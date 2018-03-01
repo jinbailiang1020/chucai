@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.3"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/select_lv_item_tv_num"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="001"
+                android:textColor="@color/select_pop_lv_tv"
+                android:textSize="@dimen/common_big_text_size" />
+
+            <TextView
+                android:id="@+id/select_lv_item_tv_matchname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="乙法"
+                android:textColor="@color/select_pop_lv_tv"
+                android:textSize="@dimen/common_big_text_size" />
+
+            <TextView
+                android:id="@+id/select_lv_item_tv_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="2:00开赛"
+                android:textColor="@color/select_pop_lv_tv"
+                android:textSize="@dimen/common_big_text_size" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.7"
+             >
+
+            <LinearLayout
+                android:id="@+id/layout_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/select_lv_item_tv_mainteam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="自由人"
+                    android:textColor="@color/select_lv_item_tv_black"
+                    android:textSize="@dimen/common_lager_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="  VS  "
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/common_lager_text_size" />
+
+                <TextView
+                    android:id="@+id/select_lv_item_tv_guessteam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="狂热"
+                    android:textColor="@color/select_lv_item_tv_black"
+                    android:textSize="@dimen/common_lager_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_buttom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_top"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:weightSum="0.9" >
+
+                <Button
+                    android:id="@+id/select_lv_item_btn_left"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="3"
+                    android:background="@drawable/select_sfc_lv_item_left"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/common_lager_text_size" />
+
+                <Button
+                    android:id="@+id/select_lv_item_btn_center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="1"
+                    android:background="@drawable/select_sfc_lv_item_center"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/common_lager_text_size" />
+
+                <Button
+                    android:id="@+id/select_lv_item_btn_right"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="0"
+                    android:background="@drawable/select_sfc_lv_item_right_selected"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_lager_text_size" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

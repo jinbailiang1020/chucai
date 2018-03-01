@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_toplayout_height"
+        android:background="@color/main_red" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/main_red"
+            android:text="资讯"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_lager_text_size" />
+    </RelativeLayout>
+
+    <com.sm.sls_app.indicator.widget.TabPageIndicator
+        android:id="@+id/information_fragment_indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/my_all_lottery_indicator_height"
+        android:background="@color/vpi_indicator_bg" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_shade" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/information_fragment_viewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

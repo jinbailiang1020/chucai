@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/tv_item_fangshi"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.3"
+            android:background="@drawable/follow_textview_bolder2"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="方式"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_big_text_size" />
+
+        <TextView
+            android:id="@+id/tv_item_touzhu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/follow_textview_bolder2"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="11 10 21 11"
+            android:textColor="@color/follow_tv_textcolor"
+            android:textSize="@dimen/common_big_text_size" />
+
+        <TextView
+            android:id="@+id/tv_item_zhushu"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:background="@drawable/follow_textview_bolder2"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_big_text_size" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="70dp"
+    android:layout_height="40dp"
+     >
+    
+    <LinearLayout 
+        android:id="@+id/layout_item_dialog"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_gridview_item_selected"
+        android:orientation="vertical"
+        >
+     <TextView
+        android:id="@+id/tv_item_dialog_result"
+        android:layout_width="fill_parent"
+    	android:layout_height="20dp"
+    	android:padding="0dp"
+    	android:gravity="center"
+    	android:textSize="13sp"
+    	android:text="胜胜"
+    	android:textColor="@color/black"
+        />
+     <TextView
+        android:id="@+id/tv_item_dialog_scale"
+        android:layout_width="fill_parent"
+    	android:layout_height="20dp"
+    	android:padding="0dp"
+    	android:gravity="center"
+    	android:text="2.3"
+    	android:textSize="13sp"
+    	android:textColor="@color/black"
+        />
+	</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.3"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/follow_lv_tv_lotteryname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text=""
+                android:textColor="@color/main_red"
+                android:textSize="@dimen/common_small_text_size" />
+
+            <com.sm.sls_app.view.RoundProgressBar
+                android:id="@+id/RoundProgressBar"
+                android:layout_width="@dimen/follow_pb_size"
+                android:layout_height="@dimen/follow_pb_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="0.6"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:weightSum="0.3">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/follow_icon_user" />
+
+                <TextView
+                    android:id="@+id/follow_lv_tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:text="asdfas "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/common_big_text_size" />
+
+                <ImageView
+                    android:id="@+id/follow_lv_iv_user_record1"
+                    android:layout_width="@dimen/follow_level_icon_size"
+                    android:layout_height="@dimen/follow_level_icon_size" />
+
+                <ImageView
+                    android:id="@+id/follow_lv_iv_user_record2"
+                    android:layout_width="@dimen/follow_level_icon_size"
+                    android:layout_height="@dimen/follow_level_icon_size" />
+
+                <ImageView
+                    android:id="@+id/follow_lv_iv_user_record3"
+                    android:layout_width="@dimen/follow_level_icon_size"
+                    android:layout_height="@dimen/follow_level_icon_size" />
+
+                <ImageView
+                    android:id="@+id/follow_lv_iv_user_record4"
+                    android:layout_width="@dimen/follow_level_icon_size"
+                    android:layout_height="@dimen/follow_level_icon_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="0.5">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="总金额"
+                        android:textColor="@color/follow_lv_item_tv"
+                        android:textSize="@dimen/common_small_text_size" />
+
+                    <TextView
+                        android:id="@+id/follow_lv_iv_tatolmoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/common_margin_4"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_small_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="每份"
+                        android:textColor="@color/follow_lv_item_tv"
+                        android:textSize="@dimen/common_small_text_size" />
+
+                    <TextView
+                        android:id="@+id/follow_lv_iv_eachmoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/common_margin_4"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_small_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="剩余"
+                        android:textColor="@color/follow_lv_item_tv"
+                        android:textSize="@dimen/common_small_text_size" />
+
+                    <TextView
+                        android:id="@+id/follow_lv_iv_remain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/common_margin_4"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_small_text_size" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.1"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_arrow_right" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string  name="fc3d601">直选</string>
+    <string  name="fc3d602">组三单式</string>
+   <string  name="fc3d603">组三</string>
+    <string  name="fc3d604">组六</string>
+     <string  name="fc3d605">组六单式</string>
+     <string  name="fc3d607">组六复式</string>
+     <string  name="fc3d606">组三复式</string>
+    
+    <!--选球页面-->
+    <string  name="shakerandom">摇一摇机选</string>
+    <string  name="fc3d301select">每位至少选择1个号码</string>
+</resources>

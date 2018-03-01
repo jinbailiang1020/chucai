@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 账户信息 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:background="#ffffff"
+            >
+
+            <TextView
+                android:id="@+id/tv_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="普通投注"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_show"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_red_pressed"
+                    android:text="任选二"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_white_pressed"
+                    android:text="任选三"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btn3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_white_pressed"
+                    android:text="任选四"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btn4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_white_pressed"
+                    android:text="任选五"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll1"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <Button
+                    android:id="@+id/btn5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_white_pressed"
+                    android:text="任选六"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btn6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_white_pressed"
+                    android:text="任选七"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btn7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_white_pressed"
+                    android:text="任选八"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btn8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_white_pressed"
+                    android:text="前一"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll2"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <Button
+                    android:id="@+id/btn9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_white_pressed"
+                    android:text="前二直选"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btn10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_white_pressed"
+                    android:text="前二组选"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btn11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_white_pressed"
+                    android:text="前三直选"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btn12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_white_pressed"
+                    android:text="前三组选"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <!--
+            <Button 
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tv_show"
+                android:text="任选二"
+                />
+            <Button 
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/btn1"
+                android:layout_below="@+id/tv_show"
+                android:text="任选三"
+                />
+            <Button 
+                android:id="@+id/btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/btn2"
+                android:layout_below="@+id/tv_show"
+                android:text="任选四"
+                />
+            <Button 
+                android:id="@+id/btn4"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/btn3"
+                android:layout_below="@+id/tv_show"
+                android:text="任选五"
+                />
+             <Button 
+                android:id="@+id/btn5"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/btn4"
+                android:layout_below="@+id/tv_show"
+                android:text="任选六"
+                />
+             
+             <Button 
+                android:id="@+id/btn6"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/btn1"
+                android:text="任选七"
+                />
+                 <Button 
+                android:id="@+id/btn7"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/btn2"
+                android:layout_toRightOf="@+id/btn6"
+                android:text="任选八"
+                />
+         
+             <Button 
+                android:id="@+id/btn8"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/btn3"
+                android:layout_toRightOf="@+id/btn7"
+                android:text="前一"
+                />
+             <Button 
+                android:id="@+id/btn9"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/btn4"
+                android:layout_toRightOf="@+id/btn8"
+                android:text="前二直选"
+                />
+             <Button 
+                android:id="@+id/btn10"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/btn6"
+                android:text="前二组选"
+                />
+             
+               <Button 
+                android:id="@+id/btn11"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                 android:layout_below="@+id/btn7"
+                android:layout_toRightOf="@+id/btn10"
+                android:text="前三直选"
+                /> 
+             
+             <Button 
+                android:id="@+id/btn12"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/btn8"
+                android:layout_toRightOf="@+id/btn11"
+                android:text="前三组选"
+                />
+            -->
+
+            <TextView
+                android:id="@+id/tv_show2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll3"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="胆拖投注"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/ll4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_show2"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <Button
+                    android:id="@+id/btn13"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_white_pressed"
+                    android:text="任选二"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btn14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_white_pressed"
+                    android:text="任选三"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btn15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_white_pressed"
+                    android:text="任选四"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btn16"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_white_pressed"
+                    android:text="任选五"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll4"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <Button
+                    android:id="@+id/btn17"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_white_pressed"
+                    android:text="任选六"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btn18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_white_pressed"
+                    android:text="任选七"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btn19"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_white_pressed"
+                    android:text="前二胆拖"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btn20"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_white_pressed"
+                    android:text="前三胆拖"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <!--
+            <Button 
+                android:id="@+id/btn13"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/ll3"
+                android:text="任选二"
+                />
+            <Button 
+                android:id="@+id/btn14"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/ll3"
+                android:layout_below="@+id/tv_show2"
+                android:text="任选三"
+                />
+            <Button 
+                android:id="@+id/btn15"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/btn14"
+                android:layout_below="@+id/tv_show2"
+                android:text="任选四"
+                />
+            <Button 
+                android:id="@+id/btn16"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/btn15"
+                android:layout_below="@+id/tv_show2"
+                android:text="任选五"
+                />
+             <Button 
+                android:id="@+id/btn17"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/btn16"
+                android:layout_below="@+id/tv_show2"
+                android:text="任选六"
+                />
+             
+             
+             <Button 
+                android:id="@+id/btn18"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/ll3"
+                android:text="任选七"
+                />
+                 <Button 
+                android:id="@+id/btn19"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/ll3"
+                android:layout_toRightOf="@+id/btn18"
+                android:text="前二组选"
+                />
+         
+             <Button 
+                android:id="@+id/btn20"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/ll3"
+                android:layout_toRightOf="@+id/btn19"
+                android:text="前三组选"
+                />
+            -->
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

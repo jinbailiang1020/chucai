@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   <LinearLayout 
+       android:id="@+id/menu_ll_top"
+       android:layout_height="45dp"
+       android:layout_width="fill_parent"
+       android:weightSum="1"
+       >
+       
+       <LinearLayout 
+           android:id="@+id/ll_top_item"
+           android:layout_height="45dp"
+           android:layout_width="0dp"
+           android:layout_weight="0.25"
+           android:gravity="center"
+           >
+       <ImageView 
+           android:id="@+id/one"
+           android:layout_height="45dp"
+           android:layout_width="45dp"
+           android:layout_gravity="center"
+           android:background="@drawable/menu_refresh_change"
+           />
+       </LinearLayout>
+       <LinearLayout 
+           android:id="@+id/ll_top_item2"
+           android:layout_height="45dp"
+           android:layout_width="0dp"
+           android:layout_weight="0.25"
+           android:gravity="center"
+           >
+       <ImageView 
+           android:id="@+id/two"
+           android:layout_height="45dp"
+           android:layout_width="45dp"
+           android:layout_gravity="center"
+           android:background="@drawable/menu_setting_change"
+           />
+       </LinearLayout>
+       <LinearLayout 
+           android:id="@+id/ll_top_item3"
+           android:layout_height="45dp"
+           android:layout_width="0dp"
+           android:layout_weight="0.25"
+           android:gravity="center"
+           >
+       <ImageView 
+           android:id="@+id/three"
+           android:layout_height="45dp"
+           android:layout_width="45dp"
+           android:layout_gravity="center"
+           android:background="@drawable/menu_changeuser_change"
+           />
+       </LinearLayout>
+       
+       <LinearLayout 
+           android:id="@+id/ll_top_item4"
+           android:layout_height="45dp"
+           android:layout_width="0dp"
+           android:layout_weight="0.25"
+           android:gravity="center"
+           >
+       <ImageView 
+           android:id="@+id/four"
+           android:layout_height="45dp"
+           android:layout_width="45dp"
+           android:layout_gravity="center"
+           android:background="@drawable/menu_exit_change"
+           />
+       </LinearLayout>
+     
+   </LinearLayout> 
+   
+    
+</LinearLayout>

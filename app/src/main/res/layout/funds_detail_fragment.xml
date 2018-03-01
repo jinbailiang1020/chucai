@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sm.sls_app.view.MyScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/funds_datail_fragment_scrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f6f6f6" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/funds_detail_fragment_date"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_8"
+            android:gravity="left|center_vertical"
+            android:text="2014年12月份账户明细"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_big_text_size"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/funds_detail_fragment_all"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_8"
+            android:gravity="left|center_vertical"
+            android:text="总收入540元，支出658元，中奖260元"
+            android:textColor="#848848"
+            android:textSize="@dimen/common_small_text_size"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_margin_8"
+            android:layout_marginRight="@dimen/common_margin_8"
+            android:layout_marginTop="@dimen/common_margin_8"
+            android:background="#e2e2e2"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/funds_fragment_title_height"
+                android:orientation="horizontal"
+                android:padding="1dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:background="#fefef2"
+                    android:gravity="center"
+                    android:text="金额"
+                    android:textColor="#848848"
+                    android:textSize="@dimen/common_small_text_size" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="2"
+                    android:background="#fefef2"
+                    android:gravity="center"
+                    android:text="类型"
+                    android:textColor="#848848"
+                    android:textSize="@dimen/common_small_text_size" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="2"
+                    android:background="#fefef2"
+                    android:gravity="center"
+                    android:text="时间"
+                    android:textColor="#848848"
+                    android:textSize="@dimen/common_small_text_size" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="3"
+                    android:background="#fefef2"
+                    android:gravity="center"
+                    android:text="摘要"
+                    android:textColor="#848848"
+                    android:textSize="@dimen/common_small_text_size" />
+            </LinearLayout>
+
+            <com.sm.sls_app.view.MyListView2
+                android:id="@+id/funds_detail_fragment_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#dddddd"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="1dp"
+                android:fadingEdge="none"
+                android:listSelector="#00000000"
+                android:scrollbars="none"
+                android:scrollingCache="false" />
+        </LinearLayout>
+    </LinearLayout>
+
+</com.sm.sls_app.view.MyScrollView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 账户信息 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+     >
+
+    <TextView
+        android:id="@+id/tv_dm_name"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/select_jc_screen_gv_item_height"
+        android:layout_margin="5dp"
+        android:background="@drawable/btn_playtype_select"
+        android:gravity="center"
+        android:text="非洲杯"
+        android:textColor="@color/black"
+        android:textSize="@dimen/common_big_text_size" />
+
+</RelativeLayout>

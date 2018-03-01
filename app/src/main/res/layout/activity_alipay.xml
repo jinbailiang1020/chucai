@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_toplayout_height"
+        android:background="@color/main_red" >
+
+        <ImageButton
+            android:id="@+id/alipay_btn_back"
+            android:layout_width="@dimen/common_toplayout_height"
+            android:layout_height="@dimen/common_toplayout_height"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/main_red"
+            android:text="支付宝账号绑定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_lager_text_size" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/alipay_btn_name"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/my_infromation_height"
+                android:layout_marginLeft="@dimen/common_margin_8"
+                android:layout_marginRight="@dimen/common_margin_8" >
+
+                <TextView
+                    android:id="@+id/text_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin_8"
+                    android:text="支付宝账号        "
+                    android:textColor="#848484"
+                    android:textSize="@dimen/common_big_text_size" />
+
+                <EditText
+                    android:id="@+id/alipay_et_user"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin_16"
+                    android:layout_toRightOf="@id/text_hint"
+                    android:background="@android:color/transparent"
+                    android:hint="点此支付宝账号"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="#c7c7c7"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/common_big_text_size" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/my_center_bg2" />
+
+            <RelativeLayout
+                android:id="@+id/alipay_btn_location"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/my_infromation_height"
+                android:layout_marginLeft="@dimen/common_margin_8"
+                android:layout_marginRight="@dimen/common_margin_8" >
+
+                <TextView
+                    android:id="@+id/text_hint1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin_8"
+                    android:text="确认支付宝账号"
+                    android:textColor="#848484"
+                    android:textSize="@dimen/common_big_text_size" />
+
+                <EditText
+                    android:id="@+id/alipay_et_user_sec"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin_16"
+                    android:layout_toRightOf="@id/text_hint1"
+                    android:background="@android:color/transparent"
+                    android:hint="点此确认支付宝账号"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="#c7c7c7"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/common_big_text_size" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/my_center_bg2" />
+
+            <RelativeLayout
+                android:id="@+id/alipay_btn_fullName"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/my_infromation_height"
+                android:layout_marginLeft="@dimen/common_margin_8"
+                android:layout_marginRight="@dimen/common_margin_8"
+                android:splitMotionEvents="false" >
+
+                <TextView
+                    android:id="@+id/text_hint2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin_8"
+                    android:text="支付宝真实姓名"
+                    android:textColor="#848484"
+                    android:textSize="@dimen/common_big_text_size" />
+
+                <EditText
+                    android:id="@+id/alipay_et_real_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin_16"
+                    android:layout_toRightOf="@id/text_hint2"
+                    android:background="@android:color/transparent"
+                    android:hint="点此输入支付宝真实姓名"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="#c7c7c7"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/common_big_text_size" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/alipay_question_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/my_center_bg2" />
+
+            <RelativeLayout
+                android:id="@+id/alipay_question_relativelayout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/my_infromation_height"
+                android:layout_marginLeft="@dimen/common_margin_8"
+                android:layout_marginRight="@dimen/common_margin_8" >
+
+                <TextView
+                    android:id="@+id/text_hint5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin_8"
+                    android:text="安全问题  "
+                    android:textColor="#848484"
+                    android:textSize="@dimen/common_big_text_size" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/my_bank_infromation_edit_height"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin_16"
+                    android:layout_marginRight="@dimen/common_margin_8"
+                    android:layout_toRightOf="@id/text_hint5"
+                    android:background="@drawable/et_bg" >
+
+                    <EditText
+                        android:id="@+id/alipay_et_soft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@android:color/transparent"
+                        android:focusable="false"
+                        android:hint="我婆婆或岳母的名字叫什么?"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="#c7c7c7"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/common_big_text_size" />
+
+                    <ImageButton
+                        android:id="@+id/alipay_btn_soft"
+                        android:layout_width="@dimen/my_bank_infromation_edit_height"
+                        android:layout_height="@dimen/my_bank_infromation_edit_height"
+                        android:layout_alignParentRight="true"
+                        android:background="#bebebe"
+                        android:src="@drawable/icon_down" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/alipay_gone_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/my_center_bg2" />
+
+            <RelativeLayout
+                android:id="@+id/alipay_gone_relativelayout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/my_infromation_height"
+                android:layout_marginLeft="@dimen/common_margin_8"
+                android:layout_marginRight="@dimen/common_margin_8" >
+
+                <TextView
+                    android:id="@+id/alipay_custom_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin_8"
+                    android:text="自定义问题"
+                    android:textColor="#848484"
+                    android:textSize="@dimen/common_big_text_size" />
+
+                <EditText
+                    android:id="@+id/alipay_et_custom_question"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin_16"
+                    android:layout_toRightOf="@id/alipay_custom_question"
+                    android:background="@android:color/transparent"
+                    android:hint="点此输入问题"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="#c7c7c7"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/common_big_text_size" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/alipay_answer_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/my_center_bg2" />
+
+            <RelativeLayout
+                android:id="@+id/alipay_answer_relativelayout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/my_infromation_height"
+                android:layout_marginLeft="@dimen/common_margin_8"
+                android:layout_marginRight="@dimen/common_margin_8" >
+
+                <TextView
+                    android:id="@+id/text_hint6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin_8"
+                    android:text="答案          "
+                    android:textColor="#848484"
+                    android:textSize="@dimen/common_big_text_size" />
+
+                <EditText
+                    android:id="@+id/alipay_et_answer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin_16"
+                    android:layout_toRightOf="@id/text_hint6"
+                    android:background="@android:color/transparent"
+                    android:hint="点此输入答案"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="#c7c7c7"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/common_big_text_size" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/my_center_bg2" />
+
+            <Button
+                android:id="@+id/alipay_btn_ok"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="@dimen/common_margin_8"
+                android:layout_marginRight="@dimen/common_margin_8"
+                android:layout_marginTop="@dimen/common_margin_16"
+                android:background="@drawable/btn_main"
+                android:gravity="center"
+                android:text="确  认"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_lage_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_margin_8"
+                android:layout_marginTop="@dimen/common_margin_16"
+                android:text="提示：请认真填写此内容，提交成功后，将不可更改。"
+                android:textColor="#ff231e"
+                android:textSize="@dimen/common_small_text_size" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

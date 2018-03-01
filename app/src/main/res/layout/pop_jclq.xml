@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 账户信息 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_shade" >
+
+    <GridView
+        android:id="@+id/gv_type_jclq"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/select_pop_gv_bg"
+        android:listSelector="@android:color/transparent"
+        android:horizontalSpacing="@dimen/select_jclq_gv_spcing"
+        android:numColumns="3"
+        android:padding="@dimen/select_jclq_gv_padding"
+        android:orientation="horizontal"
+        android:verticalSpacing="@dimen/select_jclq_gv_spcing" />
+
+</RelativeLayout>

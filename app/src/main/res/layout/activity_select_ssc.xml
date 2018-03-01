@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_top"
+        layout="@layout/common_header_select"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/include_bommon"
+        layout="@layout/common_footer_select"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <include
+        android:id="@+id/include_tip"
+        layout="@layout/common_tip_pre_wininfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include_top" />
+
+    <include
+        android:id="@+id/include_line_red"
+        layout="@layout/common_select_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include_tip" />
+
+    <ScrollView
+        android:id="@+id/sv_show_ball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/include_bommon"
+        android:layout_below="@+id/include_tip"
+        android:background="@color/white"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="true"
+        android:listSelector="#00000000"
+        android:scrollingCache="false">
+
+        <RelativeLayout
+            android:id="@+id/number_sv_center_ll_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_tip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_tip"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="每位至少选择一个号码"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/common_big_text_size" />
+
+                <LinearLayout
+                    android:id="@+id/layout_shake_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/btn_main"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/iv_shake_all"
+                        android:layout_width="@dimen/icon_shake_size"
+                        android:layout_height="@dimen/icon_shake_size"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/icon_shake" />
+
+                    <TextView
+                        android:id="@+id/tv_shake_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="全选"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/common_lage_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_shake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/btn_main"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/iv_shake"
+                        android:layout_width="@dimen/icon_shake_size"
+                        android:layout_height="@dimen/icon_shake_size"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/icon_shake" />
+
+                    <TextView
+                        android:id="@+id/tv_shake"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="机选"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/common_lage_text_size" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/number_sv_center_rlOne"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_tip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/select_fc3d_bg_tip"
+                        android:gravity="center"
+                        android:text="万位"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/common_big_text_size" />
+
+                    <com.sm.sls_app.view.MyGridView
+                        android:id="@+id/number_sv_center_gv_showOne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:columnWidth="@dimen/icon_ball_size"
+                        android:gravity="center"
+                        android:horizontalSpacing="@dimen/icon_ball_spacing"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="auto_fit"
+                        android:padding="@dimen/pop_gv_padding"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="@dimen/icon_ball_spacing" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/number_sv_center_rlTwo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/number_sv_center_rlOne"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <include
+                    android:id="@+id/include_line1"
+                    layout="@layout/common_select_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/include_line1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_show2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/select_fc3d_bg_tip"
+                        android:gravity="center"
+                        android:text="万位"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/common_big_text_size" />
+
+                    <com.sm.sls_app.view.MyGridView
+                        android:id="@+id/number_sv_center_gv_showTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_show2"
+                        android:columnWidth="@dimen/icon_ball_size"
+                        android:gravity="center"
+                        android:horizontalSpacing="@dimen/icon_ball_spacing"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="auto_fit"
+                        android:padding="@dimen/pop_gv_padding"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="@dimen/icon_ball_spacing" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/number_sv_center_rlThree"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/number_sv_center_rlTwo"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <include
+                    android:id="@+id/include_line2"
+                    layout="@layout/common_select_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/include_line2"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_show3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/select_fc3d_bg_tip"
+                        android:gravity="center"
+                        android:text="万位"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/common_big_text_size" />
+
+                    <com.sm.sls_app.view.MyGridView
+                        android:id="@+id/number_sv_center_gv_showThree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:columnWidth="@dimen/icon_ball_size"
+                        android:gravity="center"
+                        android:horizontalSpacing="@dimen/icon_ball_spacing"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="auto_fit"
+                        android:padding="@dimen/pop_gv_padding"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="@dimen/icon_ball_spacing" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/number_sv_center_rlFour"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/number_sv_center_rlThree"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <include
+                    android:id="@+id/include_line3"
+                    layout="@layout/common_select_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/include_line3"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_show4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/select_fc3d_bg_tip"
+                        android:gravity="center"
+                        android:text="万位"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/common_big_text_size" />
+
+                    <com.sm.sls_app.view.MyGridView
+                        android:id="@+id/number_sv_center_gv_showFour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:columnWidth="@dimen/icon_ball_size"
+                        android:gravity="center"
+                        android:horizontalSpacing="@dimen/icon_ball_spacing"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="auto_fit"
+                        android:padding="@dimen/pop_gv_padding"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="@dimen/icon_ball_spacing" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/number_sv_center_rlFive"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/number_sv_center_rlFour"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <include
+                    android:id="@+id/include_line4"
+                    layout="@layout/common_select_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/include_line4"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_show5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/select_fc3d_bg_tip"
+                        android:gravity="center"
+                        android:text="万位"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/common_big_text_size" />
+
+                    <com.sm.sls_app.view.MyGridView
+                        android:id="@+id/number_sv_center_gv_showFive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:columnWidth="@dimen/icon_ball_size"
+                        android:gravity="center"
+                        android:horizontalSpacing="@dimen/icon_ball_spacing"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="auto_fit"
+                        android:padding="@dimen/pop_gv_padding"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="@dimen/icon_ball_spacing" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_dxds"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/number_sv_center_rlFive"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_show6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/select_fc3d_bg_tip"
+                        android:gravity="center"
+                        android:text="万位"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/common_big_text_size" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <com.sm.sls_app.view.MyGridView
+                            android:id="@+id/number_sv_dxds"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:columnWidth="@dimen/icon_ball_size"
+                            android:gravity="center"
+                            android:horizontalSpacing="@dimen/icon_ball_spacing"
+                            android:listSelector="@android:color/transparent"
+                            android:numColumns="auto_fit"
+                            android:padding="@dimen/pop_gv_padding"
+                            android:stretchMode="columnWidth"
+                            android:verticalSpacing="@dimen/icon_ball_spacing" />
+
+                        <com.sm.sls_app.view.MyGridView
+                            android:id="@+id/number_sv_dxds2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:columnWidth="@dimen/icon_ball_size"
+                            android:gravity="center"
+                            android:horizontalSpacing="@dimen/icon_ball_spacing"
+                            android:listSelector="@android:color/transparent"
+                            android:numColumns="auto_fit"
+                            android:padding="@dimen/pop_gv_padding"
+                            android:stretchMode="columnWidth"
+                            android:verticalSpacing="@dimen/icon_ball_spacing" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/number_sv_center_rlOne_dan"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_tip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_show_dan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="胆码"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/common_big_text_size" />
+
+                <com.sm.sls_app.view.MyGridView
+                    android:id="@+id/number_sv_center_gv_showOne_dan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_show_dan"
+                    android:columnWidth="@dimen/icon_ball_size"
+                    android:gravity="center"
+                    android:horizontalSpacing="@dimen/icon_ball_spacing"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="auto_fit"
+                    android:padding="@dimen/pop_gv_padding"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="@dimen/icon_ball_spacing" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/number_sv_center_rlTwo_tuo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/number_sv_center_rlOne_dan"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <include
+                    android:id="@+id/include_line1"
+                    layout="@layout/common_select_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_show2_tuo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/include_line1"
+                    android:padding="10dp"
+                    android:text="拖码"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/common_big_text_size" />
+
+                <com.sm.sls_app.view.MyGridView
+                    android:id="@+id/number_sv_center_gv_showTwo_tuo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_show2_tuo"
+                    android:columnWidth="@dimen/icon_ball_size"
+                    android:gravity="center"
+                    android:horizontalSpacing="@dimen/icon_ball_spacing"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="auto_fit"
+                    android:padding="@dimen/pop_gv_padding"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="@dimen/icon_ball_spacing" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/select_all_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_dxds"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btn_select_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/common_btn_submit_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/btn_main"
+                    android:gravity="center"
+                    android:text="全选"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_lage_text_size" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/bet_ll_top"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_toplayout_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/main_red" >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/common_btn_back_size"
+            android:layout_height="@dimen/common_btn_back_size"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_back" />
+
+        <LinearLayout
+            android:id="@+id/layout_select_playtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+
+            <Button
+                android:id="@+id/btn_playtype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/main_red"
+                android:padding="5dp"
+                android:text="竞彩篮球投注"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_lager_text_size" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_screen"
+            android:layout_width="@dimen/common_btn_screen_size"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_screen"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bet_rl_select"
+        android:layout_width="fill_parent"
+        android:layout_height="37dp"
+        android:layout_below="@+id/bet_ll_top"
+        android:gravity="center"
+        android:weightSum="2" >
+
+        <LinearLayout
+            android:id="@+id/btn_continue_select"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/bet_layout_btns_height"
+            android:layout_margin="10dp"
+            android:background="@drawable/layout_btns_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/bet_layout_btns_height"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_add" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="继续选择比赛"
+                    android:textColor="@color/bet_btn_text"
+                    android:textSize="@dimen/common_big_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- add_number 图片可能要删 -->
+    </LinearLayout>
+
+    <!-- 中间 -->
+
+    <RelativeLayout
+        android:id="@+id/bet_sv_showNumber"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/include_passway_bei"
+        android:layout_marginBottom="-2dp"
+        android:layout_below="@+id/bet_rl_select"
+        android:layout_marginTop="5dp"
+        android:background="#dddcdc" >
+
+        <include
+            android:id="@+id/bet_lv_nums"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            layout="@layout/common_scheme_bet" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/include_passway_bei"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bet_lv_nums"
+        layout="@layout/common_middle_bet" />
+
+    <include
+        android:id="@+id/bet_lv_nums"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/common_footer_select" />
+
+</RelativeLayout>

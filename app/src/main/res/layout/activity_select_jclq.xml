@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 竞彩篮球的选球页面 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/re_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddcdc"
+    android:orientation="vertical" >
+  
+    <!-- 头部 -->
+
+    <RelativeLayout
+        android:id="@+id/select_jclq_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_toplayout_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/main_red"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/common_btn_back_size"
+            android:layout_height="@dimen/common_btn_back_size"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_back" />
+
+        <LinearLayout
+            android:id="@+id/layout_select_playtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+
+            <Button
+                android:id="@+id/btn_playtype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/main_red"
+                android:padding="5dp"
+                android:text="普通投注"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_lager_text_size" />
+
+            <ImageView
+                android:id="@+id/iv_up_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/icon_down" />
+        </LinearLayout>
+
+            
+         <ImageButton
+            android:id="@+id/btn_help"
+            android:layout_width="@dimen/common_btn_help_size"
+            android:layout_height="@dimen/common_btn_help_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_help" />
+
+        
+         <ImageButton
+            android:id="@+id/btn_screen"
+            android:layout_width="@dimen/common_btn_screen_size"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_help"
+            android:scaleType="centerInside"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_screen" />
+       
+    </RelativeLayout>
+ 
+    <include
+        android:id="@+id/include_bommon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/common_footer_select_jclq" />
+
+ 
+    <!-- 中间部分 -->
+
+    <com.sm.sls_app.view.IphoneTreeView
+        android:id="@+id/jclq_exListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/include_bommon"
+        android:layout_below="@+id/select_jclq_title"
+        android:cacheColorHint="#DDDCDC"
+        android:fadingEdge="none"
+        android:groupIndicator="@null"
+        android:listSelector="#00000000"
+        android:scrollingCache="false"
+        android:childDivider="#00000000"
+         />
+
+    <!-- 隐藏的层 -->
+
+</RelativeLayout>

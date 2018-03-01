@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="E:\KwDownload\chucai\app\libs\SocialSDK_laiwang_1.jar"
+        jumboMode="false"
+        min-sdk-version="8"
+        optimize="true"
+        revision="27.0.1"
+        sha1="683f207519e21edd9d4fcfe8ef8fc2533c88ef1b">
+        <dex dex="E:\KwDownload\chucai\app\build\intermediates\transforms\preDex\release\12.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\KwDownload\chucai\app\libs\SocialSDK_facebook_2.jar"
+        jumboMode="false"
+        min-sdk-version="8"
+        optimize="true"
+        revision="27.0.1"
+        sha1="8ed3941b84cb556e899a63c2e8006dca0b93ef37">
+        <dex dex="E:\KwDownload\chucai\app\build\intermediates\transforms\preDex\release\10.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\KwDownload\chucai\app\libs\SocialSDK_AtFriends.jar"
+        jumboMode="false"
+        min-sdk-version="8"
+        optimize="true"
+        revision="27.0.1"
+        sha1="f37797f40ea957cac042681b0dacb41a0dc6a924">
+        <dex dex="E:\KwDownload\chucai\app\build\intermediates\transforms\preDex\release\6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\KwDownload\chucai\app\libs\SocialSDK_yixin_1.jar"
+        jumboMode="false"
+        min-sdk-version="8"
+        optimize="true"
+        revision="27.0.1"
+        sha1="8fa68a3bb5ae6231cd4ccaf355d80c6f3725d0ca">
+        <dex dex="E:\KwDownload\chucai\app\build\intermediates\transforms\preDex\release\28.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\KwDownload\chucai\app\libs\SocialSDK_yixin_2.jar"
+        jumboMode="false"
+        min-sdk-version="8"
+        optimize="true"
+        revision="27.0.1"
+        sha1="0823cc9b9fe2868d28c58061b14236e8c664cb57">
+        <dex dex="E:\KwDownload\chucai\app\build\intermediates\transforms\preDex\release\29.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\KwDownload\chucai\app\libs\SocialSDK_QQZone_2.jar"
+        jumboMode="false"
+        min-sdk-version="8"
+        optimize="true"
+        revision="27.0.1"
+        sha1="73915005d14af2994f235034b9f9832d666a6ec9">
+        <dex dex="E:\KwDownload\chucai\app\build\intermediates\transforms\preDex\release\16.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\KwDownload\chucai\app\libs\SocialSDK_tencentWB_3.jar"
+        jumboMode="false"
+        min-sdk-version="8"
+        optimize="true"
+        revision="27.0.1"
+        sha1="04278ed4ea5c75f278381c123d40552514c0bf5c">
+        <dex dex="E:\KwDownload\chucai\app\build\intermediates\transforms\preDex\release\26.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\KwDownload\chucai\app\libs\SocialSDK_sms.jar"
+        jumboMode="false"
+        min-sdk-version="8"
+        optimize="true"
+        revision="27.0.1"
+        sha1="3cdb73796e336bd8c7711b060f89318845e8625e">
+        <dex dex="E:\KwDownload\chucai\app\build\intermediates\transforms\preDex\release\23.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\KwDownload\chucai\app\libs\alipay_msp.jar"
+        jumboMode="false"
+        min-sdk-version="8"
+        optimize="true"
+        revision="27.0.1"
+        sha1="cea297259e69635a6448449a6852f4c6161a07c9">
+        <dex dex="E:\KwDownload\chucai\app\build\intermediates\transforms\preDex\release\1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\KwDownload\chucai\app\libs\SocialSDK_tencentWB_1.jar"
+        jumboMode="false"
+        min-sdk-version="8"
+        optimize="true"
+        revision="27.0.1"
+        sha1="328c5351cae13f2ab29450d22b6c02d0ac88a855">
+        <dex dex="E:\KwDownload\chucai\app\build\intermediates\transforms\preDex\release\24.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\KwDownload\chucai\app\libs\SocialSDK_tencentWB_2.jar"
+        jumboMode="false"
+        min-sdk-version="8"
+        optimize="true"
+        revision="27.0.1"
+        sha1="6f744074067eb201171c9c8ff1ca45ed821a76a8">
+        <dex dex="E:\KwDownload\chucai\app\build\intermediates\transforms\preDex\release\25.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\KwDownload\chucai\app\libs\libammsdk.jar"
+        jumboMode="false"
+        min-sdk-version="8"
+        optimize="true"
+        revision="27.0.1"
+        sha1="a5f20a9010df32cb73db28ec33964ed8b4c503cc">
+        <dex dex="E:\KwDownload\chucai\app\build\intermediates\transforms\preDex\release\4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\KwDownload\chucai\app\libs\SocialSDK_renren_2.jar"
+        jumboMode="false"
+        min-sdk-version="8"
+        optimize="true"
+        revision="27.0.1"
+        sha1="260c799c4dd13ebfafeb98caf1eeebc8cdb689c0">
+        <dex dex="E:\KwDownload\chucai\app\build\intermediates\transforms\preDex\release\19.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\KwDownload\chucai\app\libs\SocialSDK_QQZone_3.jar"
+        jumboMode="false"
+        min-sdk-version="8"
+        optimize="true"
+        revision="27.0.1"
+        sha1="041517af5e95fa9d2b03f6d455fed8cc6e27572f">
+        <dex dex="E:\KwDownload\chucai\app\build\intermediates\transforms\preDex\release\17.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\KwDownload\chucai\app\libs\SocialSDK_actionbarview.jar"
+        jumboMode="false"
+        min-sdk-version="8"
+        optimize="true"
+        revision="27.0.1"
+        sha1="8617f450010ecdc469b400982e5b42c31239a82f">
+        <dex dex="E:\KwDownload\chucai\app\build\intermediates\transforms\preDex\release\5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\KwDownload\chucai\app\libs\SocialSDK_like.jar"
+        jumboMode="false"
+        min-sdk-version="8"
+        optimize="true"
+        revision="27.0.1"
+        sha1="0f6c9701e48f9071b614e3a1fa37051e1b0b04c2">
+        <dex dex="E:\KwDownload\chucai\app\build\intermediates\transforms\preDex\release\14.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\KwDownload\chucai\app\libs\SocialSDK_renren_1.jar"
+        jumboMode="false"
+        min-sdk-version="8"
+        optimize="true"
+        revision="27.0.1"
+        sha1="0ca209d760b28d73bbe444888cdd0c20eeaacbc3">
+        <dex dex="E:\KwDownload\chucai\app\build\intermediates\transforms\preDex\release\18.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\KwDownload\chucai\app\libs\SocialSDK_shake.jar"
+        jumboMode="false"
+        min-sdk-version="8"
+        optimize="true"
+        revision="27.0.1"
+        sha1="5b50c04e6c5325b08081a4890f375c83178067e2">
+        <dex dex="E:\KwDownload\chucai\app\build\intermediates\transforms\preDex\release\21.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\KwDownload\chucai\app\libs\SocialSDK_comment.jar"
+        jumboMode="false"
+        min-sdk-version="8"
+        optimize="true"
+        revision="27.0.1"
+        sha1="99853d4b86f6d84cce4d4b758ace96fd137d3168">
+        <dex dex="E:\KwDownload\chucai\app\build\intermediates\transforms\preDex\release\7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\KwDownload\chucai\app\libs\SocialSDK_UserCenter.jar"
+        jumboMode="false"
+        min-sdk-version="8"
+        optimize="true"
+        revision="27.0.1"
+        sha1="a9e00a50345fc429d667e93d4b7c771eab4598c9">
+        <dex dex="E:\KwDownload\chucai\app\build\intermediates\transforms\preDex\release\27.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\KwDownload\chucai\app\libs\commons-codec-1.3.jar"
+        jumboMode="false"
+        min-sdk-version="8"
+        optimize="true"
+        revision="27.0.1"
+        sha1="fd32786786e2adb664d5ecc965da47629dca14ba">
+        <dex dex="E:\KwDownload\chucai\app\build\intermediates\transforms\preDex\release\2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\KwDownload\chucai\app\libs\SocialSDK_scrshot.jar"
+        jumboMode="false"
+        min-sdk-version="8"
+        optimize="true"
+        revision="27.0.1"
+        sha1="19bb87cfac63079fc381bcc0aeb0bd0417c34adc">
+        <dex dex="E:\KwDownload\chucai\app\build\intermediates\transforms\preDex\release\20.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\KwDownload\chucai\app\libs\SocialSDK_Sina.jar"
+        jumboMode="false"
+        min-sdk-version="8"
+        optimize="true"
+        revision="27.0.1"
+        sha1="6fb8e2873aaf0761ae91069d794e6bad0d8952b3">
+        <dex dex="E:\KwDownload\chucai\app\build\intermediates\transforms\preDex\release\22.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\KwDownload\chucai\app\libs\httpmime-4.1.3.jar"
+        jumboMode="false"
+        min-sdk-version="8"
+        optimize="true"
+        revision="27.0.1"
+        sha1="e70d34d98f7f7f3b2b92105b9f2fe2a7a7184461">
+        <dex dex="E:\KwDownload\chucai\app\build\intermediates\transforms\preDex\release\3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\KwDownload\chucai\app\libs\SocialSDK_facebook_1.jar"
+        jumboMode="false"
+        min-sdk-version="8"
+        optimize="true"
+        revision="27.0.1"
+        sha1="5f50272ac2abe1fb79fcc9528856f445626ada6c">
+        <dex dex="E:\KwDownload\chucai\app\build\intermediates\transforms\preDex\release\9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\KwDownload\chucai\app\libs\umeng_social_sdk.jar"
+        jumboMode="false"
+        min-sdk-version="8"
+        optimize="true"
+        revision="27.0.1"
+        sha1="d8647fc93fec3ed36c32933348e2d01cfa695be1">
+        <dex dex="E:\KwDownload\chucai\app\build\intermediates\transforms\preDex\release\30.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\KwDownload\chucai\app\libs\SocialSDK_laiwang_2.jar"
+        jumboMode="false"
+        min-sdk-version="8"
+        optimize="true"
+        revision="27.0.1"
+        sha1="745bd41ff5afa25585cafaa3968c2db2b4158b84">
+        <dex dex="E:\KwDownload\chucai\app\build\intermediates\transforms\preDex\release\13.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\KwDownload\chucai\app\libs\SocialSDK_QQZone_1.jar"
+        jumboMode="false"
+        min-sdk-version="8"
+        optimize="true"
+        revision="27.0.1"
+        sha1="1d1a215c3acd13ef011b8391cab495f7760c2a1d">
+        <dex dex="E:\KwDownload\chucai\app\build\intermediates\transforms\preDex\release\15.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\AndroidStudioSDK\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jumboMode="false"
+        min-sdk-version="8"
+        optimize="true"
+        revision="27.0.1"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="E:\KwDownload\chucai\app\build\intermediates\transforms\preDex\release\31.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\KwDownload\chucai\app\libs\SocialSDK_instagram.jar"
+        jumboMode="false"
+        min-sdk-version="8"
+        optimize="true"
+        revision="27.0.1"
+        sha1="de6a274f7feafb555299349faada30869e13ce30">
+        <dex dex="E:\KwDownload\chucai\app\build\intermediates\transforms\preDex\release\11.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\KwDownload\chucai\app\libs\SocialSDK_email.jar"
+        jumboMode="false"
+        min-sdk-version="8"
+        optimize="true"
+        revision="27.0.1"
+        sha1="79ecff80cc595f437f0306b870705442873ffd77">
+        <dex dex="E:\KwDownload\chucai\app\build\intermediates\transforms\preDex\release\8.jar" />
+    </item>
+
+</items>

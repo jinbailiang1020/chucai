@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:background="@color/bet_middle_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <View
+            android:id="@+id/view_line1"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp" />
+
+        <RelativeLayout
+            android:id="@+id/layout_left1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@+id/view_line1" >
+
+            <!-- 非竞彩 -->
+
+            <RelativeLayout
+                android:id="@+id/layout_notjc"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/zhuiqi_item_qihao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="201111111111期"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_small_text_size" />
+                </LinearLayout>
+            </RelativeLayout>
+            <!-- 竞彩 -->
+
+            <RelativeLayout
+                android:id="@+id/layout_jc"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/bet_et_height"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_show_passway"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/select_jc_bg_white"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/common_small_text_size" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/view_line1" >
+
+            <EditText
+                android:id="@+id/zhuiqi_item_bei"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/et_bg"
+                android:gravity="center"
+                android:hint="1"
+                android:maxLength="3"
+                android:numeric="integer"
+                android:textColor="@color/bet_et"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/common_big_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/zhuiqi_item_bei"
+                android:text="倍"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_small_text_size" />
+
+            <TextView
+                android:id="@+id/zhuiqi_item_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:text="¥180元"
+                android:textColor="@color/red"
+                android:textSize="@dimen/common_small_text_size" />
+        </RelativeLayout>
+
+        <com.sm.sls_app.view.MyListView2
+            android:id="@+id/zhuiqi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

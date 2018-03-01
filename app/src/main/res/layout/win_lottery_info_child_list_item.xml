@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/win_num_content_one"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/win_lottery_detail_child_titil2_height"
+    android:layout_marginTop="1dp"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/center_tv_level1"
+        style="@style/win_lottery_detail_text_title1_style"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:text="一等奖" />
+
+    <TextView
+        android:id="@+id/win_one_count"
+        style="@style/win_lottery_detail_text_content_style"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="0.3" />
+
+    <TextView
+        android:id="@+id/lottery_one"
+        style="@style/win_lottery_detail_text_content1_style"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="0.3" />
+
+</LinearLayout>

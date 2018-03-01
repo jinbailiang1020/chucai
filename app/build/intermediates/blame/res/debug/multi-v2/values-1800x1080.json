@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "E:\\KwDownload\\chucai\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-1800x1080\\values-1800x1080.xml",
+            "map": [
+                {
+                    "source": "E:\\KwDownload\\chucai\\app\\src\\main\\res\\values-1800x1080\\dimens.xml",
+                    "from": {
+                        "startLines": "5,4",
+                        "startColumns": "1,1",
+                        "startOffsets": "131,94",
+                        "endColumns": "37,35",
+                        "endOffsets": "167,128"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,96",
+                        "endColumns": "40,38",
+                        "endOffsets": "91,130"
+                    }
+                }
+            ]
+        }
+    ]
+}

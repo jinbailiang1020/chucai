@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 账户信息 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+     >
+    <TextView
+        android:id="@+id/tv_playType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:text="普通投注"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/select_pop_lv_tv"
+        android:textSize="@dimen/common_lager_text_size" />
+
+    <com.sm.sls_app.view.MyGridView
+        android:id="@+id/gv_playType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_playType"
+        android:background="@color/select_pop_gv_bg"
+        android:padding="@dimen/hall_gv_spacing"
+        android:horizontalSpacing="@dimen/hall_gv_spacing"
+        android:verticalSpacing="@dimen/hall_gv_spacing"
+         />
+
+
+</RelativeLayout>

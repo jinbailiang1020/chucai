@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/luky_pop_width"
+    android:layout_height="@dimen/luky_pop_height" 
+    android:background="@drawable/luck_popwindow_back"
+    >
+    <ListView 
+        android:id="@+id/luck_pop_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadeScrollbars="true"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="true"
+        android:listSelector="#00000000"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/tran"
+        android:dividerHeight="0dp"
+        android:scrollingCache="false"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="5dp"
+        />
+
+</RelativeLayout>

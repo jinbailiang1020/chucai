@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6" >
+
+    <RelativeLayout
+        android:id="@+id/news_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_toplayout_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/main_red" >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/common_toplayout_height"
+            android:layout_height="@dimen/common_toplayout_height"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/main_red"
+            android:text="资讯详情"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_lager_text_size" />
+
+        <ImageButton
+            android:id="@+id/information_detail_share"
+            android:layout_width="@dimen/common_toplayout_height"
+            android:layout_height="@dimen/common_toplayout_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/information_share" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/information_center_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/information_detail_bottom"
+        android:layout_below="@+id/news_rl"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:id="@+id/ll_information"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_margin_4"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/information_detail_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/common_margin_8" >
+
+                <TextView
+                    android:id="@+id/information_detail_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="标题"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_margin_4"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/informationDetail_Datetime"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:paddingRight="@dimen/common_margin_16"
+                        android:text="2014-12-8"
+                        android:textColor="#999999"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_line_dotted" />
+
+            <TextView
+                android:id="@+id/tx_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxEms="10000"
+                android:padding="@dimen/common_margin_8"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/information_detail_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"
+        android:weightSum="3" >
+
+        <Button
+            android:id="@+id/informationDetail_Pervious"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:text="上一条"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/informationDetail_Current"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:background="@color/gray"
+            android:gravity="right|center_vertical"
+            android:text="1"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:text="/"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/informationDetail_Sum"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:background="@color/gray"
+            android:gravity="left|center_vertical"
+            android:text="6"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/informationDetail_Next"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:text="下一条"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

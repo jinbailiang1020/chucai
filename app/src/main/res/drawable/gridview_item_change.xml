@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 消除GridView点击Item后面的黄框  -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true" android:drawable="@color/tran"></item>
+    <item android:state_focused="true" android:drawable="@color/tran"></item>
+    <item android:drawable="@color/tran"></item>
+</selector>

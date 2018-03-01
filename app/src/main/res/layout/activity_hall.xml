@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rv_main_top"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_toplayout_height"
+        android:background="@color/main_red"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/common_toplayout_height"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_xmax_text_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_luckyBtn"
+            android:layout_width="@dimen/hall_btn_lucky_size"
+            android:layout_height="@dimen/hall_btn_lucky_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn_lucky" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/hall_ll_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/hall_ll_advertisement"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp" >
+
+            <ImageView
+                android:id="@+id/hall_img_advertisement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_win_info" />
+
+            <com.sm.sls_app.view.MarqueeTextView
+                android:id="@+id/rolltextView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/hall_win_info_text"
+                android:textSize="@dimen/common_big_text_size" />
+        </LinearLayout>
+
+        <com.sm.sls_app.view.PullToRefreshView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/mPullToRefreshView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hall_ll_advertisement"
+            android:background="@android:color/white"
+            android:orientation="vertical" >
+
+            <!--
+    这里放置listview,gridview或者scrollview的布局 ,PullToRefreshView
+	要设置android:orientation="vertical"属性否则,显示不正确
+            -->
+
+            <GridView
+                android:id="@+id/gv_hall_lottry"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#eaeaea"
+                android:horizontalSpacing="@dimen/hall_gv_spacing"
+                android:listSelector="@null"
+                android:numColumns="2"
+                android:paddingTop="@dimen/hall_gv_paddingtop"
+                android:verticalSpacing="@dimen/hall_gv_spacing" />
+        </com.sm.sls_app.view.PullToRefreshView>
+
+        <com.sm.sls_app.view.MyListView
+            android:id="@+id/listView_lottery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hall_ll_advertisement"
+            android:cacheColorHint="#DDDCDC"
+            android:fadeScrollbars="true"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="true"
+            android:listSelector="#00000000"
+            android:scrollingCache="false"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/Layout_progressBar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" >
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

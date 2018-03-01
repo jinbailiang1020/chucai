@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bank_dialog"
+    android:orientation="vertical" 
+    >
+
+    <TextView
+        android:id="@+id/top_title"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="赛事选择"
+        android:textColor="@color/gray"
+        android:textSize="22sp" />
+<!--让球选择  -->
+    <LinearLayout 
+        android:id="@+id/ll_loseBall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+  <!--    <TextView
+        android:id="@+id/top_tishi"
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:layout_marginLeft="15dp"
+        android:text="让球选择"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+-->
+    <RadioGroup
+        android:id="@+id/dialog_rg"
+        android:layout_width="fill_parent"
+        android:layout_height="28dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="0.9" >
+ <!--     <RadioButton
+            android:id="@+id/rb_all"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_weight="0.3"
+            android:button="@drawable/radiobtn_change"
+            android:layout_marginLeft="10dp"
+            android:checked="true"
+            android:paddingLeft="25dp"
+            android:textColor="@color/gray"
+            android:text="全部" />
+ -->
+    </RadioGroup>
+</LinearLayout>
+
+<!--赛事选择  -->
+    <RelativeLayout
+        android:id="@+id/sai_select"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp" >
+
+        <TextView
+            android:id="@+id/tv_sai"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="bottom"
+            android:text="赛事选择"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_notAllSelect"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/main_btn_ok_change"
+            android:text="反选" />
+
+        <Button
+            android:id="@+id/btn_allSelect"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/btn_notAllSelect"
+            android:background="@drawable/main_btn_ok_change"
+            android:text="全选" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/spf_dialog_gd"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        
+        android:columnWidth="90dp"
+       
+        android:gravity="center"
+        android:horizontalSpacing="2dp"
+        android:numColumns="auto_fit"
+        android:padding="2dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="2dp"
+         
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        >
+    </GridView>
+
+    <LinearLayout
+        android:id="@+id/btn"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:id="@+id/btn_left"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="0.5"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:background="@drawable/main_btn_ok_change"
+                android:text="确定" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_right"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="0.5"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btn_quit"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:background="@drawable/main_btn_ok_change"
+                android:text="取消" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

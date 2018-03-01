@@ -1,0 +1,969 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/rl_sethight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#ffffff" >
+
+        <LinearLayout
+            android:id="@+id/layout_dt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_mainteam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="多特蒙德"
+                android:textColor="@color/main_red"
+                android:textSize="@dimen/common_lage_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VS"
+                android:textColor="@color/main_red"
+                android:textSize="@dimen/common_lage_text_size" />
+
+            <TextView
+                android:id="@+id/tv_guestteam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="拜仁"
+                android:textColor="@color/main_red"
+                android:textSize="@dimen/common_lage_text_size" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/dl_line"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/common_line_height"
+            android:layout_below="@+id/layout_dt"
+            android:background="@color/main_red" />
+
+        <LinearLayout
+            android:id="@+id/layout_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <Button
+                android:id="@+id/dl_btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@color/dialog_bg"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="取消"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_lager_text_size" />
+
+            <Button
+                android:id="@+id/dl_btn_confirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@color/bet_btn_text"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_lager_text_size" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/layout_bottom"
+            android:layout_below="@+id/dl_line" >
+
+            <LinearLayout
+                android:id="@+id/layout_result"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!-- 让分和不让##################################### -->
+
+                <LinearLayout
+                    android:id="@+id/layout_rangqiu_notrangqiu"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="主队("
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/common_lage_text_size" />
+
+                        <TextView
+                            android:id="@+id/tv_main"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="骑士"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/common_lage_text_size" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text=")让分："
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/common_lage_text_size" />
+
+                        <TextView
+                            android:id="@+id/tv_rangfen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="-10.5"
+                            android:textSize="@dimen/common_lage_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_frf"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="13" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/select_jc_screen_gv_item_height"
+                            android:layout_weight="1"
+                            android:background="@drawable/select_jczq_tv_bolder_orange"
+                            android:gravity="center" >
+
+                            <TextView
+                                android:id="@+id/tv_0"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="center"
+                                android:text="非让球"
+                                android:textColor="@color/select_jczq_tvcolor_orange"
+                                android:textSize="@dimen/common_small_text_size" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_main_win"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="6"
+                            android:background="@drawable/select_jczq_tv_bolder_white"
+                            android:gravity="center" >
+
+                            <TextView
+                                android:id="@+id/tv_101"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="center"
+                                android:padding="2dp"
+                                android:text="主胜"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/common_lage_text_size" />
+
+                            <TextView
+                                android:id="@+id/tv_burangfen_mianwin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:text="0.11"
+                                android:textColor="@color/gray"
+                                android:textSize="@dimen/common_big_text_size" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_main_lose"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="6"
+                            android:background="@drawable/select_jczq_tv_bolder_white"
+                            android:gravity="center"
+                            android:textColor="@color/black" >
+
+                            <TextView
+                                android:id="@+id/tv_102"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="2dp"
+                                android:text="主负"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/common_lage_text_size" />
+
+                            <TextView
+                                android:id="@+id/tv_burangfen_mianlos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:text="0.11"
+                                android:textColor="@color/gray"
+                                android:textSize="@dimen/common_big_text_size" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- 总进球下面一部分 -->
+
+                    <LinearLayout
+                        android:id="@+id/ll_rf"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="13" >
+
+                        <LinearLayout
+                            android:id="@+id/layout_rq"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/select_jczq_tv_bolder_green" >
+
+                            <TextView
+                                android:id="@+id/tv_rq"
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/select_jc_screen_gv_item_height"
+                                android:gravity="center"
+                                android:text="让球"
+                                android:textColor="@color/select_jczq_tvcolor_green"
+                                android:textSize="@dimen/common_small_text_size" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_main_r_win"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="6"
+                            android:background="@drawable/select_jczq_tv_bolder_white"
+                            android:gravity="center"
+                            android:textColor="@color/black" >
+
+                            <TextView
+                                android:id="@+id/tv_501"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="center"
+                                android:padding="2dp"
+                                android:text="主胜"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/common_lage_text_size" />
+
+                            <TextView
+                                android:id="@+id/tv_rangfen_mianwin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="center"
+                                android:text="0.11"
+                                android:textColor="@color/gray"
+                                android:textSize="@dimen/common_big_text_size" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_main_r_lose"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="6"
+                            android:background="@drawable/select_jczq_tv_bolder_white"
+                            android:gravity="center"
+                            android:textColor="@color/black" >
+
+                            <TextView
+                                android:id="@+id/tv_502"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="2dp"
+                                android:text="主负"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/common_lage_text_size" />
+
+                            <TextView
+                                android:id="@+id/tv_rangfen_mianlos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:text="0.000"
+                                android:textColor="@color/gray"
+                                android:textSize="@dimen/common_big_text_size" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 让分和不让结束##################################### -->
+
+
+                <!-- 预设总分##################################### -->
+
+                <LinearLayout
+                    android:id="@+id/yszf_"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="总分："
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/common_lage_text_size" />
+
+                    <TextView
+                        android:id="@+id/sumscore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="199.5"
+                        android:textSize="@dimen/common_lage_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_zjq"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/select_jc_screen_gv_item_height"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="13" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/select_jczq_tv_bolder_orange"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="大\n小\n分"
+                            android:textColor="@color/select_jczq_tvcolor_orange"
+                            android:textSize="@dimen/common_min_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="12"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:id="@+id/layout_zjq1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:weightSum="2" >
+
+                                <LinearLayout
+                                    android:id="@+id/ll_main_big"
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/select_jczq_tv_bolder_white"
+                                    android:gravity="center"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/tv_201"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="fill_parent"
+                                        android:gravity="center"
+                                        android:padding="2dp"
+                                        android:text="大分"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/common_lage_text_size" />
+
+                                    <TextView
+                                        android:id="@+id/tv_dx_big"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="fill_parent"
+                                        android:gravity="center"
+                                        android:padding="2dp"
+                                        android:text="10.50"
+                                        android:textColor="@color/gray"
+                                        android:textSize="@dimen/common_big_text_size" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ll_main_small"
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/select_jczq_tv_bolder_white"
+                                    android:gravity="center"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/tv_202"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="2dp"
+                                        android:text="小分"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/common_lage_text_size" />
+
+                                    <TextView
+                                        android:id="@+id/tv_dx_small"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="2dp"
+                                        android:text="10.50"
+                                        android:textColor="@color/gray"
+                                        android:textSize="@dimen/common_big_text_size" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 预设总分结束##################################### -->
+
+
+                <!-- 主胜   客胜##################################### -->
+
+                <LinearLayout
+                    android:id="@+id/ll_mian_win"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="13" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/select_jczq_tv_bolder_purple"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="主胜"
+                            android:textColor="@color/select_pop_lv_tv"
+                            android:textSize="@dimen/common_small_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="12"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:id="@+id/layout_bqc1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/select_jclq_sfc_hhtz_dialog"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:weightSum="2" >
+
+                                <LinearLayout
+                                    android:id="@+id/tv_sfc_2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="@dimen/select_jclq_sfc_hhtz_dialog"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/select_jczq_tv_bolder_white"
+                                    android:gravity="center"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/tv_1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="1-5"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/common_lage_text_size" />
+
+                                    <TextView
+                                        android:id="@+id/tv_sfc_2s"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="2dp"
+                                        android:text="10.50"
+                                        android:textColor="@color/gray"
+                                        android:textSize="@dimen/common_big_text_size" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/tv_sfc_4"
+                                    android:layout_width="0dp"
+                                    android:layout_height="@dimen/select_jclq_sfc_hhtz_dialog"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/select_jczq_tv_bolder_white"
+                                    android:gravity="center"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/tv_2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="2dp"
+                                        android:text="6-10"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/common_lage_text_size" />
+
+                                    <TextView
+                                        android:id="@+id/tv_sfc_4s"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="2dp"
+                                        android:text="10.50"
+                                        android:textColor="@color/gray"
+                                        android:textSize="@dimen/common_big_text_size" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/layout_item403"
+                                    android:layout_width="0dp"
+                                    android:layout_height="@dimen/select_jclq_sfc_hhtz_dialog"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/select_jczq_tv_bolder_white"
+                                    android:gravity="center"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:id="@+id/tv_403"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="2dp"
+                                        android:text="胜负"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/common_lage_text_size" />
+
+                                    <TextView
+                                        android:id="@+id/tv_item403"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="2dp"
+                                        android:text="10.50"
+                                        android:textColor="@color/gray"
+                                        android:textSize="@dimen/common_big_text_size" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/layout_bqc2"
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/select_jclq_sfc_hhtz_dialog"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:weightSum="2" >
+
+                                <LinearLayout
+                                    android:id="@+id/tv_sfc_6"
+                                    android:layout_width="0dp"
+                                    android:layout_height="@dimen/select_jclq_sfc_hhtz_dialog"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/select_jczq_tv_bolder_white"
+                                    android:gravity="center"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/tv_3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="2dp"
+                                        android:text="11-15"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/common_lage_text_size" />
+
+                                    <TextView
+                                        android:id="@+id/tv_sfc_6s"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="2dp"
+                                        android:text="10.50"
+                                        android:textColor="@color/gray"
+                                        android:textSize="@dimen/common_big_text_size" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/tv_sfc_8"
+                                    android:layout_width="0dp"
+                                    android:layout_height="@dimen/select_jclq_sfc_hhtz_dialog"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/select_jczq_tv_bolder_white"
+                                    android:gravity="center"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/tv_4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="2dp"
+                                        android:text="16-20"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/common_lage_text_size" />
+
+                                    <TextView
+                                        android:id="@+id/tv_sfc_8s"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="2dp"
+                                        android:text="10.50"
+                                        android:textColor="@color/gray"
+                                        android:textSize="@dimen/common_big_text_size" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/select_jclq_sfc_hhtz_dialog"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:weightSum="2" >
+
+                                <LinearLayout
+                                    android:id="@+id/tv_sfc_10"
+                                    android:layout_width="0dp"
+                                    android:layout_height="@dimen/select_jclq_sfc_hhtz_dialog"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/select_jczq_tv_bolder_white"
+                                    android:gravity="center"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/tv_5"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="2dp"
+                                        android:text="21-25"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/common_lage_text_size" />
+
+                                    <TextView
+                                        android:id="@+id/tv_sfc_10s"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="2dp"
+                                        android:text="10.50"
+                                        android:textColor="@color/gray"
+                                        android:textSize="@dimen/common_big_text_size" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/tv_sfc_12"
+                                    android:layout_width="0dp"
+                                    android:layout_height="@dimen/select_jclq_sfc_hhtz_dialog"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/select_jczq_tv_bolder_white"
+                                    android:gravity="center"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/tv_6"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="2dp"
+                                        android:text="26+"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/common_lage_text_size" />
+
+                                    <TextView
+                                        android:id="@+id/tv_sfc_12s"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="2dp"
+                                        android:text="10.50"
+                                        android:textColor="@color/gray"
+                                        android:textSize="@dimen/common_big_text_size" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_mian_Losin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="13" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#D6F5D8"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="客胜"
+                            android:textColor="@color/select_pop_lv_tv"
+                            android:textSize="@dimen/common_small_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="12"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/select_jclq_sfc_hhtz_dialog"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:weightSum="2" >
+
+                                <LinearLayout
+                                    android:id="@+id/tv_sfc_1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="@dimen/select_jclq_sfc_hhtz_dialog"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/select_jczq_tv_bolder_white"
+                                    android:gravity="center"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/tv_7"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="2dp"
+                                        android:text="1-5"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/common_lage_text_size" />
+
+                                    <TextView
+                                        android:id="@+id/tv_sfc_1s"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="2dp"
+                                        android:text="10.50"
+                                        android:textColor="@color/gray"
+                                        android:textSize="@dimen/common_big_text_size" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/tv_sfc_3"
+                                    android:layout_width="0dp"
+                                    android:layout_height="@dimen/select_jclq_sfc_hhtz_dialog"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/select_jczq_tv_bolder_white"
+                                    android:gravity="center"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/tv_8"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="2dp"
+                                        android:text="6-10"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/common_lage_text_size" />
+
+                                    <TextView
+                                        android:id="@+id/tv_sfc_3s"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="2dp"
+                                        android:text="10.50"
+                                        android:textColor="@color/gray"
+                                        android:textSize="@dimen/common_big_text_size" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="@dimen/select_jclq_sfc_hhtz_dialog"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/select_jczq_tv_bolder_white"
+                                    android:gravity="center"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="2dp"
+                                        android:text="胜负"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/common_lage_text_size" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="2dp"
+                                        android:text="10.50"
+                                        android:textColor="@color/gray"
+                                        android:textSize="@dimen/common_big_text_size" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/select_jclq_sfc_hhtz_dialog"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:weightSum="2" >
+
+                                <LinearLayout
+                                    android:id="@+id/tv_sfc_5"
+                                    android:layout_width="0dp"
+                                    android:layout_height="@dimen/select_jclq_sfc_hhtz_dialog"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/select_jczq_tv_bolder_white"
+                                    android:gravity="center"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/tv_9"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="2dp"
+                                        android:text="11-15"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/common_lage_text_size" />
+
+                                    <TextView
+                                        android:id="@+id/tv_sfc_5s"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="2dp"
+                                        android:text="10.50"
+                                        android:textColor="@color/gray"
+                                        android:textSize="@dimen/common_big_text_size" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/tv_sfc_7"
+                                    android:layout_width="0dp"
+                                    android:layout_height="@dimen/select_jclq_sfc_hhtz_dialog"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/select_jczq_tv_bolder_white"
+                                    android:gravity="center"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/tv_10"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="2dp"
+                                        android:text="16-20"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/common_lage_text_size" />
+
+                                    <TextView
+                                        android:id="@+id/tv_sfc_7s"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="2dp"
+                                        android:text="10.50"
+                                        android:textColor="@color/gray"
+                                        android:textSize="@dimen/common_big_text_size" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/select_jclq_sfc_hhtz_dialog"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:weightSum="2" >
+
+                                <LinearLayout
+                                    android:id="@+id/tv_sfc_9"
+                                    android:layout_width="0dp"
+                                    android:layout_height="@dimen/select_jclq_sfc_hhtz_dialog"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/select_jczq_tv_bolder_white"
+                                    android:gravity="center"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/tv_11"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="2dp"
+                                        android:text="21-25"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/common_lage_text_size" />
+
+                                    <TextView
+                                        android:id="@+id/tv_sfc_9s"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="2dp"
+                                        android:text="10.50"
+                                        android:textColor="@color/gray"
+                                        android:textSize="@dimen/common_big_text_size" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/tv_sfc_11"
+                                    android:layout_width="0dp"
+                                    android:layout_height="@dimen/select_jclq_sfc_hhtz_dialog"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/select_jczq_tv_bolder_white"
+                                    android:gravity="center"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/tv_12"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="2dp"
+                                        android:text="26+"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/common_lage_text_size" />
+
+                                    <TextView
+                                        android:id="@+id/tv_sfc_11s"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="2dp"
+                                        android:text="10.50"
+                                        android:textColor="@color/gray"
+                                        android:textSize="@dimen/common_big_text_size" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

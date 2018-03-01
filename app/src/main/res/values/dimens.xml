@@ -1,0 +1,185 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+
+    <!-- 刷新 -->
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+    <!-- 通用 -->
+    <!-- 公用字体大小 -->
+    <dimen name="common_text_size">13sp</dimen>
+    <dimen name="common_min_text_size">10sp</dimen>
+    <dimen name="common_small_text_size">12sp</dimen>
+    <dimen name="common_big_text_size">14sp</dimen>
+    <dimen name="common_lage_text_size">16sp</dimen>
+    <dimen name="common_lager_text_size">18sp</dimen>
+    <dimen name="common_max_text_size">20sp</dimen>
+    <dimen name="common_xmax_text_size">25sp</dimen>
+
+    <!-- 主页面 -->
+    <dimen name="main_bottomlayout_height">60dp</dimen>
+    <dimen name="main_shade_height">1dp</dimen>
+    <dimen name="main_layout_tubiao_height">55dp</dimen>
+    <dimen name="main_tubiao_size">30dp</dimen>
+    <dimen name="main_tab_textsize">10sp</dimen>
+    <dimen name="tx_size">13sp</dimen>
+    <dimen name="m_tx_size">15sp</dimen>
+
+    <!-- 公用的 -->
+    <dimen name="common_toplayout_height">50dp</dimen>
+    <dimen name="common_bommonlayout_height">50dp</dimen>
+    <dimen name="common_btn_back_size">50dp</dimen>
+    <dimen name="common_btn_help_size">50dp</dimen>
+    <dimen name="common_btn_screen_size">30dp</dimen>
+    <dimen name="common_btn_submit_height">30dp</dimen>
+    <dimen name="common_line_height">2dp</dimen>
+    <dimen name="common_small_line_height">0.5dp</dimen>
+    <dimen name="common_margin_left_width">10dp</dimen>
+    <dimen name="common_margin_right_width">10dp</dimen>
+    <dimen name="common_diver_height">1dp</dimen>
+    <dimen name="common_margin_4">4dp</dimen>
+    <dimen name="common_margin_8">8dp</dimen>
+    <dimen name="common_margin_16">16dp</dimen>
+    <dimen name="common_margin_24">24dp</dimen>
+    <dimen name="common_margin_72">72dp</dimen>
+
+    <!-- 购彩大厅 -->
+    <dimen name="hall_btn_lucky_size">40dp</dimen>
+    <dimen name="hall_gridview_wid">300dp</dimen>
+    <dimen name="hall_lottery_layout_wid">150dp</dimen>
+    <dimen name="hall_lottery_layout_height">80dp</dimen>
+    <dimen name="hall_lottery_image_size">50dp</dimen>
+    <dimen name="hall_gv_spacing">0.5dp</dimen>
+    <dimen name="hall_gv_paddingtop">0.5dp</dimen>
+    <dimen name="hall_gv_item_margin">0.5dp</dimen>
+    
+    <!-- 幸运选号 -->
+    <dimen name="luky_iv_height">30dp</dimen>
+    <dimen name="luky_iv_width">100dp</dimen>
+    <dimen name="luky_pop_width">150dp</dimen>
+    <dimen name="luky_pop_height">200dp</dimen>
+
+    <!-- 选号页面 -->
+    <dimen name="common_tip_select_wid">30dp</dimen>
+    <dimen name="icon_shake_size">20dp</dimen>
+    <dimen name="icon_ball_size">40dp</dimen>
+    <dimen name="icon_ball_spacing">5dp</dimen>
+    <dimen name="pop_gv_padding">5dp</dimen>
+    <dimen name="btn_gv_item_width">150dp</dimen>
+    <dimen name="btn_gv_item_height">60dp</dimen>
+    <dimen name="select_expand_groupview_height">30dp</dimen>
+    <dimen name="select_jczq_layout_hhtz_height">50dp</dimen>
+    <dimen name="select_jczq_tvlayout_hhtz_height">35dp</dimen>
+    <dimen name="select_jczq_tvlayout_zjq_height">35dp</dimen>
+    <dimen name="select_jczq_dialog_rangqiu_layout_height">50dp</dimen>
+    <dimen name="select_jc_rangqiu_layout_height">35dp</dimen>
+    <dimen name="select_jc_bifen_bqc_layout_height">35dp</dimen>
+	<dimen name="select_jclq_sfc_hhtz_dialog">35dp</dimen>
+    <dimen name="select_jc_screen_gv_item_height">40dp</dimen>
+    <dimen name="select_jclq__height">129dp</dimen>
+    <dimen name="select_jclq_gv_spcing">1dp</dimen>
+    <dimen name="select_jclq_gv_padding">1dp</dimen>
+    <dimen name="select_jclq_layout_height">35dp</dimen>
+    <dimen name="select_jclq_layout_height_hunhe">40dp</dimen>
+    <dimen name="select_k3_tv_tip_height">50dp</dimen>
+    <!-- 投注页面 -->
+    <dimen name="bet_et_height">30dp</dimen>
+    <dimen name="bet_et_wid">70dp</dimen>
+    <dimen name="bet_cb_size">20dp</dimen>
+    <dimen name="bet_layout_btns_height">30dp</dimen>
+    <dimen name="bet_lv_diver_height">1dp</dimen>
+    <dimen name="bet_layout_xieyi_height">50dp</dimen>
+    <dimen name="bet_layout_xieyi_margin">30dp</dimen>
+    <dimen name="bet_layout_margin">10dp</dimen>
+    <dimen name="bet_listview_margin">10dp</dimen>
+    <dimen name="bet_listview_item_delbtn_size">30dp</dimen>
+    <dimen name="bet_jc_selectpasstype_pop_height">300dp</dimen>
+    <dimen name="bet_jclq_lv_item_layout_team_height">30dp</dimen>
+    <dimen name="bet_jclq_lv_item_layout_result_height">30dp</dimen>
+    <dimen name="bet_jclq_lv_item_btn_dan_size">30dp</dimen>
+    <dimen name="bet_jclq_lv_item_btn_del_size">30dp</dimen>
+    
+    <!-- 付款成功页面 -->
+    <dimen name="paysuc_icon_size">100dp</dimen>
+    <dimen name="paysuc_btn_height">40dp</dimen>
+
+    <!-- 发起合买 页面 -->
+    <dimen name="follow_layout_height">40dp</dimen>
+    <dimen name="follow_layout_money">160dp</dimen>
+    <dimen name="follow_et_yj_width">80dp</dimen>
+    <dimen name="follow_et_yj_height">30dp</dimen>
+    <dimen name="follow_et_width">60dp</dimen>
+    <dimen name="follow_btn_height">30dp</dimen>
+    <dimen name="follow_btn_width">60dp</dimen>
+    <dimen name="follow_pb_circle_width">20dp</dimen>
+
+    <!-- 合买大厅 -->
+    <dimen name="follow_tab_height">35dp</dimen>
+    <dimen name="follow_pb_size">60dp</dimen>
+    <dimen name="follow_level_icon_size">15dp</dimen>
+
+    <!-- 登陆注册界面 -->
+    <dimen name="login_edit_height">40dp</dimen>
+    <dimen name="login_button_height">40dp</dimen>
+    <dimen name="regist_login_btn_height">28dp</dimen>
+    <dimen name="regist_login_btn_width">64dp</dimen>
+
+    <!-- 个人中心界面 -->
+    <dimen name="my_center_money_btn_width">72dp</dimen>
+    <dimen name="my_center_money_btn_height">28dp</dimen>
+    <dimen name="my_center_layout_height">32dp</dimen>
+    <dimen name="my_center_account_layout_height">120dp</dimen>
+
+    <!-- 我的彩票界面 -->
+    <dimen name="my_all_lottery_indicator_height">35dp</dimen>
+    <dimen name="my_all_lottery_date_width">35dp</dimen>
+    <!-- 个人信息界面 -->
+    <dimen name="my_infromation_height">45dp</dimen>
+    <dimen name="my_infromation_btn_height">35dp</dimen>
+    <dimen name="my_bank_infromation_edit_height">30dp</dimen>
+
+    <!-- 账户明细界面 -->
+    <dimen name="funds_fragment_title_height">28dp</dimen>
+    <dimen name="funds_fragment_item_height">45dp</dimen>
+       
+    <!-- 全部彩票投注界面 -->
+    <dimen name="all_bet_lottery_item_height">50dp</dimen>
+    
+    <!-- 彩票投注详情界面 -->
+    <dimen name="bet_lottery_logo_height">40dp</dimen>
+    <dimen name="bet_lottery_logo_text_height">40dp</dimen>
+    <dimen name="bet_lottery_item_title_height">30dp</dimen>
+    <dimen name="bet_lottery_item_height">50dp</dimen>
+    <dimen name="jc_bet_lottery_title_height">30dp</dimen>
+    <dimen name="jc_bet_lottery_item_height">60dp</dimen>
+    <dimen name="jc_bet_lottery_item_cc_width">50dp</dimen>
+    <dimen name="jc_bet_lottery_item_vs_width">80dp</dimen>
+    <dimen name="jc_bet_lottery_item_play_width">50dp</dimen>
+    <dimen name="jc_bet_lottery_item_cube_height">50dp</dimen>
+
+    <!-- 充值提款设置界面 -->
+    <dimen name="money_edit_height">40dp</dimen>
+    <dimen name="money_text_height">30dp</dimen>
+    <dimen name="setting_item_height">45dp</dimen>
+    <dimen name="suggest_edit_height">35dp</dimen>
+    <dimen name="suggest_edit_content_height">170dp</dimen>
+
+    <!-- 开奖公告 -->
+    <dimen name="win_lottery_ball_height">30dp</dimen>
+    <dimen name="win_lottery_rectangle_height">30dp</dimen>
+    <dimen name="win_lottery_rectangle_width">18dp</dimen>
+    <!-- 开奖公告详情 -->
+    <dimen name="win_lottery_detail_titil_height">30dp</dimen>
+    <dimen name="win_lottery_detail_titil_num_height">20dp</dimen>
+    <dimen name="win_lottery_detail_child_titil_height">30dp</dimen>
+    <dimen name="win_lottery_detail_child_titil2_height">25dp</dimen>
+    <dimen name="win_lottery_detail_child_content_height">30dp</dimen>
+    <dimen name="win_lottery_detail_child_content2_height">30dp</dimen>
+    <dimen name="win_lottery_cj_detail_title_height">40dp</dimen>
+    <dimen name="win_lottery_cj_detail_child_height">60dp</dimen>
+
+</resources>

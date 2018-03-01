@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#dddcdc" >
+
+    <include
+        android:id="@+id/include_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/common_header_select" />
+
+    <include
+        android:id="@+id/include_bommon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/common_footer_select" />
+
+    <include
+        android:id="@+id/include_passway_bei"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/include_bommon"
+        layout="@layout/common_middle_bet" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/include_passway_bei"
+        android:layout_below="@+id/include_top"
+        android:background="@color/bet_white_middle_bg" >
+
+        <LinearLayout
+            android:id="@+id/layout_btns"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:id="@+id/btn_continue_select"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/bet_layout_btns_height"
+                android:layout_margin="10dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/layout_btns_bg"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/bet_layout_btns_height"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_add" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="继续选号"
+                        android:textColor="@color/bet_btn_text"
+                        android:textSize="@dimen/common_big_text_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_automatic_select"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/bet_layout_btns_height"
+                android:layout_margin="10dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/layout_btns_bg"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/bet_layout_btns_height"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_add" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="机选1注"
+                        android:textColor="@color/bet_btn_text"
+                        android:textSize="@dimen/common_big_text_size" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    	<include
+    	    android:id="@+id/include_scheme"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="fill_parent"
+    	    android:layout_below="@+id/layout_btns"
+    	    layout="@layout/common_scheme_bet" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

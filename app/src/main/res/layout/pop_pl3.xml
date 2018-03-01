@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 账户信息 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <Button
+                    android:id="@+id/btn_zhixuan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_red_pressed"
+                    android:text="直选"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btn_zsds"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_white_pressed"
+                    android:text="组三单式"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btn_zsfs"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_white_pressed"
+                    android:text="组三复式"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btn_zlds"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_white_pressed"
+                    android:text="组六单式"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout1"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_zlfs"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_white_pressed"
+                    android:text="组六复式"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btn_zuxhz"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_white_pressed"
+                    android:text="组选和值"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btn_zhixhz"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_white_pressed"
+                    android:text="直选和值"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btn_1d"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_white_pressed"
+                    android:text="1D"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+            <!--
+              <LinearLayout 
+                android:id="@+id/layout3"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/layout2"
+                android:orientation="horizontal"
+                >
+                 <Button 
+                 android:id="@+id/btn_cai2dbt"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:text="猜2D-二不同"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:background="@drawable/btn_white_pressed"
+                />
+                
+              
+               <Button 
+                 android:id="@+id/btn_tongxuan"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="通选"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:background="@drawable/btn_white_pressed"
+                />
+                 <Button 
+                 android:id="@+id/btn_baoxuan3"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:text="包选3"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:background="@drawable/btn_white_pressed"
+                />
+                 <Button 
+                android:id="@+id/btn_baoxuan6"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:text="包选6"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:background="@drawable/btn_white_pressed"
+                />
+               </LinearLayout>
+                <LinearLayout 
+                android:id="@+id/layout4"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/layout3"
+                android:orientation="horizontal"
+                >
+               
+               <Button 
+                 android:id="@+id/btn_caidx"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:text="猜大小"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:background="@drawable/btn_white_pressed"
+                />
+               <Button 
+                 android:id="@+id/btn_caist"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="猜三同"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:background="@drawable/btn_white_pressed"
+                />
+                 <Button 
+                 android:id="@+id/btn_caijo"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:text="猜奇偶"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:background="@drawable/btn_white_pressed"
+                />
+                 <Button 
+                android:id="@+id/btn_tuolaji"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:text="拖拉机"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:background="@drawable/btn_white_pressed"
+                />
+               </LinearLayout>
+                <LinearLayout 
+                android:id="@+id/layout5"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/layout4"
+                android:orientation="horizontal"
+                >
+               
+               <Button 
+                 android:id="@+id/btn_cai2dt"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:text="猜2D"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:visibility="invisible"
+                android:background="@drawable/btn_white_pressed"
+                />
+               <Button 
+                 android:id="@+id/btn_tongxuan"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="通选"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:visibility="invisible"
+                android:background="@drawable/btn_white_pressed"
+                />
+               </LinearLayout>
+            -->
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

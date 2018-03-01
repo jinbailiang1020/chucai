@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/layout_top_select"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_toplayout_height"
+        android:background="@color/main_red" >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/common_btn_back_size"
+            android:layout_height="@dimen/common_btn_back_size"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_back" />
+
+        <LinearLayout
+            android:id="@+id/layout_select_playtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+
+            <Button
+                android:id="@+id/btn_playtype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/main_red"
+                android:padding="5dp"
+                android:text="普通投注"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_lager_text_size" />
+
+            <ImageView
+                android:id="@+id/iv_up_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/icon_down" />
+        </LinearLayout>
+
+        
+        <ImageButton
+            android:id="@+id/btn_help"
+            android:layout_width="@dimen/common_btn_help_size"
+            android:layout_height="@dimen/common_btn_help_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_help" />
+
+        
+         <ImageButton
+            android:id="@+id/btn_screen"
+            android:layout_width="@dimen/common_btn_screen_size"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_help"
+            android:visibility="gone"
+            android:scaleType="centerInside"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_screen" />
+    </RelativeLayout>
+
+</RelativeLayout>

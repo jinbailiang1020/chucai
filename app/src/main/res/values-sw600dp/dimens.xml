@@ -1,0 +1,10 @@
+<resources>
+
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw600dp devices (e.g. 7" tablets   7英寸平板电脑) here.
+    -->
+    <dimen name="tx_size">13sp</dimen>
+ 	<dimen name="m_tx_size">15sp</dimen>
+
+</resources>

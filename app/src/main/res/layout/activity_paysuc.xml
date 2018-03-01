@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+   <RelativeLayout
+       android:id="@+id/layout_top_select"
+       android:layout_width="fill_parent"
+       android:layout_height="@dimen/common_toplayout_height"
+       android:background="@color/main_red" >
+
+
+        <LinearLayout
+            android:id="@+id/layout_select_playtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/main_red"
+                android:padding="5dp"
+                android:text="付款成功"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_max_text_size" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_below="@+id/layout_top_select"
+	    android:background="@color/white"
+	    android:gravity="center_horizontal"
+	    android:orientation="vertical"
+	    >
+        <ImageView 
+            android:layout_width="@dimen/paysuc_icon_size"
+            android:layout_height="@dimen/paysuc_icon_size"
+            android:layout_margin="20dp"
+            android:background="@drawable/paysuc_icon_gou"
+            />
+        <TextView 
+            android:id="@+id/tv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你共花费 2 元，余额为 32132135 元"
+            android:textSize="@dimen/common_big_text_size"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您已成功付款，请关注方案出票状态"
+            android:layout_margin="10dp"
+            android:textSize="@dimen/common_lage_text_size"
+            />
+        
+        <Button 
+            android:id="@+id/btn_select_schemeinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/paysuc_btn_height"
+            android:gravity="center"
+            android:text="查看投注详情"
+            android:textSize="@dimen/common_lage_text_size"
+            android:textColor="@color/paysuc_btn_textcolor"
+            android:background="@drawable/paysuc_btn_bg"
+            android:layout_margin="10dp"
+            />
+        <Button 
+            android:id="@+id/btn_continue_bet"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/paysuc_btn_height"
+            android:gravity="center"
+            android:text="继续投注"
+            android:textSize="@dimen/common_lage_text_size"
+            android:textColor="@color/paysuc_btn_textcolor"
+            android:background="@drawable/paysuc_btn_bg"
+            android:layout_margin="10dp"
+            />
+        <Button 
+            android:id="@+id/btn_back_tohall"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/paysuc_btn_height"
+            android:gravity="center"
+            android:text="返回首页"
+            android:textSize="@dimen/common_lage_text_size"
+            android:textColor="@color/paysuc_btn_textcolor"
+            android:background="@drawable/paysuc_btn_bg"
+            android:layout_margin="10dp"
+            />
+        
+	    
+	    
+	</LinearLayout>
+   
+
+</RelativeLayout>

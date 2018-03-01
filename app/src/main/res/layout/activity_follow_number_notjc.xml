@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bet_white_middle_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_top_select"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_toplayout_height"
+        android:background="@color/main_red" >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/common_btn_back_size"
+            android:layout_height="@dimen/common_btn_back_size"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_back" />
+
+        <LinearLayout
+            android:id="@+id/layout_select_playtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+
+            <Button
+                android:id="@+id/btn_playtype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/main_red"
+                android:padding="5dp"
+                android:text="选号详情"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_lager_text_size" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_top_select" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_fangan"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_margin_left_width"
+                android:layout_marginRight="@dimen/common_margin_right_width"
+                android:background="@drawable/et_bg" >
+
+                <LinearLayout
+                    android:id="@+id/ll_fangan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/bet_lottery_item_title_height"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:text="方案情况:"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_fangan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/red"
+                        android:textSize="14sp" />
+
+                    <ImageButton
+                        android:id="@+id/fangan_hide_btn"
+                        android:layout_width="@dimen/bet_lottery_item_title_height"
+                        android:layout_height="@dimen/bet_lottery_item_title_height"
+                        android:layout_marginRight="@dimen/common_margin_16"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/betinfo_hide_btn_selector" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/fangan_divider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/ll_fangan"
+                    android:layout_marginLeft="@dimen/common_margin_16"
+                    android:layout_marginRight="@dimen/common_margin_16"
+                    android:background="#e2e2e2" />
+
+                <com.sm.sls_app.view.MyListView2
+                    android:id="@+id/lv_fangan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fangan_divider"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="@dimen/common_margin_16"
+                    android:layout_marginRight="@dimen/common_margin_16"
+                    android:divider="#e2e2e2"
+                    android:dividerHeight="1dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_margin_left_width"
+                android:layout_marginRight="@dimen/common_margin_right_width"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_bg" >
+
+                <LinearLayout
+                    android:id="@+id/ll_hemai"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/bet_lottery_item_title_height"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:text="合买用户:"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_hemai"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/red"
+                        android:textSize="14sp" />
+
+                    <ImageButton
+                        android:id="@+id/hemai_hide_btn"
+                        android:layout_width="@dimen/bet_lottery_item_title_height"
+                        android:layout_height="@dimen/bet_lottery_item_title_height"
+                        android:layout_marginRight="@dimen/common_margin_16"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/betinfo_hide_btn_selector" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/hemai_divider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/ll_hemai"
+                    android:layout_marginLeft="@dimen/common_margin_16"
+                    android:layout_marginRight="@dimen/common_margin_16"
+                    android:background="#e2e2e2" />
+
+                <com.sm.sls_app.view.MyListView2
+                    android:id="@+id/lv_hemai"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hemai_divider"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="@dimen/common_margin_16"
+                    android:layout_marginRight="@dimen/common_margin_16"
+                    android:divider="#e2e2e2"
+                    android:dividerHeight="1dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_tile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_margin_left_width"
+                android:layout_marginRight="@dimen/common_margin_right_width"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/tv_fangshi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/follow_textview_bolder"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="方式"
+                    android:textColor="@color/follow_tv_textcolor"
+                    android:textSize="@dimen/common_big_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_touzhu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/follow_textview_bolder"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="投注"
+                    android:textColor="@color/follow_tv_textcolor"
+                    android:textSize="@dimen/common_big_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_beishu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/follow_textview_bolder"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="注数"
+                    android:textColor="@color/follow_tv_textcolor"
+                    android:textSize="@dimen/common_big_text_size" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/common_margin_left_width"
+                android:layout_marginRight="@dimen/common_margin_right_width" >
+
+                <TextView
+                    android:id="@+id/followinfo_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="正在加载中"
+                    android:textSize="@dimen/common_big_text_size" />
+
+                <ListView
+                    android:id="@+id/followinfo_jc_listView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dp"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0dp"
+                    android:fadeScrollbars="true"
+                    android:fadingEdge="none"
+                    android:fastScrollEnabled="true"
+                    android:listSelector="#00000000"
+                    android:scrollingCache="false" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

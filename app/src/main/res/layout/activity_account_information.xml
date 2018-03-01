@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_center_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_toplayout_height"
+        android:background="@color/main_red" >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/common_toplayout_height"
+            android:layout_height="@dimen/common_toplayout_height"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/main_red"
+            android:text="账户信息"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_lager_text_size" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_margin_8"
+                android:layout_marginRight="@dimen/common_margin_8"
+                android:layout_marginTop="@dimen/common_margin_8"
+                android:background="@drawable/et_bg"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/my_infromation_height"
+                    android:layout_marginLeft="@dimen/common_margin_8"
+                    android:layout_marginRight="@dimen/common_margin_8"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/account_information_real_name" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_margin_4"
+                        android:text="真实姓名"
+                        android:textColor="#848484"
+                        android:textSize="@dimen/common_big_text_size" />
+
+                    <TextView
+                        android:id="@+id/accInfo_tv_name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_margin_16"
+                        android:text="未绑定"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_big_text_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_margin_8"
+                android:layout_marginRight="@dimen/common_margin_8"
+                android:layout_marginTop="@dimen/common_margin_8"
+                android:background="@drawable/et_bg"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/my_infromation_height"
+                    android:layout_marginLeft="@dimen/common_margin_8"
+                    android:layout_marginRight="@dimen/common_margin_8"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/account_information_bank" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_margin_4"
+                        android:text="银行名称"
+                        android:textColor="#848484"
+                        android:textSize="@dimen/common_big_text_size" />
+
+                    <TextView
+                        android:id="@+id/accInfo_tv_bankName2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_margin_16"
+                        android:text="未绑定"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_big_text_size" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/my_center_bg2" />
+
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/my_center_bg2" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/my_infromation_height"
+                    android:layout_marginLeft="@dimen/common_margin_8"
+                    android:layout_marginRight="@dimen/common_margin_8"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/account_information_bank_num" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_margin_4"
+                        android:text="银行卡号"
+                        android:textColor="#848484"
+                        android:textSize="@dimen/common_big_text_size" />
+
+                    <TextView
+                        android:id="@+id/accInfo_tv_bankNum2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_margin_16"
+                        android:text="未绑定"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_big_text_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/accInfo_btn_improve"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="@dimen/common_margin_8"
+                android:layout_marginRight="@dimen/common_margin_8"
+                android:layout_marginTop="@dimen/common_margin_16"
+                android:background="@drawable/btn_main"
+                android:text="完善信息"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_lage_text_size" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

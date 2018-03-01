@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/win_lottery_detail_child"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#f6f6f6"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#e2e2e2" />
+
+    <!-- 销量和奖金 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_margin_8"
+        android:layout_marginLeft="@dimen/common_margin_16"
+        android:layout_marginRight="@dimen/common_margin_16"
+        android:layout_marginTop="@dimen/common_margin_8"
+        android:background="#e2e2e2"
+        android:orientation="vertical"
+        android:padding="1dp" >
+
+        <LinearLayout
+            android:id="@+id/win_num_center"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/center_tv_payCount"
+                style="@style/win_lottery_detail_text_title_style"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.5"
+                android:text="本期销量(元)" />
+
+            <TextView
+                android:id="@+id/center_tv_lotteryMoney"
+                style="@style/win_lottery_detail_text_title_style"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="0.5"
+                android:text="奖池奖金(元)" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/win_num_center2"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/center_tv_payCount2"
+                style="@style/win_lottery_detail_text_content1_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5" />
+
+            <TextView
+                android:id="@+id/center_tv_lotteryMoney2"
+                style="@style/win_lottery_detail_text_content1_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="0.5" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 奖项 -->
+
+    <LinearLayout
+        android:id="@+id/win_num_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_margin_8"
+        android:layout_marginLeft="@dimen/common_margin_16"
+        android:layout_marginRight="@dimen/common_margin_16"
+        android:background="#e2e2e2"
+        android:orientation="vertical"
+        android:padding="1dp" >
+
+        <LinearLayout
+            android:id="@+id/win_num_content_title"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/win_lottery_detail_child_titil2_height"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/win_lottery_detail_text_title_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:text="奖项" />
+
+            <TextView
+                style="@style/win_lottery_detail_text_title_style"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="0.3"
+                android:text="中奖注数" />
+
+            <TextView
+                style="@style/win_lottery_detail_text_title_style"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="0.3"
+                android:text="每注金额(元)" />
+        </LinearLayout>
+
+        <com.sm.sls_app.view.MyListView2
+            android:id="@+id/win_lottery_info_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp"
+            android:cacheColorHint="#dddddd"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="1dp"
+            android:fadingEdge="none"
+            android:listSelector="#00000000"
+            android:scrollbars="none"
+            android:scrollingCache="false" />
+    </LinearLayout>
+
+</LinearLayout>

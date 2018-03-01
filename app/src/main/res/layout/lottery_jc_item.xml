@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/win_lottery_cj_detail_child_height"
+    android:background="#ffffff"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/ll_left"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="欧洲杯"
+            android:textColor="#909090"
+            android:textSize="@dimen/common_big_text_size" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_4"
+            android:text="21:30"
+            android:textColor="#909090"
+            android:textSize="@dimen/common_big_text_size" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="@dimen/common_margin_4"
+        android:layout_marginTop="@dimen/common_margin_4"
+        android:background="@drawable/win_lottery_jc_detail_deliver" />
+
+    <LinearLayout
+        android:id="@+id/ll_left2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_mainTeam"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="面对抗生"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_big_text_size" />
+
+        <TextView
+            android:id="@+id/tv_loseBall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/common_margin_4"
+            android:gravity="center"
+            android:text="-1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_big_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_right2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@color/win_lottery_jc_detail_score3_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="胜"
+            android:textColor="@color/win_lottery_jc_detail_score3_text"
+            android:textSize="@dimen/common_big_text_size" />
+
+        <TextView
+            android:id="@+id/tv_scorll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_4"
+            android:text="1：1"
+            android:textColor="@color/win_lottery_jc_detail_score3_text"
+            android:textSize="@dimen/common_big_text_size" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_right1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3" >
+
+        <TextView
+            android:id="@+id/tv_gusTeam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="维尔大额"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_big_text_size" />
+    </RelativeLayout>
+
+</LinearLayout>

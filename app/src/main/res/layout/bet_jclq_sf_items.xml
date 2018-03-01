@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:id="@+id/right_top_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bet_jclq_lv_item_layout_team_height"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/ll_tv_mainTeam"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.32"
+            android:gravity="center"
+            android:text="新加坡"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_big_text_size" />
+
+        <TextView
+            android:id="@+id/ll_tv_vs"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.12"
+            android:gravity="center"
+            android:text="VS"
+            android:textColor="@color/red"
+            android:textSize="@dimen/common_big_text_size" />
+
+        <TextView
+            android:id="@+id/ll_tv_cusTeam"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.32"
+            android:gravity="center"
+            android:text="泰国"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_big_text_size" />
+    </LinearLayout>
+
+    <!-- 胜平负 按钮点击区 -->
+
+    <LinearLayout
+        android:id="@+id/right_bottom_ll_spf"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bet_jclq_lv_item_layout_result_height"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <!-- sf_dx_rfsf################################### -->
+
+        <LinearLayout
+            android:id="@+id/ll_sf_dx_rfsf"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:weightSum="1" >
+
+            <Button
+                android:id="@+id/btn_mainWin"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/select_sfc_lv_item_left"
+                android:gravity="center"
+                android:text="主胜"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_small_text_size" />
+
+            <Button
+                android:id="@+id/btn_lose"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/select_sfc_lv_item_right"
+                android:gravity="center"
+                android:text="主负"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_small_text_size" />
+        </LinearLayout>
+        <!-- up_sf_dx_rfsf################################### -->
+
+
+        <!-- sfc################################### -->
+
+        <LinearLayout
+            android:id="@+id/ll_sfc"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/tv_sfc_show"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/select_jc_bg_white"
+                android:ellipsize="middle"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/select_pop_lv_tv"
+                android:textSize="@dimen/common_small_text_size" />
+        </LinearLayout>
+        <!-- up_sfc################################### -->
+
+        <Button
+            android:id="@+id/btn_dan"
+            android:layout_width="@dimen/bet_jclq_lv_item_btn_dan_size"
+            android:layout_height="@dimen/bet_jclq_lv_item_btn_dan_size"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bet_btn_dan_unselected"
+            android:gravity="center"
+            android:text="胆"
+            android:textColor="@color/red"
+            android:textSize="@dimen/common_lage_text_size" />
+
+        <ImageButton
+            android:id="@+id/btn_clean"
+            android:layout_width="@dimen/bet_jclq_lv_item_btn_del_size"
+            android:layout_height="@dimen/bet_jclq_lv_item_btn_del_size"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_delete" />
+    </LinearLayout>
+
+</LinearLayout>

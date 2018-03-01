@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/follow_hint"
+        style="@style/pull_to_refresh_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_margin_8"
+        android:gravity="center"
+        android:text="正在加载中..." />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:pulltorefresh="http://schemas.android.com/apk/res/com.sm.sls_app.activity"
+        android:id="@+id/followListView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:divider="#e2e2e2"
+        android:dividerHeight="@dimen/common_diver_height"
+        android:fadingEdge="none"
+        android:listSelector="#e2e2e2"
+        android:scrollbars="none"
+        android:scrollingCache="false"
+        pulltorefresh:ptrAnimationStyle="rotate"
+        pulltorefresh:ptrHeaderBackground="@color/my_center_bg2"
+        pulltorefresh:ptrMode="disabled" />
+
+</RelativeLayout>

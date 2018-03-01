@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:background="@color/white"
+    >
+
+    <ImageView
+        android:id="@+id/line_shade"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_shade"
+        android:scaleType="fitXY"
+         />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_toplayout_height"
+        android:layout_below="@+id/line_shade"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:id="@+id/layout_left"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+			<!-- 选号 -->
+            <Button
+                android:id="@+id/btn_clearall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@color/white"
+                android:text="清空"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_lage_text_size" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/layout_left"
+            android:background="@color/select_vertical_line" />
+
+       
+        <LinearLayout
+            android:id="@+id/layout_tip_jc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+             >
+
+            <TextView
+                android:id="@+id/tv_tip_jc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_lage_text_size" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/common_btn_submit_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_main"
+            android:gravity="center"
+            android:text="选好了"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_lage_text_size" />
+    </RelativeLayout>
+
+</RelativeLayout>

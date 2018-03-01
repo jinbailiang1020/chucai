@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="310dp"
+    android:background="@drawable/bank_dialog"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/scroll_tv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="比分投注"
+        android:textColor="@color/gray"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_btn_change1"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/scroll_tv_title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        android:weightSum="0.9" >
+
+        <TextView
+            android:id="@+id/tv_mainTeam"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:text="新加坡"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_vs"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:text="VS"
+            android:textColor="@color/red"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_gusTeam"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:text="新加坡"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_btn_change"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/ll_btn_change1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        android:weightSum="0.9" >
+
+        <Button
+            android:id="@+id/btn_win_scroll"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="0.3"
+            android:background="@drawable/pass_type_select"
+            android:text="主胜比分"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_flot_scroll"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="0.3"
+            android:background="@drawable/pass_type"
+            android:text="平比分"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn_lose_scroll"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="0.3"
+            android:background="@drawable/pass_type"
+            android:text="主负比分"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/check_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="145dp"
+        android:layout_below="@+id/ll_btn_change"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="true"
+        android:listSelector="#00000000"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:scrollingCache="false" >
+    </GridView>
+    <!-- 底部按钮 -->
+
+    <RelativeLayout
+        android:id="@+id/ll_bottom_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/check_gridview"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/main_btn_ok_change"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_quit"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/main_btn_ok_change"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

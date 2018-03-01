@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_one"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/logo_lin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="@dimen/bet_lottery_logo_height"
+            android:layout_height="@dimen/bet_lottery_logo_height"
+            android:layout_marginBottom="@dimen/common_margin_4"
+            android:layout_marginLeft="@dimen/common_margin_16"
+            android:layout_marginTop="@dimen/common_margin_4"
+            android:background="@drawable/init_lottery" />
+
+        <TextView
+            android:id="@+id/tv_lotteryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_margin_8"
+            android:gravity="center"
+            android:text="---"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_lotteryName_issue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_margin_16"
+            android:gravity="center"
+            android:text="111"
+            android:textColor="#888474"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_followInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="@color/gray2"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/logo_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/logo_lin"
+        android:background="@color/my_center_bg2" />
+
+    <LinearLayout
+        android:id="@+id/ll_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_divider"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="0.9" >
+
+        <LinearLayout
+            android:id="@+id/ll_info1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.3"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:gravity="center_horizontal|bottom"
+                android:text="订单金额"
+                android:textColor="#888474"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_money2"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/activity_login_divider" />
+
+        <LinearLayout
+            android:id="@+id/ll_info2"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.3"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_state"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:gravity="center_horizontal|bottom"
+                android:text="订单状态"
+                android:textColor="#888474"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_state2"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/red"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/activity_login_divider" />
+
+        <LinearLayout
+            android:id="@+id/ll_info3"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.3"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_winMoney"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:gravity="center_horizontal|bottom"
+                android:text="奖金"
+                android:textColor="#888474"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_winMoney2"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="@color/red"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_info"
+        android:background="@drawable/bet_lottery_bg_orgin" />
+
+</RelativeLayout>

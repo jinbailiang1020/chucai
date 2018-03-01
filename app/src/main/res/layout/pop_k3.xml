@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 账户信息 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_show"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_red_pressed"
+                    android:text="和值"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_white_pressed"
+                    android:text="三同号单选"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btn3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_white_pressed"
+                    android:text="二同号单选"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btn4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_white_pressed"
+                    android:text="三不同号"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll1"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <Button
+                    android:id="@+id/btn5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_white_pressed"
+                    android:text="二不同号"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btn6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_white_pressed"
+                    android:text="三同号通选"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btn7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_white_pressed"
+                    android:text="二同号复选"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btn8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/btn_white_pressed"
+                    android:text="三连号通选"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <!--
+                 <TextView
+                 android:id="@+id/tv_show2"
+                 android:layout_width="fill_parent"
+                 android:layout_height="30dp"
+                 android:layout_below="@+id/ll2"
+                 android:layout_marginLeft="5dp"
+                 android:layout_marginTop="10dp"
+                 android:gravity="center_vertical"
+                 android:text="胆拖投注"
+                 android:textColor="@color/black"
+                  />
+
+              <LinearLayout 
+                android:id="@+id/ll4"
+                android:layout_width="fill_parent"
+                android:weightSum="1"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tv_show2"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                >
+                <Button 
+                android:id="@+id/btn9"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:text="三不同号"
+                android:textColor="@color/black"
+                android:background="@drawable/btn1"
+                />
+               <Button 
+                 android:id="@+id/btn10"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:text="二不同号"
+                android:textColor="@color/black"
+                android:background="@drawable/btn1"
+                />
+            </LinearLayout>
+            -->
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

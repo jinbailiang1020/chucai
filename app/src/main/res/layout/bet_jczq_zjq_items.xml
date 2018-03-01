@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/spf_back"
+    android:orientation="horizontal"
+    android:weightSum="1" >
+
+    <!-- 左边 -->
+
+    <LinearLayout
+        android:id="@+id/spf_right_ll"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.8"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/right_top_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal"
+            android:weightSum="0.9" >
+
+            <TextView
+                android:id="@+id/ll_tv_mainTeam"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.3"
+                android:gravity="bottom|right"
+                android:paddingRight="15dp"
+                android:text="新加坡"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/ll_tv_vs"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.3"
+                android:gravity="center_horizontal|bottom"
+                android:text="VS"
+                android:textColor="@color/red"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/ll_tv_cusTeam"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.3"
+                android:gravity="bottom|left"
+                android:paddingLeft="15dp"
+                android:text="泰国"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/right_bottom_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="1.0" >
+
+            <Button
+                android:id="@+id/btn_0"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.25"
+                android:background="@drawable/jc_btn"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_1"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.25"
+                android:background="@drawable/jc_btn"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_2"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.25"
+                android:background="@drawable/jc_btn"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+            <Button
+                android:id="@+id/btn_3"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.25"
+                android:background="@drawable/jc_btn"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+        
+         <LinearLayout
+            android:id="@+id/right_bottom_ll2"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:weightSum="1" >
+
+            <Button
+                android:id="@+id/btn_4"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.25"
+                android:background="@drawable/jc_btn"
+                android:gravity="center"
+                android:text="4"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_5"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.25"
+                android:background="@drawable/jc_btn"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_6"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.25"
+                android:background="@drawable/jc_btn"
+                android:gravity="center"
+                android:text="6"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+             <Button
+                android:id="@+id/btn_7"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.25"
+                android:background="@drawable/jc_btn"
+                android:gravity="center"
+                android:text="7+"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+    
+
+    <!-- 胆 -->
+    <RelativeLayout
+        android:id="@+id/right_btn"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2" >
+
+        <Button
+            android:id="@+id/btn_dan_zjq"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/jc_btn"
+            android:text="胆" />
+
+    </RelativeLayout>
+
+</LinearLayout>

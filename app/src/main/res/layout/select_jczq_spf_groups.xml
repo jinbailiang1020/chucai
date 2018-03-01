@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/select_jc_lv_parent_down"
+    android:gravity="center_vertical"
+    android:paddingLeft="8dp" >
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/common_margin_8"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="2014-12-12 周五"
+        android:textColor="@color/black"
+        android:textSize="@dimen/common_big_text_size" />
+
+    <TextView
+        android:id="@+id/tv_weekday"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="@dimen/common_big_text_size"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_playCount"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/common_margin_8"
+        android:layout_weight="1.5"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="55场比赛可投 "
+        android:textColor="@color/black"
+        android:textSize="@dimen/common_big_text_size"
+        android:visibility="visible" />
+
+</LinearLayout>

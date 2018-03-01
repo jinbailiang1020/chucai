@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 账户信息 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_shade" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bet_jc_selectpasstype_pop_height"
+        android:layout_alignParentBottom="true" >
+
+        <LinearLayout
+            android:id="@+id/layout_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@color/dialog_bg"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="取消"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_lager_text_size" />
+
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@color/bet_btn_text"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_lager_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/select_middle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/layout_bottom"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="赛事筛选"
+                android:textColor="@color/main_red"
+                android:textSize="@dimen/common_max_text_size"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/dl_line"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/common_line_height"
+                android:background="@color/main_red" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <Button
+                    android:id="@+id/btn_select_all"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/select_jc_screen_gv_item_height"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/select_jczq_tv_bolder_white"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="全选"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/common_lage_text_size" />
+
+                <Button
+                    android:id="@+id/btn_select_anti"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/select_jc_screen_gv_item_height"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/select_jczq_tv_bolder_white"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="反选"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/common_lage_text_size" />
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+                    <com.sm.sls_app.view.MyGridView
+                        android:id="@+id/pop_screen_gv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="3" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 在线充值 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_toplayout_height"
+        android:background="@color/main_red" >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/common_toplayout_height"
+            android:layout_height="@dimen/common_toplayout_height"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/main_red"
+            android:text="支付宝网页充值"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_lager_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/recharge_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_margin_16"
+        android:layout_marginRight="@dimen/common_margin_16"
+        android:layout_marginTop="@dimen/common_margin_24" >
+
+        <TextView
+            android:id="@+id/recahge_name"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="账户充值："
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/recahge_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/recahge_name"
+            android:layout_toRightOf="@+id/recahge_name"
+            android:gravity="center"
+            android:text="Elan"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/recahge_tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/recahge_name"
+            android:layout_below="@+id/recahge_name"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="充值金额"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/recahge_et_money"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/money_edit_height"
+            android:layout_alignBottom="@+id/recahge_tv_money"
+            android:layout_toRightOf="@+id/recahge_tv_money"
+            android:background="@drawable/et_bg"
+            android:hint="100元"
+            android:inputType="number"
+            android:paddingLeft="@dimen/common_margin_8"
+            android:textColor="@color/black"
+            android:textColorHint="#cccccc"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/common_big_text_size" />
+
+        <TextView
+            android:id="@+id/recahge_tv_money2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/recahge_et_money"
+            android:layout_toRightOf="@+id/recahge_et_money"
+            android:gravity="center"
+            android:text="元"
+            android:textColor="@color/red"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/recharge_btn_ok"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/money_edit_height"
+            android:layout_below="@+id/recahge_et_money"
+            android:layout_marginTop="@dimen/common_margin_16"
+            android:background="@drawable/btn_main"
+            android:text="立即充值"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_lage_text_size" />
+
+        <TextView
+            android:id="@+id/recharge_tv_tishi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recharge_btn_ok"
+            android:layout_marginTop="@dimen/common_margin_8"
+            android:text="提示：充值无手续费，最低充值1元"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_small_text_size" />
+    </RelativeLayout>
+    <!-- 按钮 -->
+
+    <RelativeLayout
+        android:id="@+id/idcard_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center" >
+    </RelativeLayout>
+
+</LinearLayout>

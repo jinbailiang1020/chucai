@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin_jc_child2"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/jc_bet_lottery_item_cube_height"
+    android:minHeight="@dimen/jc_bet_lottery_item_cube_height"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/child_invest"
+        style="@style/orderinfo_jc_text"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="3" />
+
+    <TextView
+        android:id="@+id/child_result"
+        style="@style/orderinfo_jc_text"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="2" />
+
+</LinearLayout>

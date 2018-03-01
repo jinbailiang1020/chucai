@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include
+        android:id="@+id/include_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/common_header_select" />
+
+    <include
+        android:id="@+id/include_bommon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/common_footer_select" />
+
+    <include
+        android:id="@+id/include_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include_top"
+        layout="@layout/common_tip_pre_wininfo" />
+	<include
+         android:id="@+id/include_line_red"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/include_tip"
+         layout="@layout/common_select_line" />
+    <ScrollView
+        android:id="@+id/sv_show_ball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/include_bommon"
+        android:layout_below="@+id/include_line_red"
+        android:background="@color/select_main" 
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <!-- 红球 -->
+            <RelativeLayout
+                android:id="@+id/layout_ball_red"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+               <RelativeLayout 
+                   android:id="@+id/tip"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   >
+                <LinearLayout
+                    android:id="@+id/layout_tip_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="请至少选出"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_big_text_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6"
+                        android:textColor="@color/main_red"
+                        android:textSize="@dimen/common_big_text_size" />
+
+                    <TextView
+                        android:id="@+id/tv_tip_ted"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="个红球"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_big_text_size" />
+                </LinearLayout>
+                <LinearLayout 
+				    android:id="@+id/layout_shake"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:padding="5dp"
+				    android:layout_margin="10dp"
+				    android:background="@drawable/btn_main"
+				    android:layout_alignParentRight="true"
+				    android:layout_centerVertical="true"
+				    android:orientation="horizontal"
+				    android:gravity="center"
+				    >
+                    <ImageView 
+                        android:id="@+id/iv_shake"
+                        android:layout_width="@dimen/icon_shake_size"
+                        android:layout_height="@dimen/icon_shake_size"
+                        android:background="@drawable/icon_shake"
+                        android:layout_marginLeft="5dp"
+                        />
+                    <TextView 
+                        android:id="@+id/tv_shake"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="机选"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/common_lage_text_size"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_tip_red_tuo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+                    android:visibility="invisible" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="胆码区-红球，请至少选出1个，最多5个"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_big_text_size" />
+                </LinearLayout>
+                </RelativeLayout>
+
+                <com.sm.sls_app.view.MyGridView
+                    android:id="@+id/gv_ball_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tip"
+                    android:layout_margin="5dp"
+                    android:listSelector="@android:color/transparent"
+                    android:columnWidth="@dimen/icon_ball_size"
+                    android:gravity="center"
+                    android:horizontalSpacing="@dimen/icon_ball_spacing"
+                    android:numColumns="auto_fit"
+                    android:padding="@dimen/pop_gv_padding"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="@dimen/icon_ball_spacing" />
+            </RelativeLayout>
+
+            <!-- 红球胆拖选号区  默认隐藏 -->
+
+            <RelativeLayout
+                android:id="@+id/layout_ball_redtuo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_below="@+id/layout_ball_red" >
+
+                <include
+                    android:id="@+id/include_line_redtuo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/common_select_line" />
+ 				<LinearLayout
+                    android:id="@+id/layout_tip_redtuo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/include_line_redtuo"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                     >
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="10dp"
+	                    android:text="拖码区-红球，请至少选出"
+	                    android:textColor="@color/black"
+	                    android:textSize="@dimen/common_big_text_size" />
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="2"
+	                    android:textColor="@color/main_red"
+	                    android:textSize="@dimen/common_big_text_size" />
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="个"
+	                    android:textColor="@color/black"
+	                    android:textSize="@dimen/common_big_text_size" />
+				</LinearLayout>
+                <com.sm.sls_app.view.MyGridView
+                    android:id="@+id/gv_ball_red_tuo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_tip_redtuo"
+                    android:layout_margin="5dp"
+                    android:listSelector="@android:color/transparent"
+                    android:columnWidth="@dimen/icon_ball_size"
+                    android:fadingEdge="none"
+                    android:gravity="center"
+                    android:horizontalSpacing="@dimen/icon_ball_spacing"
+                    android:numColumns="auto_fit"
+                    android:padding="@dimen/pop_gv_padding"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="@dimen/icon_ball_spacing"  />
+            </RelativeLayout>
+
+            <!-- 蓝球区 -->
+
+            <RelativeLayout
+                android:id="@+id/layout_ball_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_ball_redtuo" >
+
+                <include
+                    android:id="@+id/include_line_blue"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/common_select_line" />
+
+                  <LinearLayout
+                    android:id="@+id/layout_tip_blue"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/include_line_blue"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="请至少选出"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_big_text_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/common_big_text_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="个蓝球"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_big_text_size" />
+                </LinearLayout>
+
+                <com.sm.sls_app.view.MyGridView
+                    android:id="@+id/gv_ball_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_tip_blue"
+                    android:layout_margin="5dp"
+                    android:listSelector="@android:color/transparent"
+                    android:columnWidth="@dimen/icon_ball_size"
+                    android:gravity="center"
+                    android:horizontalSpacing="@dimen/icon_ball_spacing"
+                    android:numColumns="auto_fit"
+                    android:padding="@dimen/pop_gv_padding"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="@dimen/icon_ball_spacing"  />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_toplayout_height"
+        android:background="@color/main_red" >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/common_toplayout_height"
+            android:layout_height="@dimen/common_toplayout_height"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_back"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="开奖公告"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_lager_text_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/hall_ll_advertisement"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/adv"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/hall_img_advertisement"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:background="@drawable/trumpet" />
+
+        <com.sm.sls_app.view.RollTextView
+            android:id="@+id/rolltextView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/win_lottery_hint"
+            style="@style/pull_to_refresh_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_8"
+            android:gravity="center"
+            android:text="正在加载中..." />
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:pulltorefresh="http://schemas.android.com/apk/res/com.sm.sls_app.activity"
+            android:id="@+id/win_lottery_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#DDDCDC"
+            android:divider="#e2e2e2"
+            android:dividerHeight="1dp"
+            android:fadeScrollbars="true"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="true"
+            android:listSelector="#00000000"
+            android:scrollingCache="false"
+            pulltorefresh:ptrAnimationStyle="rotate"
+            pulltorefresh:ptrHeaderBackground="@color/my_center_bg2"
+            pulltorefresh:ptrHeaderTextColor="#6C6C6C"
+            pulltorefresh:ptrMode="pullFromStart" />
+    </RelativeLayout>
+
+</LinearLayout>

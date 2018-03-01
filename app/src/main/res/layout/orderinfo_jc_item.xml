@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/textview_bolder2"
+        android:orientation="horizontal"
+        android:weightSum="1.4" >
+
+        <TextView
+            android:id="@+id/tv_dan"
+            android:layout_width="0dp"
+            android:layout_height="31dp"
+            android:layout_weight="0.24"
+            android:background="@drawable/textview_bolder2"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_mainTeam"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:text="新加坡"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_vs"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/red"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_gusTeam"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:text="泰国"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_scroe"
+            android:layout_width="0dp"
+            android:layout_height="31dp"
+            android:layout_weight="0.26"
+            android:background="@drawable/textview_bolder2"
+            android:gravity="center"
+            android:text="3:1"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="-3dp"
+        android:background="@drawable/follow_textview_bolder"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1.4" >
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.24"
+            android:background="@drawable/follow_textview_bolder"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="周四 001"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_all"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="0.9"
+            android:gravity="center"
+            android:orientation="horizontal"
+             >
+            <!-- 胜平负 -->
+            <LinearLayout
+                android:id="@+id/ll_spf"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="0.9" >
+                <TextView
+                    android:id="@+id/tv_win"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="0.3"
+                    android:layout_marginRight="3dp"
+                    android:background="@color/red"
+                    android:gravity="center"
+                    android:text="胜"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_flat"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="0.3"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="平"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_lose"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:layout_marginRight="3dp"
+                    android:text="负"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- 猜比分 -->
+            <LinearLayout
+                android:id="@+id/ll_cbf"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/tv_cbf_result"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            
+            <!-- 总进球 -->
+            <LinearLayout
+                android:id="@+id/ll_zjq"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/tv_zjq_result"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- 胜 负 -->
+            <LinearLayout
+                android:id="@+id/ll_sf"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="0.8">
+
+                <TextView
+                    android:id="@+id/tv_sf_win"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="0.4"
+                    android:background="@color/red"
+                    android:gravity="center"
+                    android:text="胜"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_sf_lose"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:layout_marginRight="3dp"
+                    android:text="负"
+                    android:background="@drawable/follow_textview_bolder"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.26"
+            android:background="@drawable/follow_textview_bolder"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

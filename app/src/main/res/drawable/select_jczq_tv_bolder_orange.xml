@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"> 
+
+    <solid android:color="@color/select_jczq_tv_bg_orange"/>
+    <stroke android:width="0.5dp" android:color="@color/my_center_bg2" />
+	
+</shape>

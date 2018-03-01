@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/luck_back" >
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_toplayout_height"
+        android:background="@color/main_red" >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/common_btn_back_size"
+            android:layout_height="@dimen/common_btn_back_size"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_back" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" 
+            >
+
+            <ImageView
+                android:id="@+id/luck_logo"
+                android:layout_width="@dimen/luky_iv_width"
+                android:layout_height="@dimen/luky_iv_height"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/luck_logo" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!-- 按钮 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_button"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/layout_top"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/button_lottery"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="-20dp"
+            android:background="@drawable/luck_btn_change"
+            android:text="双色球"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/button_count"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/luck_btn_change"
+            android:text="1注"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <!-- 转盘 -->
+
+    <RelativeLayout
+        android:id="@+id/luck_rl_bottom"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/rl_button"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" >
+
+        <!-- 星座 属象 -->
+
+        <RelativeLayout
+            android:id="@+id/luck_rl_xz_sx"
+            android:layout_width="300dp"
+            android:layout_height="300dp" >
+
+            <ImageView
+                android:id="@+id/img_bg"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/turntable_bg" />
+
+            <ImageView
+                android:id="@+id/img_bottom"
+                android:layout_width="205dp"
+                android:layout_height="205dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/turntable1" />
+
+            <ImageView
+                android:id="@+id/img_up"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/xingzuo" />
+        </RelativeLayout>
+
+        <!-- 姓名 -->
+
+        <RelativeLayout
+            android:id="@+id/luck_rl_name"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@id/img_bg"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/turntable_bg" />
+
+            <ImageView
+                android:id="@id/img_bottom"
+                android:layout_width="210dp"
+                android:layout_height="210dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/turntable_name" />
+
+            <ImageView
+                android:id="@+id/img_textShow"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@id/img_bottom"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/lucky_name" />
+
+            <RelativeLayout
+                android:id="@+id/img_up2"
+                android:layout_width="160dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/img_textShow"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/lucky_name_bg" >
+
+                <EditText
+                    android:id="@+id/img_edit"
+                    android:layout_width="130dp"
+                    android:layout_height="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/lucky_edit"
+                    android:hint="姓名"
+                    android:paddingLeft="3dp"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/selectName"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/img_up2"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/luck_select_btn_change" />
+        </RelativeLayout>
+
+        <!-- 情侣 -->
+
+        <RelativeLayout
+            android:id="@+id/luck_rl_ql"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@id/img_bg"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/turntable_bg" />
+
+            <ImageView
+                android:id="@id/img_bottom"
+                android:layout_width="210dp"
+                android:layout_height="210dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/turntable_name" />
+
+            <ImageView
+                android:id="@id/img_textShow"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@id/img_bottom"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/lucky_name2" />
+
+            <RelativeLayout
+                android:id="@+id/img_ql_up"
+                android:layout_width="160dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/img_textShow"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/lucky_name_bg" >
+
+                <EditText
+                    android:id="@+id/img_edit_1"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/lucky_edit"
+                    android:hint="姓名"
+                    android:paddingLeft="3dp"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/img_edit_2"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/lucky_edit"
+                    android:hint="姓名"
+                    android:paddingLeft="3dp"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/selectName_ql"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/img_ql_up"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/luck_select_btn_change" />
+        </RelativeLayout>
+
+        <!-- 生日 -->
+
+        <RelativeLayout
+            android:id="@+id/luck_rl_sr"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@id/img_bg"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/turntable_bg" />
+
+            <ImageView
+                android:id="@id/img_bottom"
+                android:layout_width="210dp"
+                android:layout_height="210dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/turntable_name" />
+
+            <ImageView
+                android:id="@id/img_textShow"
+                android:layout_width="175dp"
+                android:layout_height="50dp"
+                android:layout_alignTop="@id/img_bottom"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/lucky_birthday" />
+
+            <RelativeLayout
+                android:id="@+id/img_birthday_up"
+                android:layout_width="175dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/img_textShow"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/lucky_name_bg" >
+
+                <TextView
+                    android:id="@+id/img_edit_year"
+                    android:layout_width="55dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/lucky_edit_birth"
+                    android:gravity="center"
+                    android:hint="年"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/img_edit_month"
+                    android:layout_width="50dp"
+                    android:layout_height="28dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/lucky_edit_birth"
+                    android:gravity="center"
+                    android:hint="月"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/img_edit_day"
+                    android:layout_width="50dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/lucky_edit_birth"
+                    android:gravity="center"
+                    android:hint="日"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/select_birthday"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/img_birthday_up"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/luck_select_btn_change" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/select"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/luck_select_btn_change" />
+    </RelativeLayout>
+
+    <!-- 种类按钮 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_type_button"
+        android:layout_width="320dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/rl_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="245dp" >
+
+        <ImageView
+            android:id="@+id/img_type"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/luck_type_xz" />
+
+        <Button
+            android:id="@+id/img_1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/tran" />
+
+        <Button
+            android:id="@+id/img_2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="43dp"
+            android:layout_toRightOf="@+id/img_1"
+            android:background="@color/tran" />
+
+        <Button
+            android:id="@+id/img_3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="3dp"
+            android:background="@color/tran" />
+
+        <Button
+            android:id="@+id/img_4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="43dp"
+            android:layout_toRightOf="@+id/img_3"
+            android:background="@color/tran" />
+
+        <Button
+            android:id="@+id/img_5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/tran" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#dddcdc"
+    >
+
+    <RelativeLayout
+        android:id="@+id/bet_ll_top"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/main_top" >
+
+        <TextView
+            android:id="@+id/top_tv_title"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/top_tv_title"
+            android:gravity="center"
+            android:text="七乐彩投注"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/top_tv_join"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/normal_btn_change"
+            android:text="发起合买"
+            android:textColor="@color/yellow"
+            android:textSize="14sp"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bet_rl_select"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/bet_ll_top"
+        android:background="@drawable/select_back_number"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/bet_rl_select_shou"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/pass_type"
+            android:text="+增加手选一注"
+            android:gravity="center"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/bet_rl_select_ji"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/pass_type"
+            android:gravity="center"
+            android:text="+增加机选一注"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bet_ll_follow"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_above="@+id/cb_is"
+        android:background="#b9b9b9"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:weightSum="3" >
+
+        <TextView
+            android:id="@+id/bet_tv_follow"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:text="追"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/bet_et_follow"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.6"
+            android:background="@drawable/edittext"
+            android:gravity="center"
+            android:numeric="integer"
+            android:maxLines="1"
+            android:hint="1"
+            android:textSize="14sp"
+            android:textColorHint="@color/snow"
+            android:textColor="@color/black" 
+            android:textCursorDrawable="@null"
+            />
+
+        <TextView
+            android:id="@+id/bet_tv_qi"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:text="期"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/bet_tv_xian"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.04"
+            android:background="@drawable/h_line"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/bet_tv_tou"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:text="投"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/bet_et_bei"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.6"
+            android:background="@drawable/edittext"
+            android:gravity="center"
+            android:numeric="integer"
+            android:hint="1"
+            android:textSize="14sp"
+            android:textColorHint="@color/snow"
+            android:textColor="@color/black" 
+            android:textCursorDrawable="@null"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:text="倍"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+    
+    <ImageView 
+         android:id="@+id/img_2"
+         android:layout_width="fill_parent"
+         android:layout_height="3dp"
+         android:layout_marginLeft="5dp"
+         android:layout_marginRight="5dp"
+         android:layout_above="@+id/cb_is"
+         android:background="@drawable/line2"
+         />
+
+    <LinearLayout
+        android:id="@+id/cb_tiaoyue"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_above="@+id/bet_ll_follow"
+        android:background="#b9b9b9"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/cb_tiaoyue2"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:button="@drawable/chechekbox_select"
+            android:checked="true"
+            android:gravity="left|center_vertical" />
+
+        <TextView
+            android:id="@+id/tv_ckName"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="我已同意并阅读"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/tv_ckName2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="《委托投注规则》"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    
+    <ImageView 
+         android:id="@+id/img_1"
+         android:layout_width="fill_parent"
+         android:layout_height="3dp"
+         android:layout_marginLeft="5dp"
+         android:layout_marginRight="5dp"
+         android:layout_above="@+id/bet_ll_follow"
+         android:background="@drawable/line2"
+         />
+
+    <RelativeLayout
+        android:id="@+id/bet_sv_showNumber"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/cb_tiaoyue"
+        android:layout_below="@+id/bet_rl_select"
+        >
+
+        <ListView
+            android:id="@+id/bet_lv_nums"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:divider="@drawable/line2"
+            android:dividerHeight="3dp"
+            android:fadeScrollbars="true"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="true"
+            android:focusable="true"
+            android:listSelector="#00000000"
+            android:scrollingCache="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cb_is"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_above="@+id/ll_bottom"
+        android:background="#b9b9b9" >
+
+        <CheckBox
+            android:id="@+id/cb_is_follow"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:button="@drawable/checkbox_change"
+            android:gravity="left|center_vertical"
+            android:checked="true" />
+
+        <TextView
+            android:id="@+id/tv_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/cb_is_follow"
+            android:layout_toRightOf="@+id/cb_is_follow"
+            android:gravity="center_vertical"
+            android:text="中奖后停止追号"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/main_bottom"
+        android:gravity="center_vertical"
+        android:weightSum="3" >
+
+        <Button
+           android:id="@+id/bet_bottom__btn_clear"
+            android:layout_width="0dip"
+            android:layout_height="43dp"
+            android:layout_margin="5dp"
+            android:layout_weight="0.7"
+            android:background="@drawable/btn_ok_change"
+            android:text="清 空"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/number_ll_bottom_zhu"
+            android:layout_width="0dip"
+            android:layout_height="45dp"
+            android:layout_weight="1.6"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/bet_bottom_"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/bet_bottom__tv_zhu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:gravity="center_horizontal|bottom"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/bet_bottom__tv_bei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/bet_bottom__tv_qi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/bet_bottom__tv_money"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="top|center_horizontal"
+                android:text="168元"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bet_bottom__btn_pay"
+            android:layout_width="0dip"
+            android:layout_height="43dp"
+            android:layout_margin="5dp"
+            android:layout_weight="0.7"
+            android:background="@drawable/btn_ok_change"
+            android:text="付款"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+</RelativeLayout>

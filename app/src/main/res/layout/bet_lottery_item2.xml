@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="#DDDCDC"
+    android:descendantFocusability="blocksDescendants"  
+    android:orientation="horizontal" >
+        <Button
+            android:id="@+id/bet_item_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bet_btn_delete" />
+
+    <RelativeLayout
+        android:id="@+id/ll_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/bet_item_img"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/bet_tv_redNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="16sp"
+            android:textColor="@color/red"
+            android:text="1 2 3 4 5 6" />
+
+        <TextView
+            android:id="@+id/bet_tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/bet_tv_redNum"
+            android:layout_marginLeft="5dp"
+            android:text="普通投注"
+            android:textColor="#402000"
+            android:textSize="14sp"
+             />
+
+        <TextView
+           android:id="@+id/bet_tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/bet_tv_redNum"
+            android:layout_marginLeft="5dp"
+             android:textColor="#402000"
+    	     android:textSize="14sp"
+             android:text="1注 2元" 
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f6f6f6"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/win_lottery_detail_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/win_lottery_expand_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_margin_16"
+            android:background="@drawable/win_lottery_detail_down" />
+
+        <RelativeLayout
+            android:id="@+id/ll_ll_top"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/win_lottery_detail_titil_height"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/common_margin_4"
+            android:layout_marginLeft="@dimen/common_margin_16"
+            android:layout_marginTop="@dimen/common_margin_4" >
+
+            <TextView
+                android:id="@+id/top_tv_qi"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:text="第43534"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_lage_text_size" />
+
+            <TextView
+                android:id="@+id/top_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/common_margin_16"
+                android:layout_toRightOf="@id/top_tv_qi"
+                android:gravity="center"
+                android:text="djfjsdfjs"
+                android:textColor="#848484"
+                android:textSize="@dimen/common_small_text_size" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_ll_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/win_lottery_detail_titil_num_height"
+            android:layout_below="@+id/ll_ll_top"
+            android:layout_marginLeft="@dimen/common_margin_16"
+            android:layout_toLeftOf="@+id/img_x"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/bottom_tv_redNum"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="dsjfsl"
+                android:textColor="@color/red"
+                android:textSize="@dimen/common_lage_text_size" />
+
+            <TextView
+                android:id="@+id/bottom_tv_blueNum"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/common_lage_text_size" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

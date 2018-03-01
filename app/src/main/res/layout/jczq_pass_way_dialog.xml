@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bank_dialog"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:gravity="top"
+    android:orientation="vertical" 
+    >
+
+    <!-- title -->
+
+    <TextView
+        android:id="@+id/pass_way_tv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="过关方式"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+   <RelativeLayout 
+       android:id="@+id/rl_scroll"
+       android:layout_below="@+id/pass_way_tv_title"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       >
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="200dp"
+        android:fadeScrollbars="true"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="true"
+        android:listSelector="#00000000"
+        android:scrollbars="none"
+        android:scrollingCache="false" 
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/line2" />
+            <!-- checekBox -->
+
+            <com.sm.sls_app.view.MyGridView
+                android:id="@+id/gv_checkbox"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:numColumns="3" 
+                />
+
+            <ImageView
+                android:id="@id/img"
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/line2" />
+
+            <!-- radioButton -->
+
+            <com.sm.sls_app.view.MyGridView
+                android:id="@+id/gv_radioButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:numColumns="3" 
+                />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+    
+     <RelativeLayout
+        android:id="@+id/show_money"
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/rl_scroll"
+        android:layout_marginTop="5dp" 
+        >
+
+        <TextView
+            android:id="@+id/tv_show"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="60注 1倍 120元"
+            android:textColor="@color/red"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    
+     
+      <!-- 底部按钮 -->
+    <LinearLayout
+        android:id="@+id/ll_bottom_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="5dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="2" 
+        android:layout_below="@+id/show_money"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_btn"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:background="@drawable/main_btn_ok_change"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_btn_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+            <Button
+                android:id="@+id/btn_quit"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:background="@drawable/main_btn_ok_change"
+                android:text="取消"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+    
+     <TextView 
+        android:id="@+id/tt"
+        android:layout_width="fill_parent"
+        android:layout_height="8dp"
+        android:layout_below="@+id/ll_bottom_btn"
+        />
+    
+</RelativeLayout>

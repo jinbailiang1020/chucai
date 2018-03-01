@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="310dp"
+    android:background="@drawable/bank_dialog"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/scroll_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="比分投注"
+        android:gravity="center"
+        android:background="@drawable/tv_tip"
+        android:textColor="@color/gray"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_btn_change1"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/scroll_tv_title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        android:weightSum="0.9" >
+
+        <TextView
+            android:id="@+id/tv_mainTeam"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:text="新加坡"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_vs"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:text="VS"
+            android:textColor="@color/red"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_gusTeam"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:text="新加坡"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+   <View 
+       android:id="@+id/line"
+       android:layout_width="fill_parent"
+       android:layout_height="1dp"
+       android:background="#9ae8e8"
+       android:layout_marginLeft="5dp"
+       android:layout_marginRight="5dp"
+       android:layout_below="@+id/ll_btn_change1"
+       />
+   <TextView 
+       android:id="@+id/tv_tip"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/line"
+       android:layout_marginLeft="8dp"
+       android:layout_marginRight="8dp"
+       android:background="#f4f2f2"
+       android:padding="3dp"
+       android:text="竞猜主队在上半场和全场比赛（不含加时赛和点球大战）的胜平负结果"
+       android:textSize="13sp"
+       android:textColor="@color/red"
+       />
+
+    <GridView
+        android:id="@+id/check_gridview"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tip"
+        android:layout_centerHorizontal="true"
+        android:numColumns="3"
+        >
+    </GridView>
+    <!-- 底部按钮 -->
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:weightSum="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_btn_ok_change"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_quit"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/main_btn_ok_change"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</RelativeLayout>

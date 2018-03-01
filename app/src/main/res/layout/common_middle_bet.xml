@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/line_shade1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/main_shade_height"
+        android:background="@color/hall_gv_item" />
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:background="@color/bet_middle_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <View
+            android:id="@+id/view_line1"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp" />
+
+        <RelativeLayout
+            android:id="@+id/layout_left1"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@+id/view_line1" >
+
+            <!-- 非竞彩 -->
+
+            <RelativeLayout
+                android:id="@+id/layout_notjc"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="追"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_small_text_size" />
+
+                    <EditText
+                        android:id="@+id/et_qi"
+                        android:layout_width="@dimen/bet_et_wid"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/et_bg"
+                        android:gravity="center"
+                        android:hint="1"
+                        android:numeric="integer"
+                        android:textColor="@color/bet_et"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/common_big_text_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="期"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_small_text_size" />
+                </LinearLayout>
+            </RelativeLayout>
+            <!-- 竞彩 -->
+
+            <RelativeLayout
+                android:id="@+id/layout_jc"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/bet_et_height"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_show_passway"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/select_jc_bg_white"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/common_small_text_size" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/view_line1" >
+
+            <EditText
+                android:id="@+id/et_bei"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/et_bg"
+                android:gravity="center"
+                android:hint="1"
+                android:numeric="integer"
+                android:textColor="@color/bet_et"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/common_big_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/et_bei"
+                android:text="倍数"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_small_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="金额（元）"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_small_text_size" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/bet_bei"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_below="@+id/layout_left1" >
+
+            <com.sm.sls_app.view.MyListView2
+                android:id="@+id/zhuiqi"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp" />
+        </ScrollView>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/line_shade2"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/main_shade_height"
+        android:layout_below="@id/layout1"
+        android:background="@color/hall_gv_item" />
+
+    <RelativeLayout
+        android:id="@+id/layout_cbs"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/line_shade2"
+        android:background="@color/bet_middle_bg" >
+
+        <View
+            android:id="@+id/view_line2"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:background="@color/select_vertical_line" />
+
+        <RelativeLayout
+            android:id="@+id/layout_left2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@+id/view_line2" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/bet_cb_stopfollow"
+                    android:layout_width="@dimen/bet_cb_size"
+                    android:layout_height="@dimen/bet_cb_size"
+                    android:button="@drawable/common_cb_selector"
+                    android:checked="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="中奖后停止追号"
+                    android:textColor="@color/bet_et"
+                    android:textSize="@dimen/common_small_text_size" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_zhuijia"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/view_line2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <CheckBox
+                android:id="@+id/bet_cb_zhuijia"
+                android:layout_width="@dimen/bet_cb_size"
+                android:layout_height="@dimen/bet_cb_size"
+                android:button="@drawable/common_cb_selector" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="追加投注"
+                android:textColor="@color/bet_et"
+                android:textSize="@dimen/common_small_text_size" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

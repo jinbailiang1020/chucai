@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/select_main"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/layout_top_select"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/common_tip_select_wid"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_lotteryname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="双色球"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_big_text_size" />
+
+            <TextView
+                android:id="@+id/tv_lotteryqi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="上期开奖："
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_big_text_size" />
+
+            <TextView
+                android:id="@+id/tv_selected_redball"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_red"
+                android:textSize="@dimen/common_small_text_size" />
+
+            <TextView
+                android:id="@+id/tv_selected_blueball"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/select_ball_blue"
+                android:textSize="@dimen/common_big_text_size" />
+        </LinearLayout>
+
+        <com.sm.sls_app.view.CustomDigitalClock2
+            android:id="@+id/tv_selected_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/hall_gvitem_text"
+            android:textSize="@dimen/common_min_text_size" />
+    </LinearLayout>
+
+</RelativeLayout>

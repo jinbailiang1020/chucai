@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_toplayout_height"
+        android:background="@color/main_red" >
+
+        <ImageButton
+            android:id="@+id/pay_account_btn_back"
+            android:layout_width="@dimen/common_toplayout_height"
+            android:layout_height="@dimen/common_toplayout_height"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/main_red"
+            android:text="提款账户"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_lager_text_size" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/pay_account_alipay_btn_name"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/my_infromation_height"
+                android:layout_marginLeft="@dimen/common_margin_8"
+                android:layout_marginRight="@dimen/common_margin_8" >
+
+                <TextView
+                    android:id="@+id/text_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin_8"
+                    android:text="支付宝账号"
+                    android:textColor="#848484"
+                    android:textSize="@dimen/common_big_text_size" />
+
+                <TextView
+                    android:id="@+id/pay_account_alipay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin_16"
+                    android:layout_toRightOf="@id/text_hint"
+                    android:background="@android:color/transparent"
+                    android:hint="未绑定支付宝账号"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="#c7c7c7"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/common_big_text_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/common_margin_8"
+                    android:background="@drawable/my_center_right_arrow" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/my_center_bg2" />
+
+            <RelativeLayout
+                android:id="@+id/pay_account_bank_btn_name"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/my_infromation_height"
+                android:layout_marginLeft="@dimen/common_margin_8"
+                android:layout_marginRight="@dimen/common_margin_8" >
+
+                <TextView
+                    android:id="@+id/text_hint1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin_8"
+                    android:text="银行卡账号"
+                    android:textColor="#848484"
+                    android:textSize="@dimen/common_big_text_size" />
+
+                <TextView
+                    android:id="@+id/pay_account_bank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin_16"
+                    android:layout_toRightOf="@id/text_hint1"
+                    android:background="@android:color/transparent"
+                    android:hint="未绑定银行卡"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="#c7c7c7"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/common_big_text_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/common_margin_8"
+                    android:background="@drawable/my_center_right_arrow" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/my_center_bg2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_margin_8"
+                android:layout_marginTop="@dimen/common_margin_16"
+                android:text="注：绑定银行卡和支付宝让您在交易中方便转账、付款等操作，绑定时需要您验证，填写真实姓名时，请与绑定支付宝或银行卡的姓名保持一致，且绑定成功后不可更改，请保护您的安全问题答案不要让第二个人知道。"
+                android:textColor="#ff231e"
+                android:textSize="@dimen/common_small_text_size" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

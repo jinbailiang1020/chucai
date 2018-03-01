@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDDCDC"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/win_num_head"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/main_bottom"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tv_head"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="期次详情"
+            android:textColor="@color/white"
+            android:textSize="22sp" 
+          />
+    </LinearLayout>
+
+    <!-- 头部 -->
+
+    <RelativeLayout
+        android:id="@+id/win_number_title"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/win_num_head"
+        android:orientation="horizontal" >
+
+        <!-- 图标 -->
+
+        <LinearLayout
+            android:id="@+id/title_ll_img"
+            android:layout_width="60dp"
+            android:layout_height="90dp"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/lottery_img"
+                android:layout_width="56dp"
+                android:layout_height="55dp"
+                android:background="@drawable/logo_ssq" />
+        </LinearLayout>
+        <!-- 头部右边的详情 -->
+
+        <RelativeLayout
+            android:id="@+id/win_number_right"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/title_ll_img" >
+
+            <TextView
+                android:id="@+id/lottery_name"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:text="3D"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/lottery_qi"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@+id/lottery_name"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:text="第234556期"
+                android:textColor="@color/gray"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/lottery_time"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignLeft="@+id/lottery_name"
+                android:layout_below="@+id/lottery_name"
+                android:gravity="center_vertical"
+                android:text="开奖时间"
+                android:textColor="@color/gray"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/lottery_num_red"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/lottery_time"
+                android:text="01 01 01 01 01 01"
+                android:textColor="@color/red"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    
+    
+    <!-- 底部 -->
+
+    <LinearLayout
+        android:id="@+id/win_num_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/main_bottom"
+        android:gravity="center"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/btn_to_bet"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/btn_ok_change"
+            android:gravity="center"
+            android:text="  去3D投注  "
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- 下面 -->
+
+    <ScrollView
+        android:id="@+id/win_num_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/win_num_bottom"
+        android:layout_below="@+id/win_num_center"
+        android:layout_margin="5dp"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:id="@+id/win_num_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/win_num_content_title"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:weightSum="0.9" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/textview_bolder2"
+                    android:gravity="center"
+                    android:text="奖项"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/textview_bolder2"
+                    android:gravity="center"
+                    android:text="中奖注数"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/center_tv_lotteryMoney2"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/textview_bolder2"
+                    android:gravity="center"
+                    android:text="每注金额"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </LinearLayout>
+            <!-- 一等奖 -->
+
+            <LinearLayout
+                android:id="@+id/win_num_content_one"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="-3dp"
+                android:orientation="horizontal"
+                android:weightSum="0.9" >
+
+                <TextView
+                    android:id="@+id/center_tv_level1"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/textview_bolder2"
+                    android:gravity="center"
+                    android:text="直选奖"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/win_one_count"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/follow_textview_bolder"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/lottery_one"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/follow_textview_bolder"
+                    android:gravity="center"
+                    android:textColor="@color/red"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <!-- 二等奖———基本 -->
+
+            <LinearLayout
+                android:id="@+id/win_num_content_two"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="-3dp"
+                android:orientation="horizontal"
+                android:weightSum="0.9" >
+
+                <TextView
+                    android:id="@+id/center_tv_level2"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/textview_bolder2"
+                    android:gravity="center"
+                    android:text="组三奖"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/win_two_count"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/follow_textview_bolder"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/lottery_two"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/follow_textview_bolder"
+                    android:gravity="center"
+                    android:textColor="@color/red"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <!-- 二等奖——追加 -->
+
+
+            <!-- 三等奖 -->
+
+            <LinearLayout
+                android:id="@+id/win_num_content_third"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="-3dp"
+                android:orientation="horizontal"
+                android:weightSum="0.9" >
+
+                <TextView
+                    android:id="@+id/center_tv_level3"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/textview_bolder2"
+                    android:gravity="center"
+                    android:text="组六奖"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/win_three_count"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/follow_textview_bolder"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/lottery_three"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/follow_textview_bolder"
+                    android:gravity="center"
+                    android:textColor="@color/red"
+                    android:textSize="13sp" />
+            </LinearLayout>
+             <LinearLayout
+                android:id="@+id/win_num_content_four"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:orientation="vertical"
+                android:visibility="gone"
+              >
+             
+                  <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="-3dp"
+                android:orientation="horizontal"
+                android:weightSum="0.9" >
+
+                <TextView
+                    android:id="@+id/center_tv_level4"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/textview_bolder2"
+                    android:gravity="center"
+                    android:text="好运二"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/win_four_count"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/follow_textview_bolder"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/lottery_four"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/follow_textview_bolder"
+                    android:gravity="center"
+                    android:textColor="@color/red"
+                    android:textSize="13sp" />
+            </LinearLayout>
+             <LinearLayout             
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="-3dp"
+                android:orientation="horizontal"
+                android:weightSum="0.9" >
+
+                <TextView
+                    android:id="@+id/center_tv_level5"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/textview_bolder2"
+                    android:gravity="center"
+                    android:text="好运三"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/win_five_count"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/follow_textview_bolder"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/lottery_five"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/follow_textview_bolder"
+                    android:gravity="center"
+                    android:textColor="@color/red"
+                    android:textSize="13sp" />
+            </LinearLayout>
+             <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="-3dp"
+                android:orientation="horizontal"
+                android:weightSum="0.9" >
+
+                <TextView
+                    android:id="@+id/center_tv_level6"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/textview_bolder2"
+                    android:gravity="center"
+                    android:text="好运四"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/win_six_count"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/follow_textview_bolder"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/lottery_six"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/follow_textview_bolder"
+                    android:gravity="center"
+                    android:textColor="@color/red"
+                    android:textSize="13sp" />
+            </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <!-- 中间 -->
+
+    <LinearLayout
+        android:id="@+id/win_num_center"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/win_number_title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
+
+        <TextView
+            android:id="@+id/center_tv_payCount"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/textview_bolder2"
+            android:gravity="center"
+            android:text="本期销量"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/center_tv_payCount2"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="-3dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/follow_textview_bolder"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <!-- 中间 -->
+    
+</RelativeLayout>

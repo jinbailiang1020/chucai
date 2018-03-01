@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 账户信息 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ScrollView 
+        android:layout_width="fill_parent"
+   		android:layout_height="wrap_content"
+        >
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+   		    android:layout_height="wrap_content"
+   		    android:gravity="center"
+            >
+            <LinearLayout 
+                android:id="@+id/ll1"
+                android:layout_width="fill_parent"
+                android:weightSum="1"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_show"
+                android:orientation="horizontal"
+                >
+                <Button 
+                android:id="@+id/btn_putong"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="普通投注"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:background="@drawable/btn_red_pressed"
+                />
+               <Button 
+                 android:id="@+id/btn_dantuo"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="胆拖投注"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:background="@drawable/btn_white_pressed"
+                />
+               </LinearLayout>
+        </RelativeLayout>
+        
+    </ScrollView>
+   
+
+</RelativeLayout>

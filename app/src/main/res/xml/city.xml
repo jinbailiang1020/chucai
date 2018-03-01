@@ -1,0 +1,2095 @@
+<?xml version="1.0" encoding="utf-8"?>
+<city>
+
+    <row
+        id="1"
+        cityname="安庆"
+        provinceid="1" >
+    </row>
+    <row
+        id="2"
+        cityname="蚌埠"
+        provinceid="1" >
+    </row>
+    <row
+        id="3"
+        cityname="巢湖"
+        provinceid="1" >
+    </row>
+    <row
+        id="4"
+        cityname="池州"
+        provinceid="1" >
+    </row>
+    <row
+        id="5"
+        cityname="滁州"
+        provinceid="1" >
+    </row>
+    <row
+        id="6"
+        cityname="阜阳"
+        provinceid="1" >
+    </row>
+    <row
+        id="7"
+        cityname="合肥"
+        provinceid="1" >
+    </row>
+    <row
+        id="8"
+        cityname="淮北"
+        provinceid="1" >
+    </row>
+    <row
+        id="9"
+        cityname="淮南"
+        provinceid="1" >
+    </row>
+    <row
+        id="10"
+        cityname="黄山"
+        provinceid="1" >
+    </row>
+    <row
+        id="11"
+        cityname="六安"
+        provinceid="1" >
+    </row>
+    <row
+        id="12"
+        cityname="马鞍山"
+        provinceid="1" >
+    </row>
+    <row
+        id="13"
+        cityname="宿州"
+        provinceid="1" >
+    </row>
+    <row
+        id="14"
+        cityname="铜陵"
+        provinceid="1" >
+    </row>
+    <row
+        id="15"
+        cityname="芜湖"
+        provinceid="1" >
+    </row>
+    <row
+        id="16"
+        cityname="宣城"
+        provinceid="1" >
+    </row>
+    <row
+        id="17"
+        cityname="亳州"
+        provinceid="1" >
+    </row>
+    <row
+        id="18"
+        cityname="东城区"
+        provinceid="2" >
+    </row>
+    <row
+        id="19"
+        cityname="福州"
+        provinceid="3" >
+    </row>
+    <row
+        id="20"
+        cityname="龙岩"
+        provinceid="3" >
+    </row>
+    <row
+        id="21"
+        cityname="南平"
+        provinceid="3" >
+    </row>
+    <row
+        id="22"
+        cityname="宁德"
+        provinceid="3" >
+    </row>
+    <row
+        id="23"
+        cityname="莆田"
+        provinceid="3" >
+    </row>
+    <row
+        id="24"
+        cityname="泉州"
+        provinceid="3" >
+    </row>
+    <row
+        id="25"
+        cityname="三明"
+        provinceid="3" >
+    </row>
+    <row
+        id="26"
+        cityname="厦门"
+        provinceid="3" >
+    </row>
+    <row
+        id="27"
+        cityname="漳州"
+        provinceid="3" >
+    </row>
+    <row
+        id="28"
+        cityname="白银"
+        provinceid="4" >
+    </row>
+    <row
+        id="29"
+        cityname="定西"
+        provinceid="4" >
+    </row>
+    <row
+        id="30"
+        cityname="甘南"
+        provinceid="4" >
+    </row>
+    <row
+        id="31"
+        cityname="嘉峪关"
+        provinceid="4" >
+    </row>
+    <row
+        id="32"
+        cityname="金昌"
+        provinceid="4" >
+    </row>
+    <row
+        id="33"
+        cityname="酒泉"
+        provinceid="4" >
+    </row>
+    <row
+        id="34"
+        cityname="兰州"
+        provinceid="4" >
+    </row>
+    <row
+        id="35"
+        cityname="临夏"
+        provinceid="4" >
+    </row>
+    <row
+        id="36"
+        cityname="陇南"
+        provinceid="4" >
+    </row>
+    <row
+        id="37"
+        cityname="平凉"
+        provinceid="4" >
+    </row>
+    <row
+        id="38"
+        cityname="庆阳"
+        provinceid="4" >
+    </row>
+    <row
+        id="39"
+        cityname="天水"
+        provinceid="4" >
+    </row>
+    <row
+        id="40"
+        cityname="武威"
+        provinceid="4" >
+    </row>
+    <row
+        id="41"
+        cityname="张掖"
+        provinceid="4" >
+    </row>
+    <row
+        id="42"
+        cityname="潮州"
+        provinceid="5" >
+    </row>
+    <row
+        id="43"
+        cityname="东莞"
+        provinceid="5" >
+    </row>
+    <row
+        id="44"
+        cityname="佛山"
+        provinceid="5" >
+    </row>
+    <row
+        id="45"
+        cityname="广州"
+        provinceid="5" >
+    </row>
+    <row
+        id="46"
+        cityname="河源"
+        provinceid="5" >
+    </row>
+    <row
+        id="47"
+        cityname="惠州"
+        provinceid="5" >
+    </row>
+    <row
+        id="48"
+        cityname="江门"
+        provinceid="5" >
+    </row>
+    <row
+        id="49"
+        cityname="揭阳"
+        provinceid="5" >
+    </row>
+    <row
+        id="50"
+        cityname="茂名"
+        provinceid="5" >
+    </row>
+    <row
+        id="51"
+        cityname="梅州"
+        provinceid="5" >
+    </row>
+    <row
+        id="52"
+        cityname="清远"
+        provinceid="5" >
+    </row>
+    <row
+        id="53"
+        cityname="汕头"
+        provinceid="5" >
+    </row>
+    <row
+        id="54"
+        cityname="汕尾"
+        provinceid="5" >
+    </row>
+    <row
+        id="55"
+        cityname="韶关"
+        provinceid="5" >
+    </row>
+    <row
+        id="56"
+        cityname="深圳"
+        provinceid="5" >
+    </row>
+    <row
+        id="57"
+        cityname="阳江"
+        provinceid="5" >
+    </row>
+    <row
+        id="58"
+        cityname="云浮"
+        provinceid="5" >
+    </row>
+    <row
+        id="59"
+        cityname="湛江"
+        provinceid="5" >
+    </row>
+    <row
+        id="60"
+        cityname="肇庆"
+        provinceid="5" >
+    </row>
+    <row
+        id="61"
+        cityname="中山"
+        provinceid="5" >
+    </row>
+    <row
+        id="62"
+        cityname="珠海"
+        provinceid="5" >
+    </row>
+    <row
+        id="63"
+        cityname="百色"
+        provinceid="6" >
+    </row>
+    <row
+        id="64"
+        cityname="北海"
+        provinceid="6" >
+    </row>
+    <row
+        id="65"
+        cityname="崇左"
+        provinceid="6" >
+    </row>
+    <row
+        id="66"
+        cityname="防城港"
+        provinceid="6" >
+    </row>
+    <row
+        id="67"
+        cityname="桂林"
+        provinceid="6" >
+    </row>
+    <row
+        id="68"
+        cityname="贵港"
+        provinceid="6" >
+    </row>
+    <row
+        id="69"
+        cityname="河池"
+        provinceid="6" >
+    </row>
+    <row
+        id="70"
+        cityname="贺州"
+        provinceid="6" >
+    </row>
+    <row
+        id="71"
+        cityname="来宾"
+        provinceid="6" >
+    </row>
+    <row
+        id="72"
+        cityname="柳州"
+        provinceid="6" >
+    </row>
+    <row
+        id="73"
+        cityname="南宁"
+        provinceid="6" >
+    </row>
+    <row
+        id="74"
+        cityname="钦州"
+        provinceid="6" >
+    </row>
+    <row
+        id="75"
+        cityname="梧州"
+        provinceid="6" >
+    </row>
+    <row
+        id="76"
+        cityname="玉林"
+        provinceid="6" >
+    </row>
+    <row
+        id="77"
+        cityname="安顺"
+        provinceid="7" >
+    </row>
+    <row
+        id="78"
+        cityname="毕节"
+        provinceid="7" >
+    </row>
+    <row
+        id="79"
+        cityname="贵阳"
+        provinceid="7" >
+    </row>
+    <row
+        id="80"
+        cityname="六盘水"
+        provinceid="7" >
+    </row>
+    <row
+        id="81"
+        cityname="黔东南"
+        provinceid="7" >
+    </row>
+    <row
+        id="82"
+        cityname="黔南"
+        provinceid="7" >
+    </row>
+    <row
+        id="83"
+        cityname="黔西南"
+        provinceid="7" >
+    </row>
+    <row
+        id="84"
+        cityname="铜仁"
+        provinceid="7" >
+    </row>
+    <row
+        id="85"
+        cityname="遵义"
+        provinceid="7" >
+    </row>
+    <row
+        id="86"
+        cityname="白沙"
+        provinceid="8" >
+    </row>
+    <row
+        id="87"
+        cityname="保亭"
+        provinceid="8" >
+    </row>
+    <row
+        id="88"
+        cityname="昌江"
+        provinceid="8" >
+    </row>
+    <row
+        id="89"
+        cityname="澄迈"
+        provinceid="8" >
+    </row>
+    <row
+        id="90"
+        cityname="定安"
+        provinceid="8" >
+    </row>
+    <row
+        id="91"
+        cityname="东方"
+        provinceid="8" >
+    </row>
+    <row
+        id="92"
+        cityname="海口"
+        provinceid="8" >
+    </row>
+    <row
+        id="93"
+        cityname="乐东"
+        provinceid="8" >
+    </row>
+    <row
+        id="94"
+        cityname="临高县"
+        provinceid="8" >
+    </row>
+    <row
+        id="95"
+        cityname="陵水"
+        provinceid="8" >
+    </row>
+    <row
+        id="96"
+        cityname="琼海"
+        provinceid="8" >
+    </row>
+    <row
+        id="97"
+        cityname="琼中"
+        provinceid="8" >
+    </row>
+    <row
+        id="98"
+        cityname="三亚"
+        provinceid="8" >
+    </row>
+    <row
+        id="99"
+        cityname="屯昌"
+        provinceid="8" >
+    </row>
+    <row
+        id="100"
+        cityname="万宁"
+        provinceid="8" >
+    </row>
+    <row
+        id="101"
+        cityname="文昌"
+        provinceid="8" >
+    </row>
+    <row
+        id="102"
+        cityname="五指山"
+        provinceid="8" >
+    </row>
+    <row
+        id="103"
+        cityname="儋州"
+        provinceid="8" >
+    </row>
+    <row
+        id="104"
+        cityname="保定"
+        provinceid="9" >
+    </row>
+    <row
+        id="105"
+        cityname="沧州"
+        provinceid="9" >
+    </row>
+    <row
+        id="106"
+        cityname="承德"
+        provinceid="9" >
+    </row>
+    <row
+        id="107"
+        cityname="邯郸"
+        provinceid="9" >
+    </row>
+    <row
+        id="108"
+        cityname="衡水"
+        provinceid="9" >
+    </row>
+    <row
+        id="109"
+        cityname="廊坊"
+        provinceid="9" >
+    </row>
+    <row
+        id="110"
+        cityname="秦皇岛"
+        provinceid="9" >
+    </row>
+    <row
+        id="111"
+        cityname="石家庄"
+        provinceid="9" >
+    </row>
+    <row
+        id="112"
+        cityname="唐山"
+        provinceid="9" >
+    </row>
+    <row
+        id="113"
+        cityname="邢台"
+        provinceid="9" >
+    </row>
+    <row
+        id="114"
+        cityname="张家口"
+        provinceid="9" >
+    </row>
+    <row
+        id="115"
+        cityname="安阳"
+        provinceid="10" >
+    </row>
+    <row
+        id="116"
+        cityname="鹤壁"
+        provinceid="10" >
+    </row>
+    <row
+        id="117"
+        cityname="济源"
+        provinceid="10" >
+    </row>
+    <row
+        id="118"
+        cityname="焦作"
+        provinceid="10" >
+    </row>
+    <row
+        id="119"
+        cityname="开封"
+        provinceid="10" >
+    </row>
+    <row
+        id="120"
+        cityname="洛阳"
+        provinceid="10" >
+    </row>
+    <row
+        id="121"
+        cityname="南阳"
+        provinceid="10" >
+    </row>
+    <row
+        id="122"
+        cityname="平顶山"
+        provinceid="10" >
+    </row>
+    <row
+        id="123"
+        cityname="三门峡"
+        provinceid="10" >
+    </row>
+    <row
+        id="124"
+        cityname="商丘"
+        provinceid="10" >
+    </row>
+    <row
+        id="125"
+        cityname="新乡"
+        provinceid="10" >
+    </row>
+    <row
+        id="126"
+        cityname="信阳"
+        provinceid="10" >
+    </row>
+    <row
+        id="127"
+        cityname="许昌"
+        provinceid="10" >
+    </row>
+    <row
+        id="128"
+        cityname="郑州"
+        provinceid="10" >
+    </row>
+    <row
+        id="129"
+        cityname="周口"
+        provinceid="10" >
+    </row>
+    <row
+        id="130"
+        cityname="驻马店"
+        provinceid="10" >
+    </row>
+    <row
+        id="131"
+        cityname="漯河"
+        provinceid="10" >
+    </row>
+    <row
+        id="132"
+        cityname="濮阳"
+        provinceid="10" >
+    </row>
+    <row
+        id="133"
+        cityname="大庆"
+        provinceid="11" >
+    </row>
+    <row
+        id="134"
+        cityname="大兴安岭"
+        provinceid="11" >
+    </row>
+    <row
+        id="135"
+        cityname="哈尔滨"
+        provinceid="11" >
+    </row>
+    <row
+        id="136"
+        cityname="鹤岗"
+        provinceid="11" >
+    </row>
+    <row
+        id="137"
+        cityname="黑河"
+        provinceid="11" >
+    </row>
+    <row
+        id="138"
+        cityname="鸡西"
+        provinceid="11" >
+    </row>
+    <row
+        id="139"
+        cityname="佳木斯"
+        provinceid="11" >
+    </row>
+    <row
+        id="140"
+        cityname="牡丹江"
+        provinceid="11" >
+    </row>
+    <row
+        id="141"
+        cityname="七台河"
+        provinceid="11" >
+    </row>
+    <row
+        id="142"
+        cityname="齐齐哈尔"
+        provinceid="11" >
+    </row>
+    <row
+        id="143"
+        cityname="双鸭山"
+        provinceid="11" >
+    </row>
+    <row
+        id="144"
+        cityname="绥化"
+        provinceid="11" >
+    </row>
+    <row
+        id="145"
+        cityname="伊春"
+        provinceid="11" >
+    </row>
+    <row
+        id="146"
+        cityname="鄂州"
+        provinceid="12" >
+    </row>
+    <row
+        id="147"
+        cityname="恩施"
+        provinceid="12" >
+    </row>
+    <row
+        id="148"
+        cityname="黄冈"
+        provinceid="12" >
+    </row>
+    <row
+        id="149"
+        cityname="黄石"
+        provinceid="12" >
+    </row>
+    <row
+        id="150"
+        cityname="荆门"
+        provinceid="12" >
+    </row>
+    <row
+        id="151"
+        cityname="荆州"
+        provinceid="12" >
+    </row>
+    <row
+        id="152"
+        cityname="潜江"
+        provinceid="12" >
+    </row>
+    <row
+        id="153"
+        cityname="神农架"
+        provinceid="12" >
+    </row>
+    <row
+        id="154"
+        cityname="十堰"
+        provinceid="12" >
+    </row>
+    <row
+        id="155"
+        cityname="随州"
+        provinceid="12" >
+    </row>
+    <row
+        id="156"
+        cityname="天门"
+        provinceid="12" >
+    </row>
+    <row
+        id="157"
+        cityname="武汉"
+        provinceid="12" >
+    </row>
+    <row
+        id="158"
+        cityname="仙桃"
+        provinceid="12" >
+    </row>
+    <row
+        id="159"
+        cityname="咸宁"
+        provinceid="12" >
+    </row>
+    <row
+        id="160"
+        cityname="襄樊"
+        provinceid="12" >
+    </row>
+    <row
+        id="161"
+        cityname="孝感"
+        provinceid="12" >
+    </row>
+    <row
+        id="162"
+        cityname="宜昌"
+        provinceid="12" >
+    </row>
+    <row
+        id="163"
+        cityname="常德"
+        provinceid="13" >
+    </row>
+    <row
+        id="164"
+        cityname="长沙"
+        provinceid="13" >
+    </row>
+    <row
+        id="165"
+        cityname="郴州"
+        provinceid="13" >
+    </row>
+    <row
+        id="166"
+        cityname="衡阳"
+        provinceid="13" >
+    </row>
+    <row
+        id="167"
+        cityname="怀化"
+        provinceid="13" >
+    </row>
+    <row
+        id="168"
+        cityname="娄底"
+        provinceid="13" >
+    </row>
+    <row
+        id="169"
+        cityname="邵阳"
+        provinceid="13" >
+    </row>
+    <row
+        id="170"
+        cityname="湘潭"
+        provinceid="13" >
+    </row>
+    <row
+        id="171"
+        cityname="湘西"
+        provinceid="13" >
+    </row>
+    <row
+        id="172"
+        cityname="益阳"
+        provinceid="13" >
+    </row>
+    <row
+        id="173"
+        cityname="永州"
+        provinceid="13" >
+    </row>
+    <row
+        id="174"
+        cityname="岳阳"
+        provinceid="13" >
+    </row>
+    <row
+        id="175"
+        cityname="张家界"
+        provinceid="13" >
+    </row>
+    <row
+        id="176"
+        cityname="株洲"
+        provinceid="13" >
+    </row>
+    <row
+        id="177"
+        cityname="白城"
+        provinceid="14" >
+    </row>
+    <row
+        id="178"
+        cityname="白山"
+        provinceid="14" >
+    </row>
+    <row
+        id="179"
+        cityname="长春"
+        provinceid="14" >
+    </row>
+    <row
+        id="180"
+        cityname="吉林"
+        provinceid="14" >
+    </row>
+    <row
+        id="181"
+        cityname="辽源"
+        provinceid="14" >
+    </row>
+    <row
+        id="182"
+        cityname="四平"
+        provinceid="14" >
+    </row>
+    <row
+        id="183"
+        cityname="松原"
+        provinceid="14" >
+    </row>
+    <row
+        id="184"
+        cityname="通化"
+        provinceid="14" >
+    </row>
+    <row
+        id="185"
+        cityname="延边"
+        provinceid="14" >
+    </row>
+    <row
+        id="186"
+        cityname="常州"
+        provinceid="15" >
+    </row>
+    <row
+        id="187"
+        cityname="淮安"
+        provinceid="15" >
+    </row>
+    <row
+        id="188"
+        cityname="连云港"
+        provinceid="15" >
+    </row>
+    <row
+        id="189"
+        cityname="南京"
+        provinceid="15" >
+    </row>
+    <row
+        id="190"
+        cityname="南通"
+        provinceid="15" >
+    </row>
+    <row
+        id="191"
+        cityname="苏州"
+        provinceid="15" >
+    </row>
+    <row
+        id="192"
+        cityname="宿迁"
+        provinceid="15" >
+    </row>
+    <row
+        id="193"
+        cityname="泰州"
+        provinceid="15" >
+    </row>
+    <row
+        id="194"
+        cityname="无锡"
+        provinceid="15" >
+    </row>
+    <row
+        id="195"
+        cityname="徐州"
+        provinceid="15" >
+    </row>
+    <row
+        id="196"
+        cityname="盐城"
+        provinceid="15" >
+    </row>
+    <row
+        id="197"
+        cityname="扬州"
+        provinceid="15" >
+    </row>
+    <row
+        id="198"
+        cityname="镇江"
+        provinceid="15" >
+    </row>
+    <row
+        id="199"
+        cityname="抚州"
+        provinceid="16" >
+    </row>
+    <row
+        id="200"
+        cityname="赣州"
+        provinceid="16" >
+    </row>
+    <row
+        id="201"
+        cityname="吉安"
+        provinceid="16" >
+    </row>
+    <row
+        id="202"
+        cityname="景德镇"
+        provinceid="16" >
+    </row>
+    <row
+        id="203"
+        cityname="九江"
+        provinceid="16" >
+    </row>
+    <row
+        id="204"
+        cityname="南昌"
+        provinceid="16" >
+    </row>
+    <row
+        id="205"
+        cityname="萍乡"
+        provinceid="16" >
+    </row>
+    <row
+        id="206"
+        cityname="上饶"
+        provinceid="16" >
+    </row>
+    <row
+        id="207"
+        cityname="新余"
+        provinceid="16" >
+    </row>
+    <row
+        id="208"
+        cityname="宜春"
+        provinceid="16" >
+    </row>
+    <row
+        id="209"
+        cityname="鹰潭"
+        provinceid="16" >
+    </row>
+    <row
+        id="210"
+        cityname="鞍山"
+        provinceid="17" >
+    </row>
+    <row
+        id="211"
+        cityname="本溪"
+        provinceid="17" >
+    </row>
+    <row
+        id="212"
+        cityname="朝阳"
+        provinceid="17" >
+    </row>
+    <row
+        id="213"
+        cityname="大连"
+        provinceid="17" >
+    </row>
+    <row
+        id="214"
+        cityname="丹东"
+        provinceid="17" >
+    </row>
+    <row
+        id="215"
+        cityname="抚顺"
+        provinceid="17" >
+    </row>
+    <row
+        id="216"
+        cityname="阜新"
+        provinceid="17" >
+    </row>
+    <row
+        id="217"
+        cityname="葫芦岛"
+        provinceid="17" >
+    </row>
+    <row
+        id="218"
+        cityname="锦州"
+        provinceid="17" >
+    </row>
+    <row
+        id="219"
+        cityname="辽阳"
+        provinceid="17" >
+    </row>
+    <row
+        id="220"
+        cityname="盘锦"
+        provinceid="17" >
+    </row>
+    <row
+        id="221"
+        cityname="沈阳"
+        provinceid="17" >
+    </row>
+    <row
+        id="222"
+        cityname="铁岭"
+        provinceid="17" >
+    </row>
+    <row
+        id="223"
+        cityname="营口"
+        provinceid="17" >
+    </row>
+    <row
+        id="224"
+        cityname="阿拉善盟"
+        provinceid="18" >
+    </row>
+    <row
+        id="225"
+        cityname="巴彦淖尔盟"
+        provinceid="18" >
+    </row>
+    <row
+        id="226"
+        cityname="包头"
+        provinceid="18" >
+    </row>
+    <row
+        id="227"
+        cityname="赤峰"
+        provinceid="18" >
+    </row>
+    <row
+        id="228"
+        cityname="鄂尔多斯"
+        provinceid="18" >
+    </row>
+    <row
+        id="229"
+        cityname="呼和浩特"
+        provinceid="18" >
+    </row>
+    <row
+        id="230"
+        cityname="呼伦贝尔"
+        provinceid="18" >
+    </row>
+    <row
+        id="231"
+        cityname="通辽"
+        provinceid="18" >
+    </row>
+    <row
+        id="232"
+        cityname="乌海"
+        provinceid="18" >
+    </row>
+    <row
+        id="233"
+        cityname="乌兰察布盟"
+        provinceid="18" >
+    </row>
+    <row
+        id="234"
+        cityname="锡林郭勒盟"
+        provinceid="18" >
+    </row>
+    <row
+        id="235"
+        cityname="兴安盟"
+        provinceid="18" >
+    </row>
+    <row
+        id="236"
+        cityname="固原"
+        provinceid="19" >
+    </row>
+    <row
+        id="237"
+        cityname="石嘴山"
+        provinceid="19" >
+    </row>
+    <row
+        id="238"
+        cityname="吴忠"
+        provinceid="19" >
+    </row>
+    <row
+        id="239"
+        cityname="银川"
+        provinceid="19" >
+    </row>
+    <row
+        id="240"
+        cityname="果洛"
+        provinceid="20" >
+    </row>
+    <row
+        id="241"
+        cityname="海北"
+        provinceid="20" >
+    </row>
+    <row
+        id="242"
+        cityname="海东"
+        provinceid="20" >
+    </row>
+    <row
+        id="243"
+        cityname="海南"
+        provinceid="20" >
+    </row>
+    <row
+        id="244"
+        cityname="海西"
+        provinceid="20" >
+    </row>
+    <row
+        id="245"
+        cityname="黄南"
+        provinceid="20" >
+    </row>
+    <row
+        id="246"
+        cityname="西宁"
+        provinceid="20" >
+    </row>
+    <row
+        id="247"
+        cityname="玉树"
+        provinceid="20" >
+    </row>
+    <row
+        id="248"
+        cityname="滨州"
+        provinceid="21" >
+    </row>
+    <row
+        id="249"
+        cityname="德州"
+        provinceid="21" >
+    </row>
+    <row
+        id="250"
+        cityname="东营"
+        provinceid="21" >
+    </row>
+    <row
+        id="251"
+        cityname="菏泽"
+        provinceid="21" >
+    </row>
+    <row
+        id="252"
+        cityname="济南"
+        provinceid="21" >
+    </row>
+    <row
+        id="253"
+        cityname="济宁"
+        provinceid="21" >
+    </row>
+    <row
+        id="254"
+        cityname="莱芜"
+        provinceid="21" >
+    </row>
+    <row
+        id="255"
+        cityname="聊城"
+        provinceid="21" >
+    </row>
+    <row
+        id="256"
+        cityname="临沂"
+        provinceid="21" >
+    </row>
+    <row
+        id="257"
+        cityname="青岛"
+        provinceid="21" >
+    </row>
+    <row
+        id="258"
+        cityname="日照"
+        provinceid="21" >
+    </row>
+    <row
+        id="259"
+        cityname="泰安"
+        provinceid="21" >
+    </row>
+    <row
+        id="260"
+        cityname="威海"
+        provinceid="21" >
+    </row>
+    <row
+        id="261"
+        cityname="潍坊"
+        provinceid="21" >
+    </row>
+    <row
+        id="262"
+        cityname="烟台"
+        provinceid="21" >
+    </row>
+    <row
+        id="263"
+        cityname="枣庄"
+        provinceid="21" >
+    </row>
+    <row
+        id="264"
+        cityname="淄博"
+        provinceid="21" >
+    </row>
+    <row
+        id="265"
+        cityname="长治"
+        provinceid="22" >
+    </row>
+    <row
+        id="266"
+        cityname="大同"
+        provinceid="22" >
+    </row>
+    <row
+        id="267"
+        cityname="晋城"
+        provinceid="22" >
+    </row>
+    <row
+        id="268"
+        cityname="晋中"
+        provinceid="22" >
+    </row>
+    <row
+        id="269"
+        cityname="临汾"
+        provinceid="22" >
+    </row>
+    <row
+        id="270"
+        cityname="吕梁"
+        provinceid="22" >
+    </row>
+    <row
+        id="271"
+        cityname="朔州"
+        provinceid="22" >
+    </row>
+    <row
+        id="272"
+        cityname="太原"
+        provinceid="22" >
+    </row>
+    <row
+        id="273"
+        cityname="忻州"
+        provinceid="22" >
+    </row>
+    <row
+        id="274"
+        cityname="阳泉"
+        provinceid="22" >
+    </row>
+    <row
+        id="275"
+        cityname="运城"
+        provinceid="22" >
+    </row>
+    <row
+        id="276"
+        cityname="安康"
+        provinceid="23" >
+    </row>
+    <row
+        id="277"
+        cityname="宝鸡"
+        provinceid="23" >
+    </row>
+    <row
+        id="278"
+        cityname="汉中"
+        provinceid="23" >
+    </row>
+    <row
+        id="279"
+        cityname="商洛"
+        provinceid="23" >
+    </row>
+    <row
+        id="280"
+        cityname="铜川"
+        provinceid="23" >
+    </row>
+    <row
+        id="281"
+        cityname="渭南"
+        provinceid="23" >
+    </row>
+    <row
+        id="282"
+        cityname="西安"
+        provinceid="23" >
+    </row>
+    <row
+        id="283"
+        cityname="咸阳"
+        provinceid="23" >
+    </row>
+    <row
+        id="284"
+        cityname="延安"
+        provinceid="23" >
+    </row>
+    <row
+        id="285"
+        cityname="榆林"
+        provinceid="23" >
+    </row>
+    <row
+        id="286"
+        cityname="上海"
+        provinceid="24" >
+    </row>
+    <row
+        id="287"
+        cityname="阿坝"
+        provinceid="25" >
+    </row>
+    <row
+        id="288"
+        cityname="巴中"
+        provinceid="25" >
+    </row>
+    <row
+        id="289"
+        cityname="成都"
+        provinceid="25" >
+    </row>
+    <row
+        id="290"
+        cityname="达州"
+        provinceid="25" >
+    </row>
+    <row
+        id="291"
+        cityname="德阳"
+        provinceid="25" >
+    </row>
+    <row
+        id="292"
+        cityname="甘孜"
+        provinceid="25" >
+    </row>
+    <row
+        id="293"
+        cityname="广安"
+        provinceid="25" >
+    </row>
+    <row
+        id="294"
+        cityname="广元"
+        provinceid="25" >
+    </row>
+    <row
+        id="295"
+        cityname="乐山"
+        provinceid="25" >
+    </row>
+    <row
+        id="296"
+        cityname="凉山"
+        provinceid="25" >
+    </row>
+    <row
+        id="297"
+        cityname="眉山"
+        provinceid="25" >
+    </row>
+    <row
+        id="298"
+        cityname="绵阳"
+        provinceid="25" >
+    </row>
+    <row
+        id="299"
+        cityname="南充"
+        provinceid="25" >
+    </row>
+    <row
+        id="300"
+        cityname="内江"
+        provinceid="25" >
+    </row>
+    <row
+        id="301"
+        cityname="攀枝花"
+        provinceid="25" >
+    </row>
+    <row
+        id="302"
+        cityname="遂宁"
+        provinceid="25" >
+    </row>
+    <row
+        id="303"
+        cityname="雅安"
+        provinceid="25" >
+    </row>
+    <row
+        id="304"
+        cityname="宜宾"
+        provinceid="25" >
+    </row>
+    <row
+        id="305"
+        cityname="资阳"
+        provinceid="25" >
+    </row>
+    <row
+        id="306"
+        cityname="自贡"
+        provinceid="25" >
+    </row>
+    <row
+        id="307"
+        cityname="泸州"
+        provinceid="25" >
+    </row>
+    <row
+        id="308"
+        cityname="天津"
+        provinceid="26" >
+    </row>
+    <row
+        id="309"
+        cityname="阿里"
+        provinceid="27" >
+    </row>
+    <row
+        id="310"
+        cityname="昌都"
+        provinceid="27" >
+    </row>
+    <row
+        id="311"
+        cityname="拉萨"
+        provinceid="27" >
+    </row>
+    <row
+        id="312"
+        cityname="林芝"
+        provinceid="27" >
+    </row>
+    <row
+        id="313"
+        cityname="那曲"
+        provinceid="27" >
+    </row>
+    <row
+        id="314"
+        cityname="日喀则"
+        provinceid="27" >
+    </row>
+    <row
+        id="315"
+        cityname="山南"
+        provinceid="27" >
+    </row>
+    <row
+        id="316"
+        cityname="阿克苏"
+        provinceid="28" >
+    </row>
+    <row
+        id="317"
+        cityname="阿拉尔"
+        provinceid="28" >
+    </row>
+    <row
+        id="318"
+        cityname="巴音郭楞"
+        provinceid="28" >
+    </row>
+    <row
+        id="319"
+        cityname="博尔塔拉"
+        provinceid="28" >
+    </row>
+    <row
+        id="320"
+        cityname="昌吉"
+        provinceid="28" >
+    </row>
+    <row
+        id="321"
+        cityname="哈密"
+        provinceid="28" >
+    </row>
+    <row
+        id="322"
+        cityname="和田"
+        provinceid="28" >
+    </row>
+    <row
+        id="323"
+        cityname="喀什"
+        provinceid="28" >
+    </row>
+    <row
+        id="324"
+        cityname="克拉玛依"
+        provinceid="28" >
+    </row>
+    <row
+        id="325"
+        cityname="克孜勒苏柯尔克孜"
+        provinceid="28" >
+    </row>
+    <row
+        id="326"
+        cityname="石河子"
+        provinceid="28" >
+    </row>
+    <row
+        id="327"
+        cityname="图木舒克"
+        provinceid="28" >
+    </row>
+    <row
+        id="328"
+        cityname="吐鲁番"
+        provinceid="28" >
+    </row>
+    <row
+        id="329"
+        cityname="乌鲁木齐"
+        provinceid="28" >
+    </row>
+    <row
+        id="330"
+        cityname="五家渠"
+        provinceid="28" >
+    </row>
+    <row
+        id="331"
+        cityname="伊犁"
+        provinceid="28" >
+    </row>
+    <row
+        id="332"
+        cityname="保山"
+        provinceid="29" >
+    </row>
+    <row
+        id="333"
+        cityname="楚雄"
+        provinceid="29" >
+    </row>
+    <row
+        id="334"
+        cityname="大理"
+        provinceid="29" >
+    </row>
+    <row
+        id="335"
+        cityname="德宏"
+        provinceid="29" >
+    </row>
+    <row
+        id="336"
+        cityname="迪庆"
+        provinceid="29" >
+    </row>
+    <row
+        id="337"
+        cityname="红河"
+        provinceid="29" >
+    </row>
+    <row
+        id="338"
+        cityname="昆明"
+        provinceid="29" >
+    </row>
+    <row
+        id="339"
+        cityname="丽江"
+        provinceid="29" >
+    </row>
+    <row
+        id="340"
+        cityname="临沧"
+        provinceid="29" >
+    </row>
+    <row
+        id="341"
+        cityname="怒江"
+        provinceid="29" >
+    </row>
+    <row
+        id="342"
+        cityname="曲靖"
+        provinceid="29" >
+    </row>
+    <row
+        id="343"
+        cityname="思茅"
+        provinceid="29" >
+    </row>
+    <row
+        id="344"
+        cityname="文山"
+        provinceid="29" >
+    </row>
+    <row
+        id="345"
+        cityname="西双版纳"
+        provinceid="29" >
+    </row>
+    <row
+        id="346"
+        cityname="玉溪"
+        provinceid="29" >
+    </row>
+    <row
+        id="347"
+        cityname="昭通"
+        provinceid="29" >
+    </row>
+    <row
+        id="348"
+        cityname="杭州"
+        provinceid="30" >
+    </row>
+    <row
+        id="349"
+        cityname="湖州"
+        provinceid="30" >
+    </row>
+    <row
+        id="350"
+        cityname="嘉兴"
+        provinceid="30" >
+    </row>
+    <row
+        id="351"
+        cityname="金华"
+        provinceid="30" >
+    </row>
+    <row
+        id="352"
+        cityname="丽水"
+        provinceid="30" >
+    </row>
+    <row
+        id="353"
+        cityname="宁波"
+        provinceid="30" >
+    </row>
+    <row
+        id="354"
+        cityname="绍兴"
+        provinceid="30" >
+    </row>
+    <row
+        id="355"
+        cityname="台州"
+        provinceid="30" >
+    </row>
+    <row
+        id="356"
+        cityname="温州"
+        provinceid="30" >
+    </row>
+    <row
+        id="357"
+        cityname="舟山"
+        provinceid="30" >
+    </row>
+    <row
+        id="358"
+        cityname="衢州"
+        provinceid="30" >
+    </row>
+    <row
+        id="359"
+        cityname="万州区"
+        provinceid="31" >
+    </row>
+    <row
+        id="360"
+        cityname="香港"
+        provinceid="32" >
+    </row>
+    <row
+        id="361"
+        cityname="澳门"
+        provinceid="33" >
+    </row>
+    <row
+        id="362"
+        cityname="台湾"
+        provinceid="34" >
+    </row>
+    <row
+        id="376"
+        cityname="涪陵区"
+        provinceid="31" >
+    </row>
+    <row
+        id="377"
+        cityname="渝中区"
+        provinceid="31" >
+    </row>
+    <row
+        id="378"
+        cityname="大渡口区"
+        provinceid="31" >
+    </row>
+    <row
+        id="379"
+        cityname="江北区"
+        provinceid="31" >
+    </row>
+    <row
+        id="380"
+        cityname="沙坪坝区"
+        provinceid="31" >
+    </row>
+    <row
+        id="381"
+        cityname="九龙坡区"
+        provinceid="31" >
+    </row>
+    <row
+        id="382"
+        cityname="南岸区"
+        provinceid="31" >
+    </row>
+    <row
+        id="383"
+        cityname="北碚区"
+        provinceid="31" >
+    </row>
+    <row
+        id="384"
+        cityname="万盛区"
+        provinceid="31" >
+    </row>
+    <row
+        id="385"
+        cityname="双桥区"
+        provinceid="31" >
+    </row>
+    <row
+        id="386"
+        cityname="渝北区"
+        provinceid="31" >
+    </row>
+    <row
+        id="387"
+        cityname="巴南区"
+        provinceid="31" >
+    </row>
+    <row
+        id="388"
+        cityname="黔江区"
+        provinceid="31" >
+    </row>
+    <row
+        id="389"
+        cityname="长寿区"
+        provinceid="31" >
+    </row>
+    <row
+        id="390"
+        cityname="江津区"
+        provinceid="31" >
+    </row>
+    <row
+        id="391"
+        cityname="合川区"
+        provinceid="31" >
+    </row>
+    <row
+        id="392"
+        cityname="永川区"
+        provinceid="31" >
+    </row>
+    <row
+        id="393"
+        cityname="南川区"
+        provinceid="31" >
+    </row>
+    <row
+        id="394"
+        cityname="綦江县"
+        provinceid="31" >
+    </row>
+    <row
+        id="395"
+        cityname="潼南县"
+        provinceid="31" >
+    </row>
+    <row
+        id="396"
+        cityname="铜梁县"
+        provinceid="31" >
+    </row>
+    <row
+        id="397"
+        cityname="大足县"
+        provinceid="31" >
+    </row>
+    <row
+        id="398"
+        cityname="荣昌县"
+        provinceid="31" >
+    </row>
+    <row
+        id="399"
+        cityname="璧山县"
+        provinceid="31" >
+    </row>
+    <row
+        id="400"
+        cityname="梁平县"
+        provinceid="31" >
+    </row>
+    <row
+        id="401"
+        cityname="城口县"
+        provinceid="31" >
+    </row>
+    <row
+        id="402"
+        cityname="丰都县"
+        provinceid="31" >
+    </row>
+    <row
+        id="403"
+        cityname="垫江县"
+        provinceid="31" >
+    </row>
+    <row
+        id="404"
+        cityname="武隆县"
+        provinceid="31" >
+    </row>
+    <row
+        id="405"
+        cityname="忠县"
+        provinceid="31" >
+    </row>
+    <row
+        id="406"
+        cityname="开县"
+        provinceid="31" >
+    </row>
+    <row
+        id="407"
+        cityname="云阳县"
+        provinceid="31" >
+    </row>
+    <row
+        id="408"
+        cityname="奉节县"
+        provinceid="31" >
+    </row>
+    <row
+        id="409"
+        cityname="巫山县"
+        provinceid="31" >
+    </row>
+    <row
+        id="410"
+        cityname="巫溪县"
+        provinceid="31" >
+    </row>
+    <row
+        id="411"
+        cityname="石柱土家族自治县"
+        provinceid="31" >
+    </row>
+    <row
+        id="412"
+        cityname="秀山土家族苗族自治县"
+        provinceid="31" >
+    </row>
+    <row
+        id="413"
+        cityname="酉阳土家族苗族自治县"
+        provinceid="31" >
+    </row>
+    <row
+        id="414"
+        cityname="彭水苗族土家族自治县"
+        provinceid="31" >
+    </row>
+    <row
+        id="415"
+        cityname="西城区"
+        provinceid="2" >
+    </row>
+    <row
+        id="416"
+        cityname="崇文区"
+        provinceid="2" >
+    </row>
+    <row
+        id="417"
+        cityname="宣武区"
+        provinceid="2" >
+    </row>
+    <row
+        id="418"
+        cityname="朝阳区"
+        provinceid="2" >
+    </row>
+    <row
+        id="419"
+        cityname="丰台区"
+        provinceid="2" >
+    </row>
+    <row
+        id="420"
+        cityname="石景山区"
+        provinceid="2" >
+    </row>
+    <row
+        id="421"
+        cityname="海淀区"
+        provinceid="2" >
+    </row>
+    <row
+        id="422"
+        cityname="门头沟区"
+        provinceid="2" >
+    </row>
+    <row
+        id="423"
+        cityname="房山区"
+        provinceid="2" >
+    </row>
+    <row
+        id="424"
+        cityname="通州区"
+        provinceid="2" >
+    </row>
+    <row
+        id="425"
+        cityname="顺义区"
+        provinceid="2" >
+    </row>
+    <row
+        id="426"
+        cityname="昌平区"
+        provinceid="2" >
+    </row>
+    <row
+        id="427"
+        cityname="大兴区"
+        provinceid="2" >
+    </row>
+    <row
+        id="428"
+        cityname="怀柔区"
+        provinceid="2" >
+    </row>
+    <row
+        id="429"
+        cityname="平谷区"
+        provinceid="2" >
+    </row>
+    <row
+        id="430"
+        cityname="密云县"
+        provinceid="2" >
+    </row>
+    <row
+        id="431"
+        cityname="延庆县"
+        provinceid="2" >
+    </row>
+
+</city>

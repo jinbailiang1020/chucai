@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/spf_back"
+    android:weightSum="1" 
+    android:orientation="vertical"
+    >
+        <LinearLayout
+            android:id="@+id/right_top_ll"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:weightSum="0.9" >
+
+            <TextView
+                android:id="@+id/ll_tv_mainTeam"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:text="新加坡"
+                android:textColor="@color/blue"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/ll_tv_vs"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.25"
+                android:gravity="center_horizontal|bottom"
+                android:text="VS"
+                android:textColor="@color/red"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/ll_tv_cusTeam"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:text="泰国"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <!-- 胜平负 按钮点击区 -->
+        <LinearLayout
+            android:id="@+id/right_bottom_ll_spf"
+            android:layout_width="fill_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="1" 
+            >
+
+            <Button
+                android:id="@+id/btn_mainWin"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/jc_btn"
+                android:gravity="center"
+                android:text="主胜"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+
+            <Button
+                android:id="@+id/btn_lose"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/jc_btn"
+                android:gravity="center"
+                android:text="主负"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+            
+            <Button 
+                android:id="@+id/btn_dan"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/jc_btn"
+                android:textSize="13sp"
+                android:text="胆"
+                />
+        </LinearLayout>
+</LinearLayout>

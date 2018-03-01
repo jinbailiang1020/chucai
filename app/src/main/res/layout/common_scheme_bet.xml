@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bet_white_middle_bg" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/bet_layout_margin"
+        android:layout_marginRight="@dimen/bet_layout_margin"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bet_bg_top" />
+
+        <ScrollView
+            android:id="@+id/bet_sv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent" >
+
+            <LinearLayout
+                android:id="@+id/layout_scheme_bet"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/bet_dlt_continue_betting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bet_bg_middle"
+                    android:orientation="vertical" >
+
+                    <com.sm.sls_app.view.MyListView2
+                        android:id="@+id/bet_lv_scheme"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/bet_listview_margin"
+                        android:divider="@drawable/icon_line_dotted"
+                        android:dividerHeight="@dimen/bet_lv_diver_height"
+                        android:listSelector="@android:color/transparent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bet_bg_middle"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <CheckBox
+                        android:id="@+id/bet_cb_dlt"
+                        android:layout_width="@dimen/bet_cb_size"
+                        android:layout_height="@dimen/bet_cb_size"
+                        android:layout_marginLeft="@dimen/bet_layout_xieyi_margin"
+                        android:button="@drawable/common_cb_selector" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="追加投注"
+                        android:textColor="@color/bet_et"
+                        android:textSize="@dimen/common_lage_text_size" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/bet_layout_xieyi_height"
+                    android:background="@drawable/bet_bg_middle" >
+
+                    
+                    <RelativeLayout 
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_centerInParent="true"
+                        
+                        >
+                    <CheckBox
+                        android:id="@+id/bet_cb_xieyi"
+                        android:layout_width="@dimen/bet_cb_size"
+                        android:layout_height="@dimen/bet_cb_size"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/common_cb_selector"
+                        android:checked="true"
+                        android:enabled="false" />
+
+                    <TextView
+                        android:id="@+id/tv_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/bet_cb_xieyi"
+                        android:text="我已同意阅读"
+                        android:textColor="@color/bet_et"
+                        android:textSize="@dimen/common_lage_text_size" />
+
+                    <TextView
+                        android:id="@+id/bet_tv_guize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_tip"
+                        android:text="《委托投注规则》"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/common_lage_text_size" />
+
+                    <ImageView
+                        android:id="@+id/bet_btn_deleteall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                         android:layout_toRightOf="@+id/bet_tv_guize"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/bet_layout_xieyi_margin"
+                        android:background="@drawable/btn_deleteall" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bet_bg_bottom" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

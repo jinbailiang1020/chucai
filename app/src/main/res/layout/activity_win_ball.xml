@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:id="@+id/win_ball_title"
+        android:layout_width="fill_parent"
+        android:layout_height="34dp"
+        >
+
+        <Button
+            android:id="@+id/title_btn_date"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="日期" />
+
+        <TextView
+            android:id="@+id/title_tv_name"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="竞彩足球" />
+        
+    </RelativeLayout>
+    <LinearLayout 
+        android:id="@+id/win_ball_top"
+        android:layout_width="fill_parent"
+        android:weightSum="1"
+        android:layout_height="30dp"
+        >
+        <TextView 
+            android:id="@+id/top_id"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+        	android:layout_height="30dp"
+        	android:gravity="center"
+        	android:text="赛事/编号"
+            />
+         <TextView 
+            android:id="@+id/top_scroll"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+        	android:layout_height="30dp"
+        	android:gravity="center"
+        	android:text="主队/让球"
+            />
+         <TextView 
+            android:id="@+id/top_result"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+        	android:layout_height="30dp"
+        	android:gravity="center"
+        	android:text="赛果"
+            />
+         <TextView 
+            android:id="@+id/top_kedui"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+        	android:layout_height="30dp"
+        	android:gravity="center"
+        	android:text="客队"
+            />
+        
+    </LinearLayout>
+    <ExpandableListView 
+        android:id="@+id/win_ball_exListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        >
+    </ExpandableListView>
+    
+
+</LinearLayout>

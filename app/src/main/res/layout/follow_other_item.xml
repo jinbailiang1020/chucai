@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="4" >
+
+        <TextView
+            android:id="@+id/follow_other_one_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/follow_textview_bolder2"
+            android:gravity="center"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:text="2011121211期"
+            android:textColor="@color/follow_tv_textcolor"
+            android:textSize="@dimen/common_min_text_size" />
+
+        <TextView
+            android:id="@+id/follow_other_two_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/follow_textview_bolder2"
+            android:gravity="center"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:text="11 10 21 11"
+            android:textColor="@color/follow_tv_textcolor"
+            android:textSize="@dimen/common_min_text_size" />
+
+        <TextView
+            android:id="@+id/follow_other_three_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/follow_textview_bolder2"
+            android:gravity="center"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:text="11 10 21 11"
+            android:textColor="@color/follow_tv_textcolor"
+            android:textSize="@dimen/common_min_text_size" />
+
+        <TextView
+            android:id="@+id/follow_other_four_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/follow_textview_bolder2"
+            android:gravity="center"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:text="11 10 21 11"
+            android:textColor="@color/follow_tv_textcolor"
+            android:textSize="@dimen/common_min_text_size" />
+    </LinearLayout>
+
+</LinearLayout>

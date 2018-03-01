@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Itm1"
+    android:layout_width="fill_parent"
+    android:layout_height="75dp"
+    android:background="@drawable/spf_back"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/bet_rl_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/bet_tv_main"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="主队"
+            android:textColor="@color/gray"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/bet_tv_home"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_alignBottom="@+id/bet_tv_main"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/bet_tv_main"
+            android:text="塞帕汉 "
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/bet_tv_vs"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="VS"
+            android:textColor="@color/red"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/bet_tv_gus"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="客队"
+            android:textColor="@color/gray"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/bet_tv_visiting"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignBottom="@+id/bet_tv_gus"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@+id/bet_tv_gus"
+            android:text="阿赫利"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/number_ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:weightSum="2.1" >
+
+        <Button
+            android:id="@+id/Btn3"
+            android:layout_width="0dip"
+            android:layout_height="35dp"
+            android:layout_weight="0.7"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:background="@drawable/jc_btn"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/Btn1"
+            android:layout_width="0dip"
+            android:layout_height="35dp"
+            android:layout_weight="0.7"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:background="@drawable/jc_btn"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/Btn0"
+            android:layout_width="0dip"
+            android:layout_height="35dp"
+            android:layout_weight="0.7"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:background="@drawable/jc_btn"
+            android:text="0" />
+    </LinearLayout>
+
+</LinearLayout>

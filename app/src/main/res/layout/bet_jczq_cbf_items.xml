@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="68dp"
+    android:background="@drawable/spf_back"
+    android:weightSum="1"
+    android:orientation="horizontal" 
+    >
+   
+    <!-- 左边 -->
+   <LinearLayout 
+       android:id="@+id/spf_right_ll"
+       android:layout_width="0dp"
+       android:layout_weight="0.8"
+       android:layout_height="fill_parent"
+       android:orientation="vertical"
+       >
+         <LinearLayout 
+             android:id="@+id/right_top_ll"
+             android:layout_width="fill_parent"
+             android:layout_height="25dp"
+             android:layout_marginLeft="10dp"
+             android:orientation="horizontal"
+             android:weightSum="0.9"
+             >
+             <TextView 
+                 android:id="@+id/ll_tv_mainTeam"
+                 android:layout_width="0dp"
+                 android:layout_height="fill_parent"
+                 android:layout_weight="0.3"
+                 android:textColor="@color/black"
+                 android:textSize="15sp"
+                 android:paddingRight="15dp"
+                 android:gravity="bottom|right"
+                 android:text="新加坡"
+                 />
+              <TextView 
+                 android:id="@+id/ll_tv_vs"
+                 android:layout_width="0dp"
+                 android:layout_height="fill_parent"
+                 android:layout_weight="0.3"
+                 android:gravity="center_horizontal|bottom"
+                 android:textColor="@color/red"
+                 android:textSize="15sp"
+                 android:text="0"
+                 />
+               <TextView 
+                 android:id="@+id/ll_tv_cusTeam"
+                 android:layout_width="0dp"
+                 android:layout_height="fill_parent"
+                 android:layout_weight="0.3"
+                 android:textColor="@color/black"
+                 android:textSize="15sp"
+                 android:paddingLeft="15dp"
+                 android:gravity="bottom|left"
+                 android:text="泰国"
+                 />
+             
+         </LinearLayout>
+         
+          <TextView 
+              android:id="@+id/show"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="3dp"
+              android:textColor="@color/black"
+              android:textSize="14sp"
+              android:gravity="center"
+              android:text="sjlsdjf"
+              />
+   </LinearLayout>
+   <RelativeLayout 
+       android:id="@+id/right_btn"
+       android:layout_width="0dp"
+       android:layout_weight="0.2"
+       android:layout_height="match_parent"
+       >
+<Button
+    android:id="@+id/btn_dan_cbf"
+    android:layout_width="33dp"
+    android:layout_height="33dp"
+    android:background="@drawable/jc_btn"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="7dp"
+    android:text="胆"
+    >
+</Button>       
+   </RelativeLayout>
+ 
+</LinearLayout>

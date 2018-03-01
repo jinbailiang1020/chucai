@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/hall_lottery_layout_height"
+        android:layout_margin="@dimen/hall_gv_item_margin"
+        android:background="@drawable/selector_hall_gvitem" >
+
+        <ImageView
+            android:id="@+id/iv_lottery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/log_lottery_ssq" />
+
+        <RelativeLayout
+            android:id="@+id/rl_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_lottery"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_hall_lotteryname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="双色球"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_big_text_size" />
+
+            <TextView
+                android:id="@+id/tv_hall_describ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_hall_lotteryname"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:text="今晚21:30开奖"
+                android:textColor="@color/hall_gvitem_text"
+                android:textSize="@dimen/common_min_text_size" />
+
+            <com.sm.sls_app.view.CustomDigitalClock
+                android:id="@+id/cdc_hall_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_hall_describ"
+                android:textColor="@color/hall_gvitem_text"
+                android:textSize="@dimen/common_min_text_size" />
+
+            <TextView
+                android:id="@+id/tv_hall_dm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_hall_describ"
+                android:text="皇马VS塞维利亚"
+                android:textColor="@color/hall_gvitem_text"
+                android:textSize="@dimen/common_min_text_size"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/iv_hall_jiajiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="-5dp"
+            android:background="@drawable/icon_hall_jiajiang"
+            android:gravity="center"
+            android:text="加奖"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_min_text_size"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

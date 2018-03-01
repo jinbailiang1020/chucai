@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#dddcdc"
+    >
+     <RelativeLayout
+        android:id="@+id/number_ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/main_top"
+        android:gravity="center" >
+        <TextView 
+            android:id="@+id/tv_title"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="帮助"
+            />
+        </RelativeLayout>
+    <ScrollView 
+        android:id="@+id/helpInfo_scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        >
+ 		<TextView 
+	              android:id="@+id/number_sv_Help"
+            	  android:layout_width="wrap_content"
+            	  android:layout_margin="5dp"
+            	  android:textColor="@color/black"
+            	  android:textSize="15sp"
+            	  android:layout_height="wrap_content"
+            	  android:text=""
+	               />
+ 		</ScrollView>
+</LinearLayout>
