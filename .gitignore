@@ -1,0 +1,13 @@
+# Created by .ignore support plugin (hsz.mobi)
+.gitignore
+.idea/workspace.xml
+app/src/main/res/drawable-ldpi/
+app/src/main/res/drawable-mdpi/
+app/src/main/res/drawable-xhdpi/.DS_Store
+app/src/main/res/drawable-xxhdpi/
+app/src/main/res/layout/.DS_Store
+src/main/res/drawable-ldpi/
+src/main/res/drawable-mdpi/
+src/main/res/drawable-xhdpi/.DS_Store
+src/main/res/drawable-xxhdpi/
+src/main/res/layout/.DS_Store
