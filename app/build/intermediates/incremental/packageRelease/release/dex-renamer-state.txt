@@ -1,4 +1,0 @@
-#Thu Mar 01 10:04:15 CST 2018
-base.0=E\:\\KwDownload\\chucai\\app\\build\\intermediates\\transforms\\dex\\release\\0
-path.0=classes.dex
-renamed.0=classes.dex

@@ -1328,12 +1328,12 @@
         "source": "E:\\KwDownload\\chucai\\app\\src\\main\\res\\drawable-xhdpi\\account_information_real_name.png"
     },
     {
-        "merged": "E:\\KwDownload\\chucai\\app\\build\\intermediates\\res\\merged\\debug\\layout_gridview_items_3d.xml.flat",
-        "source": "E:\\KwDownload\\chucai\\app\\src\\main\\res\\layout\\gridview_items_3d.xml"
-    },
-    {
         "merged": "E:\\KwDownload\\chucai\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_passtype_change.xml.flat",
         "source": "E:\\KwDownload\\chucai\\app\\src\\main\\res\\drawable\\btn_passtype_change.xml"
+    },
+    {
+        "merged": "E:\\KwDownload\\chucai\\app\\build\\intermediates\\res\\merged\\debug\\layout_gridview_items_3d.xml.flat",
+        "source": "E:\\KwDownload\\chucai\\app\\src\\main\\res\\layout\\gridview_items_3d.xml"
     },
     {
         "merged": "E:\\KwDownload\\chucai\\app\\build\\intermediates\\res\\merged\\debug\\layout_umeng_bak_platform_item_simple.xml.flat",
